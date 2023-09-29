@@ -7,7 +7,8 @@ public class PlayerCombat : MonoBehaviour
     private InputManager _inputManager;
 
     public Transform AttackPoint;
-    public float attackRange = 0.5;
+    public float attackRange = 0.5f;
+    public LayerMask enemyLayers;
 
     private void Start()
     {
@@ -25,6 +26,11 @@ public class PlayerCombat : MonoBehaviour
 
     private void Attack()
     {
-        
+        Collider2D[] hitEnemies =Physics2D.OverlapCircleAll(AttackPoint.position, attackRange, enemyLayers);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            Debug.Log("hitEnemy");
+            Destroy(enemy.gameObject);
+        }
     }
 }
