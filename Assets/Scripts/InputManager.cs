@@ -62,12 +62,14 @@ public class InputManager : MonoBehaviour
         interactReleased = _keyboard.fKey.wasReleasedThisFrame;
         interactHeld = _keyboard.fKey.isPressed;
         
+        /*
         if (animator.GetBool("isDead"))
         {
             animator.SetBool("isJumping", false);
             moveDirection.x = 0;
             //moveDirection.y = 0;
         }
+        */
     }
     
     private void UpdateGamepadInput()

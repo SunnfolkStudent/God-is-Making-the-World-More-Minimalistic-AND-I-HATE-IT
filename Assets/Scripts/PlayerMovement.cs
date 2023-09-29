@@ -55,11 +55,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (_keyboard.dKey.isPressed)
         {
-            transform.localScale = new Vector3(2, 2f, 2f);
+            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, 1f);
         }
         else if (_keyboard.aKey.isPressed)
         { 
-            transform.localScale = new Vector3(-2, 2f, 2f);
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, 1f);
         }
         
         if (jumpBufferCounter > 0 && coyoteTimeCounter > 0)
