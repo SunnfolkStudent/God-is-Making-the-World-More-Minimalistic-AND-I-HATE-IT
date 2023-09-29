@@ -18,6 +18,12 @@ public class InputManager : MonoBehaviour
 // These variables are used to hold Input Values from the F key or East Button
     [HideInInspector] public bool interactPressed, interactReleased, interactHeld;
 
+    [Header("attack")] 
+    [HideInInspector] public bool canAttack;
+
+    [HideInInspector] public bool attackPressed;
+        
+    
 // These variables are used to determine input source.
     [SerializeField] private bool usingGamepad, usingDpad;
 
@@ -61,15 +67,17 @@ public class InputManager : MonoBehaviour
         interactPressed = _keyboard.fKey.wasPressedThisFrame;
         interactReleased = _keyboard.fKey.wasReleasedThisFrame;
         interactHeld = _keyboard.fKey.isPressed;
-        
-        /*
-        if (animator.GetBool("isDead"))
-        {
-            animator.SetBool("isJumping", false);
-            moveDirection.x = 0;
-            //moveDirection.y = 0;
-        }
-        */
+    // Set the attack bools wen the g key is interacted with
+    attackPressed = _keyboard.gKey.wasPressedThisFrame;
+
+    /*
+    if (animator.GetBool("isDead"))
+    {
+        animator.SetBool("isJumping", false);
+        moveDirection.x = 0;
+        //moveDirection.y = 0;
+    }
+    */
     }
     
     private void UpdateGamepadInput()
