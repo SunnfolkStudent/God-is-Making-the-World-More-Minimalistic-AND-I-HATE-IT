@@ -1,18 +1,77 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class GodDialog : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject dialougePanel;
+    public TextMeshProUGUI dialogueText;
+    public string[] dialouge;
+    private int index;
+
+    public float wordSpeed;
+    public bool playerIsClose;
+
+    private void Update()
     {
-        
+        if (playerIsClose)
+        {
+            if (dialougePanel.activeInHierarchy)
+            {
+                zeroText();
+            }
+            else
+            {
+                dialougePanel.SetActive(true);
+                StartCoroutine(Typing());
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void zeroText()
     {
-        
+        dialogueText.text = "";
+        index = 0;
+        dialougePanel.SetActive(false);
+    }
+
+    IEnumerator Typing()
+    {
+        foreach (char letter in dialouge[index].ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(wordSpeed);
+        }
+    }
+
+    public void NextLine()
+    {
+        if (index < dialouge.Length - 1)
+        {
+            index++;
+            dialogueText.text = "";
+            StartCoroutine(Typing());
+        }
+        else
+        {
+            zeroText();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerIsClose = true;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerIsClose = false;
+            zeroText();
+        }
     }
 }
