@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 449435984759883356}
   - component: {fileID: 3435942127655991750}
   - component: {fileID: 4674212545256753962}
+  - component: {fileID: 164385964777104595}
   m_Layer: 7
   m_Name: EnemySnake_VariantOne
   m_TagString: Enemy
@@ -174,6 +175,21 @@ MonoBehaviour:
   fallCheckPoint: {fileID: 6293932620068234949}
   isShooting: 0
   playerHealthManager: {fileID: 0}
+--- !u!114 &164385964777104595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575555320987399899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726e3f00055f9104fa3babef0067bd9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBtwShots: 0
+  startTimeBtwShots: 0
+  projectile: {fileID: 0}
 --- !u!1 &2601761406465027962
 GameObject:
   m_ObjectHideFlags: 0

@@ -39,22 +39,27 @@ public class PlayerHealthManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (canTakeDamage && other.gameObject.CompareTag("Enemy") && lives > 0)
         {
+            canTakeDamage = false;
+            canTakeDamageCounter = Time.time + canTakeDamageTime;            
             lives--;
-            Destroy(other.gameObject);
+            _audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
+
         }
     }
+    
 
     private void OnTriggerStay2D(Collider2D other)
     {
         if (canTakeDamage && other.CompareTag("Enemy") && lives > 0)
         {
-
-            lives--;
-            _audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
+            
             canTakeDamage = false;
             canTakeDamageCounter = Time.time + canTakeDamageTime;
+            lives--;
+            _audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
+
         }
     }
 
@@ -63,11 +68,11 @@ public class PlayerHealthManager : MonoBehaviour
 
         if (canTakeDamage && lives > 0)
         {
-
-            lives--;
-            _audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
             canTakeDamage = false;
             canTakeDamageCounter = Time.time + canTakeDamageTime;
+            lives--;
+            _audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
+
         }
     }
 

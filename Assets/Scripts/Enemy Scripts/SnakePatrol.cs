@@ -43,7 +43,7 @@ public class SnakePatrol : MonoBehaviour
         if (DetectedPlayer())
         {
 
-            playerHealthManager.collideWithEnemy();
+           // playerHealthManager.collideWithEnemy();
         }
 
         return;
