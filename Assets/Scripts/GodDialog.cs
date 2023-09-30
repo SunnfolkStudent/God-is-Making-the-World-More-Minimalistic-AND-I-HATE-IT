@@ -1,4 +1,4 @@
-using System;
+
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -10,6 +10,7 @@ public class GodDialog : MonoBehaviour
     public string[] dialouge;
     private int index;
 
+    public GameObject contButton;
     public float wordSpeed;
     public bool playerIsClose;
 
@@ -26,6 +27,11 @@ public class GodDialog : MonoBehaviour
                 dialougePanel.SetActive(true);
                 StartCoroutine(Typing());
             }
+        }
+
+        if (dialogueText.text == dialouge[index])
+        {
+            contButton.SetActive(true);
         }
     }
 
@@ -47,6 +53,7 @@ public class GodDialog : MonoBehaviour
 
     public void NextLine()
     {
+        contButton.SetActive(false);
         if (index < dialouge.Length - 1)
         {
             index++;
