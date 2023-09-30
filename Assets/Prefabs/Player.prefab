@@ -127,10 +127,10 @@ GameObject:
   - component: {fileID: 8963828464764373657}
   - component: {fileID: 3579815934157365410}
   - component: {fileID: 5755186189154977848}
+  - component: {fileID: 7945004843922761234}
   - component: {fileID: 415399950155563687}
   - component: {fileID: 9215342506160369187}
   - component: {fileID: 2920355578495400352}
-  - component: {fileID: 7945004843922761234}
   - component: {fileID: 3832436980193895260}
   m_Layer: 3
   m_Name: Player
@@ -234,7 +234,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &5755186189154977848
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -281,81 +281,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &415399950155563687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6390774003641410433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd40dc0c06ed03c4a9e4a855d8612b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 6
-  jumpSpeed: 8
-  accelerationTime: 0.1
-  groundFriction: 0.03
-  airFriction: 0.005
-  coyoteTime: 0.2
-  coyoteTimeCounter: 0
-  jumpBufferTime: 0.2
-  jumpBufferCounter: 0
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
---- !u!114 &9215342506160369187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6390774003641410433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0158782f78b6c0b45a254b5f7a8a2775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveDirection: {x: 0, y: 0}
-  canJump: 0
-  jumpPressed: 0
-  jumpReleased: 0
-  jumpHeld: 0
-  canInteract: 0
-  interactPressed: 0
-  interactReleased: 0
-  interactHeld: 0
-  canAttack: 0
-  attackPressed: 0
-  usingGamepad: 0
-  usingDpad: 0
-  animator: {fileID: 0}
---- !u!114 &2920355578495400352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6390774003641410433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a516c14a458b1fd4c92f3e844e5a7801, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lives: 3
-  maxLives: 3
-  canTakeDamage: 0
-  canTakeDamageTime: 1
-  canTakeDamageCounter: 0
-  hurtClips:
-  - {fileID: 8300000, guid: dcecc64c3b677014184238cdc4fba227, type: 3}
-  - {fileID: 8300000, guid: 0a4a738053037c84fa2b1b4535e6b711, type: 3}
-  - {fileID: 8300000, guid: 77068d9bfcd520f49b0193e52a903600, type: 3}
-  pickupClips:
-  - {fileID: 8300000, guid: a6fdffef7e9667e4a8512bbec3723fc3, type: 3}
-  - {fileID: 8300000, guid: ae61164781465ad44a7ffcf273feb968, type: 3}
-  - {fileID: 8300000, guid: 8c5b30633ada0ab43a6f7fa605443318, type: 3}
 --- !u!82 &7945004843922761234
 AudioSource:
   m_ObjectHideFlags: 0
@@ -452,6 +377,81 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &415399950155563687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6390774003641410433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd40dc0c06ed03c4a9e4a855d8612b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 6
+  jumpSpeed: 8
+  accelerationTime: 0.1
+  groundFriction: 0.2
+  airFriction: 0.005
+  coyoteTime: 0.2
+  coyoteTimeCounter: 0
+  jumpBufferTime: 0.2
+  jumpBufferCounter: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &9215342506160369187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6390774003641410433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0158782f78b6c0b45a254b5f7a8a2775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveDirection: {x: 0, y: 0}
+  canJump: 0
+  jumpPressed: 0
+  jumpReleased: 0
+  jumpHeld: 0
+  canInteract: 0
+  interactPressed: 0
+  interactReleased: 0
+  interactHeld: 0
+  canAttack: 0
+  attackPressed: 0
+  usingGamepad: 0
+  usingDpad: 0
+  animator: {fileID: 0}
+--- !u!114 &2920355578495400352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6390774003641410433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a516c14a458b1fd4c92f3e844e5a7801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lives: 3
+  maxLives: 3
+  canTakeDamage: 0
+  canTakeDamageTime: 1
+  canTakeDamageCounter: 0
+  hurtClips:
+  - {fileID: 8300000, guid: dcecc64c3b677014184238cdc4fba227, type: 3}
+  - {fileID: 8300000, guid: 0a4a738053037c84fa2b1b4535e6b711, type: 3}
+  - {fileID: 8300000, guid: 77068d9bfcd520f49b0193e52a903600, type: 3}
+  pickupClips:
+  - {fileID: 8300000, guid: a6fdffef7e9667e4a8512bbec3723fc3, type: 3}
+  - {fileID: 8300000, guid: ae61164781465ad44a7ffcf273feb968, type: 3}
+  - {fileID: 8300000, guid: 8c5b30633ada0ab43a6f7fa605443318, type: 3}
 --- !u!114 &3832436980193895260
 MonoBehaviour:
   m_ObjectHideFlags: 0

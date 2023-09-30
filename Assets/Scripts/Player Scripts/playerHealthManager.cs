@@ -39,27 +39,38 @@ public class PlayerHealthManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (canTakeDamage && other.gameObject.CompareTag("Enemy") && lives > 0)
+        if (canTakeDamage && (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Projektile")) && lives > 0)
         {
             canTakeDamage = false;
             canTakeDamageCounter = Time.time + canTakeDamageTime;            
             lives--;
             _audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
-
+        }
+        
+        if (other.gameObject.CompareTag("Projektile"))
+        {
+                         
+            Destroy(other.gameObject);
         }
     }
     
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (canTakeDamage && other.CompareTag("Enemy") && lives > 0)
+        if (canTakeDamage && (other.CompareTag("Enemy") || other.CompareTag("Projektile")) && lives > 0)
         {
             
             canTakeDamage = false;
             canTakeDamageCounter = Time.time + canTakeDamageTime;
             lives--;
             _audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
-
+            
+        }
+        
+        if (other.CompareTag("Projektile"))
+        {
+                         
+            Destroy(other.gameObject);
         }
     }
 

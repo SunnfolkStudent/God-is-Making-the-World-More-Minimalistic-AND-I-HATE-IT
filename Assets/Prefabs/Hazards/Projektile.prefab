@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3165922620288706336}
   m_Layer: 8
   m_Name: Projektile
-  m_TagString: Enemy
+  m_TagString: Projektile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.5
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f731fbf8e9d426248b5b50fb6d5b2dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
-  arc: 0.5
-  _rigidbody2D: {fileID: 5413821048844802452}
+  speed: 7
+  arc: 4
+  rigidbody2D: {fileID: 5413821048844802452}
   shootDirection: 0

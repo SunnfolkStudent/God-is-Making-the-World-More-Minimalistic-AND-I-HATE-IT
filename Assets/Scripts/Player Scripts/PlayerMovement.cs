@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else if (_keyboard.aKey.isPressed)
         { 
-            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, 1f);
+            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, 1f);
         }
         
         if (jumpBufferCounter > 0 && coyoteTimeCounter > 0)

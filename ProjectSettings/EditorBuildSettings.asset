@@ -6,28 +6,28 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Title.unity
+    path: Assets/Scenes/Menu Scenes/Title.unity
     guid: 7c7eaf2009c51f14b99aa29920b77478
   - enabled: 1
     path: Assets/Scenes/IntroCutscene.unity
     guid: e23925ed9981d2b4a968e4d6b4e07b34
   - enabled: 1
-    path: Assets/Scenes/DeathScene.unity
+    path: Assets/Scenes/Menu Scenes/DeathScene.unity
     guid: f12da6ffb13c9574296ae7911f6947e7
   - enabled: 1
-    path: Assets/Scenes/LevelOne.unity
+    path: Assets/Scenes/Levels/LevelOne.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/LevelTwo.unity
+    path: Assets/Scenes/Levels/LevelTwo.unity
     guid: cfb704fe08d419140a6c8e3d2d52d900
   - enabled: 1
-    path: Assets/Scenes/LevelThree.unity
+    path: Assets/Scenes/Levels/LevelThree.unity
     guid: 1e8d2168b23cdae479256f95b9f4b30f
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 3b7da459018cb7540abedab248bf3a82
   - enabled: 1
-    path: Assets/Scenes/LevelFour.unity
+    path: Assets/Scenes/Levels/LevelFour.unity
     guid: 8a7e7d05f31862d41bf3b275283f59a9
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
