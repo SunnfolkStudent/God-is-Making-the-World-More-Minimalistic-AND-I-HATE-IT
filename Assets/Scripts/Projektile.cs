@@ -8,9 +8,11 @@ public class Projektile : MonoBehaviour
 
     public Rigidbody2D _rigidbody2D;
 
+    public float shootDirection;
+
     private void Start()
     {
-        _rigidbody2D.velocity = new Vector2(transform.position.x * speed,transform.position.x * arc);
+        _rigidbody2D.velocity = new Vector2(transform.position.x * speed*shootDirection,transform.position.x * arc);
     }
     
 }

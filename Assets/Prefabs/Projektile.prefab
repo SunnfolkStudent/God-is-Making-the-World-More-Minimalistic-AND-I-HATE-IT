@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5413821048844802452}
   - component: {fileID: -1147409038962454467}
   - component: {fileID: 3165922620288706336}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Projektile
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -165,3 +165,4 @@ MonoBehaviour:
   speed: 1
   arc: 0.5
   _rigidbody2D: {fileID: 5413821048844802452}
+  shootDirection: 0

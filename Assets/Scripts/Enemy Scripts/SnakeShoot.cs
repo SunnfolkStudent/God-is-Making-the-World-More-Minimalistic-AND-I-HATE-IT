@@ -17,7 +17,9 @@ public class SnakeShoot : MonoBehaviour
    {
       if (timeBtwShots <= 0)
       {
-         Instantiate(projectile, transform.position, Quaternion.identity);
+         var clone = Instantiate(projectile, transform.position, Quaternion.identity);
+         clone.GetComponent<Projektile>().shootDirection = transform.localScale.x;
+         Destroy(clone, 5f);
          timeBtwShots = startTimeBtwShots;
       }
       else

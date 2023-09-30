@@ -27,7 +27,6 @@ public class PlayerHealthManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
         if (other.CompareTag("Heart"))
         {
             if (lives >= maxLives) return;
@@ -38,9 +37,17 @@ public class PlayerHealthManager : MonoBehaviour
         return;
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            lives--;
+            Destroy(other.gameObject);
+        }
+    }
+
     private void OnTriggerStay2D(Collider2D other)
     {
-        
         if (canTakeDamage && other.CompareTag("Enemy") && lives > 0)
         {
 
