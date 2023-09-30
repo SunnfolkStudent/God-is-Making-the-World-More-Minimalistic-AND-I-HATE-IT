@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class EnemyShoot : MonoBehaviour
+public class SnakeShoot : MonoBehaviour
 {
    public float timeBtwShots;
    public float startTimeBtwShots;

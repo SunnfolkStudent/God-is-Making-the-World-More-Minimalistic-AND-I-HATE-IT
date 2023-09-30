@@ -51,6 +51,19 @@ public class PlayerHealthManager : MonoBehaviour
         }
     }
 
+    public void collideWithEnemy()
+    {
+
+        if (canTakeDamage && lives > 0)
+        {
+
+            lives--;
+            _audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
+            canTakeDamage = false;
+            canTakeDamageCounter = Time.time + canTakeDamageTime;
+        }
+    }
+
     private void Update()
     {
         if (Time.time > canTakeDamageCounter && !canTakeDamage)
