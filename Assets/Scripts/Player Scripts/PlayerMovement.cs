@@ -31,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
     private InputManager _input;
 
+    public bool canMove = true;
+
     //public Animator animator;
     //public PlayerHealthManager healthManager;
     
@@ -77,8 +79,8 @@ public class PlayerMovement : MonoBehaviour
             coyoteTimeCounter = 0f;
         }
 
-        //if (animator.GetBool("isDead"))
-        //{ return; }
+        if (!canMove)
+        { return; }
         
         if (IsPlayerGrounded())
         { coyoteTimeCounter = coyoteTime; } else { coyoteTimeCounter -= 1 * Time.deltaTime; }

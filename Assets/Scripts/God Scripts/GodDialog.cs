@@ -5,11 +5,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class NPC : MonoBehaviour
+public class GodDialog : MonoBehaviour
 {
     public GameObject dialoguePanel;
     public GameObject GodInteractPromt;
     public PlayerMovement _playerMovement;
+    public InputManager _inputManager;
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI nameText;
     public string[] dialogue;
@@ -24,7 +25,7 @@ public class NPC : MonoBehaviour
     void Start()
     {
         dialogueText.text = "";
-        _playerMovement = GetComponent<PlayerMovement>();
+        //_playerMovement = GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -39,6 +40,8 @@ public class NPC : MonoBehaviour
             {
                 dialoguePanel.SetActive(true);
                 GodInteractPromt.SetActive(false);
+                _inputManager.canMove = false;
+                _playerMovement.canMove = false;
                 StartCoroutine(Typing());
             }
             else if (dialogueText.text == dialogue[index])
@@ -62,6 +65,8 @@ public class NPC : MonoBehaviour
         dialogueText.text = "";
         index = 0;
         dialoguePanel.SetActive(false);
+        _inputManager.canMove = true;
+        _playerMovement.canMove = true;
     }
 
     IEnumerator Typing()

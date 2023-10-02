@@ -22,7 +22,8 @@ public class InputManager : MonoBehaviour
     [HideInInspector] public bool canAttack;
 
     [HideInInspector] public bool attackPressed;
-        
+
+    public bool canMove = true;
     
 // These variables are used to determine input source.
     [SerializeField] private bool usingGamepad, usingDpad;
@@ -70,6 +71,10 @@ public class InputManager : MonoBehaviour
     // Set the attack bools wen the g key is interacted with
     attackPressed = _keyboard.gKey.wasPressedThisFrame;
 
+    if (!canMove)
+    {
+        moveDirection.x = 0;
+    }
     /*
     if (animator.GetBool("isDead"))
     {
