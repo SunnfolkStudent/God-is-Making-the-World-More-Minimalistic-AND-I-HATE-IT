@@ -17,6 +17,7 @@ public class NPC : MonoBehaviour
 
     public float wordSpeed;
     public bool playerIsClose;
+    public bool canGoToNextLine = true;
 
 
     void Start()
@@ -27,7 +28,9 @@ public class NPC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
+        
+        
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose  && canGoToNextLine)
         {
             if (!dialoguePanel.activeInHierarchy)
             {
@@ -38,6 +41,10 @@ public class NPC : MonoBehaviour
             else if (dialogueText.text == dialogue[index])
             {
                 NextLine();
+            } 
+            if (dialogueText.text == dialogue[index])
+            {
+                canGoToNextLine = true;
             }
 
         }
@@ -65,6 +72,7 @@ public class NPC : MonoBehaviour
 
     public void NextLine()
     {
+        canGoToNextLine = false;
         if (index < dialogue.Length - 1)
         {
             index++;
