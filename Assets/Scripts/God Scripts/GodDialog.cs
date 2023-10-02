@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Serialization;
 
 public class GodDialog : MonoBehaviour
 {
@@ -35,7 +36,6 @@ public class GodDialog : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
-            //PlayerMovement.SetActive(false);
             if (!dialoguePanel.activeInHierarchy)
             {
                 dialoguePanel.SetActive(true);

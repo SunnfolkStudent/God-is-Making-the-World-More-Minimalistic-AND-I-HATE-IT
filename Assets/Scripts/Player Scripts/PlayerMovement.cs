@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpSpeed = 12f;
     private Vector2 _desiredVelocity;
+    public bool _canMove;
 
     [Header("Acceleration")] 
     public float accelerationTime = 0.02f;
@@ -98,7 +99,8 @@ public class PlayerMovement : MonoBehaviour
     
     private void FixedUpdate()
     {
-
+        if (!_canMove) return;
+        
         if (_input.moveDirection.x != 0)
         {
             
