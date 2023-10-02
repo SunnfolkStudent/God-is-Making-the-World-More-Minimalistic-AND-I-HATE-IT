@@ -966,7 +966,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -995,7 +995,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -158.24017, y: 0, z: -272.28717, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1367,6 +1367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1869098949}
   GodInteractPromt: {fileID: 710475963}
+  _playerMovement: {fileID: 1871043299}
   dialogueText: {fileID: 1450176041}
   nameText: {fileID: 1422413899}
   dialogue:
@@ -1383,6 +1384,7 @@ MonoBehaviour:
   - God
   wordSpeed: 0.06
   playerIsClose: 0
+  canGoToNextLine: 0
 --- !u!1 &1770652108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,8 +1578,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869098949}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.008727774, z: -0, w: 0.9999619}
+  m_LocalPosition: {x: 0, y: 0, z: -0.6044577}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1585,10 +1587,10 @@ RectTransform:
   - {fileID: 1450176040}
   - {fileID: 22964992}
   m_Father: {fileID: 1202982270}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -1, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 25.753174, y: 349.2783}
+  m_AnchoredPosition: {x: 25.758423, y: 349.27832}
   m_SizeDelta: {x: -154.5195, y: -775.8165}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1869098951
