@@ -1370,19 +1370,35 @@ MonoBehaviour:
   dialogueText: {fileID: 1450176041}
   nameText: {fileID: 1422413899}
   dialogue:
-  - Hello my child what is your quwery
-  - can you remove minnamalism pzzz
+  - My child, what hath bringeth thy to seek mine realm?
+  - I need you to remove minimalism! I hate it so much!!
+  - Be patient, thou seeketh mine realm to ask upon me to removeth thine minimalism?
+  - ...yes?
   - NOOOOOOOOO
-  - you fool dont you se minamalizem iz ASOME
-  - now you shal go back and tink about you mistace
+  - 'Thou shalt not have the boldness to challenge upon me to removeth mine minimalism!!!! 
+    I hath created the heavens and thy stars and thy minimalism!! '
+  - You museth cherish thy minimalism, for I have createth it with thine intentions
+    in mind!
+  - Remove it you unholy bastard!
+  - KILL THINESELF
+  - No, fudge you!
+  - Have at it!! I shalt send you back to mine Garden of Eden!!!! You shalt ponder
+    upon thine blunder!!
   name:
   - God
-  - dave
+  - Maximalist Joe
   - God
+  - Maximalist Joe
   - God
-  - God
+  - Minimalist God
+  - Minimalist God
+  - Maximalist Joe
+  - Minimalist God
+  - Maximalist Joe
+  - Minimalist God
   wordSpeed: 0.06
   playerIsClose: 0
+  canGoToNextLine: 1
 --- !u!1 &1770652108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1857,6 +1873,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d68a90867b23b1f4f8efa970b012a744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackPoint: {fileID: 0}
+  attackRange: 0.5
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1871043303
 MonoBehaviour:
   m_ObjectHideFlags: 0
