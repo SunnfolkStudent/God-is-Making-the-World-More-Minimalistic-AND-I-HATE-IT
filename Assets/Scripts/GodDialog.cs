@@ -1,50 +1,62 @@
 
 using System.Collections;
-using TMPro;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class GodDialog : MonoBehaviour
-{
-    public GameObject dialougePanel;
-    public TextMeshProUGUI dialogueText;
-    public string[] dialouge;
-    private int index;
+using TMPro;
 
-    public GameObject contButton;
+public class NPC : MonoBehaviour
+{
+    public GameObject dialoguePanel;
+    public GameObject GodInteractPromt;
+    public TextMeshProUGUI dialogueText;
+    public TextMeshProUGUI nameText;
+    public string[] dialogue;
+    public string[] name;
+    private int index = 0;
+
     public float wordSpeed;
     public bool playerIsClose;
 
-    private void Update()
-    {
-        if (playerIsClose)
-        {
-            if (dialougePanel.activeInHierarchy)
-            {
-                zeroText();
-            }
-            else
-            {
-                dialougePanel.SetActive(true);
-                StartCoroutine(Typing());
-            }
-        }
 
-        if (dialogueText.text == dialouge[index])
-        {
-            contButton.SetActive(true);
-        }
+    void Start()
+    {
+        dialogueText.text = "";
     }
 
-    public void zeroText()
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
+        {
+            if (!dialoguePanel.activeInHierarchy)
+            {
+                dialoguePanel.SetActive(true);
+                GodInteractPromt.SetActive(false);
+                StartCoroutine(Typing());
+            }
+            else if (dialogueText.text == dialogue[index])
+            {
+                NextLine();
+            }
+
+        }
+        /*if (Input.GetKeyDown(KeyCode.Q) && dialoguePanel.activeInHierarchy)
+        {
+            RemoveText();
+        }*/
+    }
+
+    public void RemoveText()
     {
         dialogueText.text = "";
         index = 0;
-        dialougePanel.SetActive(false);
+        dialoguePanel.SetActive(false);
     }
 
     IEnumerator Typing()
     {
-        foreach (char letter in dialouge[index].ToCharArray())
+        foreach(char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
@@ -53,32 +65,35 @@ public class GodDialog : MonoBehaviour
 
     public void NextLine()
     {
-        contButton.SetActive(false);
-        if (index < dialouge.Length - 1)
+        if (index < dialogue.Length - 1)
         {
             index++;
             dialogueText.text = "";
+            nameText.text = name[index];
             StartCoroutine(Typing());
         }
         else
         {
-            zeroText();
+            RemoveText();
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             playerIsClose = true;
+            GodInteractPromt.SetActive(true);
         }
     }
-    private void OnTriggerExit(Collider other)
+
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;
-            zeroText();
+            RemoveText();
+            GodInteractPromt.SetActive(false);
         }
     }
 }
