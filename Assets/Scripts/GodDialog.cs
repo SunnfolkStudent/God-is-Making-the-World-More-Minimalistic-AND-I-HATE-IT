@@ -9,6 +9,7 @@ public class NPC : MonoBehaviour
 {
     public GameObject dialoguePanel;
     public GameObject GodInteractPromt;
+    public PlayerMovement _playerMovement;
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI nameText;
     public string[] dialogue;
@@ -17,12 +18,13 @@ public class NPC : MonoBehaviour
 
     public float wordSpeed;
     public bool playerIsClose;
-    public bool canGoToNextLine = true;
+    //public bool canGoToNextLine = true;
 
 
     void Start()
     {
         dialogueText.text = "";
+        _playerMovement = GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -30,8 +32,9 @@ public class NPC : MonoBehaviour
     {
         
         
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose  && canGoToNextLine)
+        if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
+            //PlayerMovement.SetActive(false);
             if (!dialoguePanel.activeInHierarchy)
             {
                 dialoguePanel.SetActive(true);
@@ -44,7 +47,7 @@ public class NPC : MonoBehaviour
             } 
             if (dialogueText.text == dialogue[index])
             {
-                canGoToNextLine = true;
+                //canGoToNextLine = true;
             }
 
         }
@@ -72,7 +75,7 @@ public class NPC : MonoBehaviour
 
     public void NextLine()
     {
-        canGoToNextLine = false;
+        //canGoToNextLine = false;
         if (index < dialogue.Length - 1)
         {
             index++;
