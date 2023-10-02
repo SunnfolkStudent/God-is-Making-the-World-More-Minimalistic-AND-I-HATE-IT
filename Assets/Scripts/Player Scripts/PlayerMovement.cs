@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpSpeed = 12f;
     private Vector2 _desiredVelocity;
-    public bool _canMove;
 
     [Header("Acceleration")] 
     public float accelerationTime = 0.02f;
@@ -31,9 +30,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Components")]
     private Rigidbody2D _rigidbody2D;
     private InputManager _input;
-
+    
     public bool canMove = true;
-
+    
     //public Animator animator;
     //public PlayerHealthManager healthManager;
     
@@ -82,6 +81,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (!canMove)
         { return; }
+        //if (animator.GetBool("isDead"))
+        //{ return; }
         
         if (IsPlayerGrounded())
         { coyoteTimeCounter = coyoteTime; } else { coyoteTimeCounter -= 1 * Time.deltaTime; }
@@ -99,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if (!_canMove) return;
+        if (!canMove) return;
         
         if (_input.moveDirection.x != 0)
         {

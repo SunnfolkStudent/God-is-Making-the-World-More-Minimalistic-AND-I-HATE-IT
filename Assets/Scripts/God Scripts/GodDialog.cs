@@ -10,12 +10,16 @@ public class GodDialog : MonoBehaviour
 {
     public GameObject dialoguePanel;
     public GameObject GodInteractPromt;
-    public PlayerMovement _playerMovement;
+    
     public InputManager _inputManager;
+    public PlayerMovement _playerMovement;
+    
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI nameText;
+    
     public string[] dialogue;
     public string[] name;
+    
     private int index = 0;
 
     public float wordSpeed;
@@ -26,7 +30,6 @@ public class GodDialog : MonoBehaviour
     void Start()
     {
         dialogueText.text = "";
-        //_playerMovement = GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -38,10 +41,10 @@ public class GodDialog : MonoBehaviour
         {
             if (!dialoguePanel.activeInHierarchy)
             {
-                dialoguePanel.SetActive(true);
-                GodInteractPromt.SetActive(false);
                 _inputManager.canMove = false;
                 _playerMovement.canMove = false;
+                dialoguePanel.SetActive(true);
+                GodInteractPromt.SetActive(false);
                 StartCoroutine(Typing());
             }
             else if (dialogueText.text == dialogue[index])

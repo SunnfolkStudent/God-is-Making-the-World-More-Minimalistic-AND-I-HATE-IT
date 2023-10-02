@@ -1367,7 +1367,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1869098949}
   GodInteractPromt: {fileID: 710475963}
-  _playerMovement: {fileID: 0}
+  _inputManager: {fileID: 1871043298}
+  _playerMovement: {fileID: 1871043299}
   dialogueText: {fileID: 1450176041}
   nameText: {fileID: 1422413899}
   dialogue:
@@ -1584,7 +1585,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1869098950
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1729,7 +1730,7 @@ Transform:
   m_GameObject: {fileID: 1871043295}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.67, y: 0.87, z: 0}
+  m_LocalPosition: {x: 15.98, y: 3.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1761,6 +1762,7 @@ MonoBehaviour:
   interactHeld: 0
   canAttack: 0
   attackPressed: 0
+  canMove: 1
   usingGamepad: 0
   usingDpad: 0
   animator: {fileID: 0}
@@ -1788,6 +1790,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
+  canMove: 1
 --- !u!61 &1871043300
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1873,6 +1876,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d68a90867b23b1f4f8efa970b012a744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackPoint: {fileID: 0}
+  attackRange: 0.5
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1871043303
 MonoBehaviour:
   m_ObjectHideFlags: 0
