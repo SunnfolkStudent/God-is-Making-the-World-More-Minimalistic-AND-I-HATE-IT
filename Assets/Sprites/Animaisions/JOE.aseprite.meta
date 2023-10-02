@@ -1,0 +1,1194 @@
+fileFormatVersion: 2
+guid: f3430fc1d266f7f4fa8ec354c9a09302
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 24
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638318525069505655
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: JOE_Frame_0
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 42
+      width: 16
+      height: 31
+    spriteID: 65877fa8e97cb4d45a37fde6e5f600d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 42}
+  - name: JOE_Frame_1
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 81
+      width: 16
+      height: 31
+    spriteID: 25f573492107cf9488e3c8ebaf5e55a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 81}
+  - name: JOE_Frame_2
+    originalName: 
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 78
+      width: 15
+      height: 30
+    spriteID: 821dcfbebd8184e48aa78860e43648a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 78}
+  - name: JOE_Frame_3
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 160
+      width: 16
+      height: 30
+    spriteID: a402590780180ab45896f213bb4490ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 160}
+  - name: JOE_Frame_4
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 120
+      width: 16
+      height: 31
+    spriteID: 30fb5333b921eec4593369ec53f88bac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 120}
+  - name: JOE_Frame_5
+    originalName: 
+    pivot: {x: 0.3529412, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 4
+      width: 17
+      height: 30
+    spriteID: eeda2483bbf4f5c4183c190c734ad0aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 4}
+  - name: JOE_Frame_6
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 198
+      width: 16
+      height: 30
+    spriteID: c58a44d4d8e6fb1448e64bcfa5f5eb1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 198}
+  - name: JOE_Frame_7
+    originalName: 
+    pivot: {x: 0.4, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 162
+      y: 4
+      width: 15
+      height: 29
+    spriteID: 665c74bedd4c85345bb5f4edabb28b62
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 162, y: 4}
+  - name: JOE_Frame_8
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 159
+      width: 16
+      height: 31
+    spriteID: 23f65a10b2940b9438750402e8014a84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 159}
+  - name: JOE_Frame_9
+    originalName: 
+    pivot: {x: 0.35, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 43
+      width: 20
+      height: 30
+    spriteID: 3b46a682c8246f14ba95815354a8a98a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 43}
+  - name: JOE_Frame_10
+    originalName: 
+    pivot: {x: 0.375, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 160
+      width: 24
+      height: 26
+    spriteID: df60d847697c8ae4686b1fad2816d473
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 160}
+  - name: JOE_Frame_11
+    originalName: 
+    pivot: {x: 0.35714287, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 4
+      width: 14
+      height: 34
+    spriteID: c948405ce896a164aaa99268240e8606
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 116, y: 4}
+  - name: JOE_Frame_12
+    originalName: 
+    pivot: {x: 0.35, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 4
+      width: 20
+      height: 31
+    spriteID: 8769c52e013a19a469451a86371268ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 4}
+  - name: JOE_Frame_13
+    originalName: 
+    pivot: {x: 0.3125, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 158
+      width: 16
+      height: 34
+    spriteID: 71abbbdfa7bd7e14eb5cffbd0eb87f2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 158}
+  - name: JOE_Frame_14
+    originalName: 
+    pivot: {x: 0.35, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 81
+      width: 20
+      height: 30
+    spriteID: 77d909e0ff4c2f44aae294762518afca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 81}
+  - name: JOE_Frame_15
+    originalName: 
+    pivot: {x: 0.375, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 194
+      width: 24
+      height: 26
+    spriteID: 44daa4429930a404d922a4b68f2f6021
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 194}
+  - name: JOE_Frame_16
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 200
+      width: 16
+      height: 32
+    spriteID: 9e1580b1fbbb5e942828409bad0d13a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 200}
+  - name: JOE_Frame_17
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 198
+      width: 16
+      height: 31
+    spriteID: c0ab1156371b7e04f8382e3e67ee5c7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 198}
+  - name: JOE_Frame_18
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 4
+      width: 16
+      height: 31
+    spriteID: 4cdf688b093665744b36235996887510
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 4}
+  - name: JOE_Frame_19
+    originalName: 
+    pivot: {x: 0.20000003, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 116
+      width: 15
+      height: 30
+    spriteID: 5774123942c3e63448f2ab8c9a964fc0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 116}
+  - name: JOE_Frame_20
+    originalName: 
+    pivot: {x: 0.18750003, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 43
+      width: 16
+      height: 31
+    spriteID: 27fd11a9182ecb942b52349f4663b536
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 43}
+  - name: JOE_Frame_21
+    originalName: 
+    pivot: {x: 0.18750003, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 4
+      width: 16
+      height: 29
+    spriteID: 17f2497cd5d57c04dbc80eb604d6432e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 4}
+  - name: JOE_Frame_22
+    originalName: 
+    pivot: {x: 0.18750003, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 185
+      y: 4
+      width: 16
+      height: 27
+    spriteID: a033e8e082fe94f4aa28bebdbc6add09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 185, y: 4}
+  - name: JOE_Frame_23
+    originalName: 
+    pivot: {x: 0.18750003, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 192
+      width: 16
+      height: 28
+    spriteID: 4d39e44fd0cb6c84e85c7c1179321bbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 192}
+  - name: JOE_Frame_24
+    originalName: 
+    pivot: {x: 0.38095236, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 228
+      width: 21
+      height: 24
+    spriteID: cb93a0b92265ac54f85847ce7eeef3db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 228}
+  - name: JOE_Frame_25
+    originalName: 
+    pivot: {x: 0.4375, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 209
+      y: 4
+      width: 32
+      height: 11
+    spriteID: 21d242afc0d1a4746b429cdd52b4a44a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 209, y: 4}
+  - name: JOE_Frame_26
+    originalName: 
+    pivot: {x: 0.4375, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 209
+      y: 41
+      width: 32
+      height: 9
+    spriteID: 6486bc1750a83f54182a20c3f23d336f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 209, y: 41}
+  - name: JOE_Frame_27
+    originalName: 
+    pivot: {x: 0.4375, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 209
+      y: 23
+      width: 32
+      height: 10
+    spriteID: d9135ccf0d756ff48aac9db50d8798b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 209, y: 23}
+  - name: JOE_Frame_28
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 82
+      width: 16
+      height: 31
+    spriteID: a6b07d5727095f24c93514afc55dfc91
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 82}
+  - name: JOE_Frame_29
+    originalName: 
+    pivot: {x: 0.20000003, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 154
+      width: 15
+      height: 30
+    spriteID: dcf2ccf6fb1c3d847abaf0d0cebd71fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 154}
+  - name: JOE_Frame_30
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 121
+      width: 16
+      height: 31
+    spriteID: 778a7b6b948bf1445a73f34a525f97d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 121}
+  - name: JOE_Frame_31
+    originalName: 
+    pivot: {x: 0.31578946, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 119
+      width: 19
+      height: 31
+    spriteID: 521d85000b3aebf4b9f35da5e58228dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 119}
+  - name: JOE_Frame_32
+    originalName: 
+    pivot: {x: 0.29999998, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 120
+      width: 20
+      height: 32
+    spriteID: c6b9dfd2556d37140a894d197e814096
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 120}
+  - name: JOE_Frame_33
+    originalName: 
+    pivot: {x: 0.33333334, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 80
+      width: 21
+      height: 32
+    spriteID: 4536dcc48f7106f4cb78efa63108e5c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 80}
+  - name: JOE_Frame_34
+    originalName: 
+    pivot: {x: 0.6666667, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 27
+      height: 31
+    spriteID: 8f41a066d97754945b86c9ab92b9fb67
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: JOE_Frame_35
+    originalName: 
+    pivot: {x: 0.65384614, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 43
+      width: 26
+      height: 29
+    spriteID: c1173b97c7af4204db512b177d9abb04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 43}
+  - name: JOE_Frame_36
+    originalName: 
+    pivot: {x: 0.37499997, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 138
+      y: 41
+      width: 16
+      height: 29
+    spriteID: 99d221233087d8d42ae5c58a8e3feedb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 138, y: 41}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 773514028
+    name: JOE
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: JOE_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 12
+        y: 0
+        width: 16
+        height: 31
+      spriteId: 65877fa8e97cb4d45a37fde6e5f600d6
+    - name: JOE_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 12
+        y: 0
+        width: 16
+        height: 31
+      spriteId: 25f573492107cf9488e3c8ebaf5e55a1
+    - name: JOE_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 13
+        y: 0
+        width: 15
+        height: 30
+      spriteId: 821dcfbebd8184e48aa78860e43648a7
+    - name: JOE_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 12
+        y: 0
+        width: 16
+        height: 30
+      spriteId: a402590780180ab45896f213bb4490ed
+    - name: JOE_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 12
+        y: 0
+        width: 16
+        height: 31
+      spriteId: 30fb5333b921eec4593369ec53f88bac
+    - name: JOE_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 12
+        y: 0
+        width: 17
+        height: 30
+      spriteId: eeda2483bbf4f5c4183c190c734ad0aa
+    - name: JOE_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 12
+        y: 0
+        width: 16
+        height: 30
+      spriteId: c58a44d4d8e6fb1448e64bcfa5f5eb1d
+    - name: JOE_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 12
+        y: 0
+        width: 15
+        height: 29
+      spriteId: 665c74bedd4c85345bb5f4edabb28b62
+    - name: JOE_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 12
+        y: 0
+        width: 16
+        height: 31
+      spriteId: 23f65a10b2940b9438750402e8014a84
+    - name: JOE_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 11
+        y: 0
+        width: 20
+        height: 30
+      spriteId: 3b46a682c8246f14ba95815354a8a98a
+    - name: JOE_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 9
+        y: 0
+        width: 24
+        height: 26
+      spriteId: df60d847697c8ae4686b1fad2816d473
+    - name: JOE_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 13
+        y: 0
+        width: 14
+        height: 34
+      spriteId: c948405ce896a164aaa99268240e8606
+    - name: JOE_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 11
+        y: 0
+        width: 20
+        height: 31
+      spriteId: 8769c52e013a19a469451a86371268ad
+    - name: JOE_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 13
+        y: 0
+        width: 16
+        height: 34
+      spriteId: 71abbbdfa7bd7e14eb5cffbd0eb87f2e
+    - name: JOE_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 11
+        y: 0
+        width: 20
+        height: 30
+      spriteId: 77d909e0ff4c2f44aae294762518afca
+    - name: JOE_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 9
+        y: 0
+        width: 24
+        height: 26
+      spriteId: 44daa4429930a404d922a4b68f2f6021
+    - name: JOE_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 12
+        y: 0
+        width: 16
+        height: 32
+      spriteId: 9e1580b1fbbb5e942828409bad0d13a4
+    - name: JOE_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 12
+        y: 0
+        width: 16
+        height: 31
+      spriteId: c0ab1156371b7e04f8382e3e67ee5c7a
+    - name: JOE_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 12
+        y: 0
+        width: 16
+        height: 31
+      spriteId: 4cdf688b093665744b36235996887510
+    - name: JOE_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 15
+        y: 0
+        width: 15
+        height: 30
+      spriteId: 5774123942c3e63448f2ab8c9a964fc0
+    - name: JOE_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 15
+        y: 0
+        width: 16
+        height: 31
+      spriteId: 27fd11a9182ecb942b52349f4663b536
+    - name: JOE_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 15
+        y: 0
+        width: 16
+        height: 29
+      spriteId: 17f2497cd5d57c04dbc80eb604d6432e
+    - name: JOE_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 15
+        y: 0
+        width: 16
+        height: 27
+      spriteId: a033e8e082fe94f4aa28bebdbc6add09
+    - name: JOE_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 15
+        y: 0
+        width: 16
+        height: 28
+      spriteId: 4d39e44fd0cb6c84e85c7c1179321bbf
+    - name: JOE_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 10
+        y: 0
+        width: 21
+        height: 24
+      spriteId: cb93a0b92265ac54f85847ce7eeef3db
+    - name: JOE_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 4
+        y: 0
+        width: 32
+        height: 11
+      spriteId: 21d242afc0d1a4746b429cdd52b4a44a
+    - name: JOE_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 4
+        y: 0
+        width: 32
+        height: 9
+      spriteId: 6486bc1750a83f54182a20c3f23d336f
+    - name: JOE_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 4
+        y: 0
+        width: 32
+        height: 10
+      spriteId: d9135ccf0d756ff48aac9db50d8798b1
+    - name: JOE_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 12
+        y: 0
+        width: 16
+        height: 31
+      spriteId: a6b07d5727095f24c93514afc55dfc91
+    - name: JOE_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 15
+        y: 0
+        width: 15
+        height: 30
+      spriteId: dcf2ccf6fb1c3d847abaf0d0cebd71fc
+    - name: JOE_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 12
+        y: 0
+        width: 16
+        height: 31
+      spriteId: 778a7b6b948bf1445a73f34a525f97d7
+    - name: JOE_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 12
+        y: 0
+        width: 19
+        height: 31
+      spriteId: 521d85000b3aebf4b9f35da5e58228dc
+    - name: JOE_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 12
+        y: 0
+        width: 20
+        height: 32
+      spriteId: c6b9dfd2556d37140a894d197e814096
+    - name: JOE_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 11
+        y: 0
+        width: 21
+        height: 32
+      spriteId: 4536dcc48f7106f4cb78efa63108e5c8
+    - name: JOE_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 0
+        y: 0
+        width: 27
+        height: 31
+      spriteId: 8f41a066d97754945b86c9ab92b9fb67
+    - name: JOE_Frame_35
+      frameIndex: 35
+      cellRect:
+        x: 1
+        y: 0
+        width: 26
+        height: 29
+      spriteId: c1173b97c7af4204db512b177d9abb04
+    - name: JOE_Frame_36
+      frameIndex: 36
+      cellRect:
+        x: 12
+        y: 0
+        width: 16
+        height: 29
+      spriteId: 99d221233087d8d42ae5c58a8e3feedb
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 36, y: 32}
