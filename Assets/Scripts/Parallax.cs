@@ -17,7 +17,7 @@ public class Parallax : MonoBehaviour
     {
         _startpos = transform.position.x;
         //_length = GetComponent<SpriteRenderer>().bounds.size.x;
-        print(_length);
+        print(gameObject.name + ": " + _length);
     }
 
     // Update is called once per frame
@@ -27,13 +27,13 @@ public class Parallax : MonoBehaviour
         float dist = (cam.transform.position.x * parallaxEffect);
         transform.position = new Vector3(_startpos + dist, transform.position.y, transform.position.z);
 
-        if (temp > _startpos + 35.6334f)
+        if (temp > _startpos + 18.4465f)
         {
-            _startpos += 35.6334f;
+            _startpos += 18.4465f;
         }
-        else if (temp < _startpos - 35.6334f)
+        else if (temp < _startpos - 18.4465f)
         {
-            _startpos -= 35.6334f;
+            _startpos -= 18.4465f;
         }
     }
 }

@@ -48,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
         _input = GetComponent<InputManager>();
         //_audioSource = GetComponent<AudioSource>();
         _keyboard = Keyboard.current;
+        animator.SetBool("isRising", true);
     }
 
     private void Update()
@@ -55,15 +56,18 @@ public class PlayerMovement : MonoBehaviour
         
         _desiredVelocity = _rigidbody2D.velocity;
 
-        if (_keyboard.dKey.isPressed)
+        if (!animator.GetBool("isDead") && !animator.GetBool("isRising") && canMove)
         {
-            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, 1f);
+            if (_keyboard.dKey.isPressed)
+            {
+                transform.localScale = new Vector3(-1, 1, 1f);
+            }
+            else if (_keyboard.aKey.isPressed)
+            {
+                transform.localScale = new Vector3(1, 1, 1f);
+            }
         }
-        else if (_keyboard.aKey.isPressed)
-        { 
-            transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, 1f);
-        }
-        
+
         if (jumpBufferCounter > 0 && coyoteTimeCounter > 0)
         {
             //_rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, jumpSpeed);
@@ -80,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        if (animator.GetBool("isDead") || !canMove)
+        if (animator.GetBool("isDead") || !canMove || animator.GetBool("isRising"))
         { return; }
         
         if (IsPlayerGrounded())
@@ -93,6 +97,7 @@ public class PlayerMovement : MonoBehaviour
         
         animator.SetFloat("Speed", Mathf.Abs(_desiredVelocity.x));
         animator.SetBool("isJumping", !IsPlayerGrounded());
+        animator.SetBool("isFalling", _rigidbody2D.velocity.y < 0);
         animator.SetBool("isDead", healthManager.lives <= 0);
         
     }
@@ -117,9 +122,16 @@ public class PlayerMovement : MonoBehaviour
 
     private bool IsPlayerGrounded()
     {
-        return Physics2D.Raycast(transform.position, Vector2.down, 1.1f, whatIsGround);
+        Debug.DrawRay(transform.position, Vector2.down, Color.red, 1f, true);
+        return Physics2D.Raycast(transform.position, Vector2.down, 0.2f, whatIsGround);
     }
 
+    public void setIsRisingToFalse()
+    {
+        animator.SetBool("isRising", false);
+        return;
+    }
+    
     /*
     public void playWalkSound()
     {

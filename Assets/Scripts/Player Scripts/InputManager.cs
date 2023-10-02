@@ -76,7 +76,7 @@ public class InputManager : MonoBehaviour
         moveDirection.x = 0;
     }
     
-    if (animator.GetBool("isDead"))
+    if (animator.GetBool("isDead") || animator.GetBool("isRising"))
     {
         animator.SetBool("isJumping", false);
         moveDirection.x = 0;

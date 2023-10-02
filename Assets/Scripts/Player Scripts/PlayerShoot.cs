@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
-    {
     public float timeBtwShots;
     public float startTimeBtwShots;
 
@@ -37,4 +36,4 @@ public class PlayerShoot : MonoBehaviour
         }
     }
 }
-}
+
