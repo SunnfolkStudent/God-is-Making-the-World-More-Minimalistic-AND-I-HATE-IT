@@ -33,8 +33,8 @@ public class PlayerMovement : MonoBehaviour
     
     public bool canMove = true;
     
-    //public Animator animator;
-    //public PlayerHealthManager healthManager;
+    public Animator animator;
+    public PlayerHealthManager healthManager;
     
     //private AudioSource _audioSource;
     //public AudioClip[] jumpClips;
@@ -79,10 +79,9 @@ public class PlayerMovement : MonoBehaviour
             coyoteTimeCounter = 0f;
         }
 
-        if (!canMove)
+
+        if (animator.GetBool("isDead") || !canMove)
         { return; }
-        //if (animator.GetBool("isDead"))
-        //{ return; }
         
         if (IsPlayerGrounded())
         { coyoteTimeCounter = coyoteTime; } else { coyoteTimeCounter -= 1 * Time.deltaTime; }
@@ -91,11 +90,11 @@ public class PlayerMovement : MonoBehaviour
         { jumpBufferCounter = jumpBufferTime; } else { jumpBufferCounter -= 1 * Time.deltaTime; }
         
         _rigidbody2D.velocity = _desiredVelocity;
-       /* 
+        
         animator.SetFloat("Speed", Mathf.Abs(_desiredVelocity.x));
         animator.SetBool("isJumping", !IsPlayerGrounded());
         animator.SetBool("isDead", healthManager.lives <= 0);
-        */
+        
     }
     
     private void FixedUpdate()

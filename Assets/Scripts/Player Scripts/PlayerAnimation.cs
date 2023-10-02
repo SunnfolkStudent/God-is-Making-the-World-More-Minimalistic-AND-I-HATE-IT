@@ -4,6 +4,7 @@ namespace Player
 {
    public class PlayerAnimation : MonoBehaviour
    {
+      /*
       private Animator _animator;
       private SpriteRenderer _spriteRenderer;
       private InputManager _input;
@@ -43,5 +44,6 @@ namespace Player
          transform1.localScale = new Vector3(
             _input.moveDirection.x, 1,1);
       }
+      */
    }
 }

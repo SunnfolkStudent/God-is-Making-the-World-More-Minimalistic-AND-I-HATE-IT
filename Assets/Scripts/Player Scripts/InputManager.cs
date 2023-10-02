@@ -75,14 +75,14 @@ public class InputManager : MonoBehaviour
     {
         moveDirection.x = 0;
     }
-    /*
+    
     if (animator.GetBool("isDead"))
     {
         animator.SetBool("isJumping", false);
         moveDirection.x = 0;
         //moveDirection.y = 0;
     }
-    */
+    
     }
     
     private void UpdateGamepadInput()
