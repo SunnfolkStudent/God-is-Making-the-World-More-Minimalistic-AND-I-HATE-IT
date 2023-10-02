@@ -5,7 +5,6 @@ public class SceneController : MonoBehaviour
 {
     public void LoadSceneByName(string name)
     {
-
         SceneManager.LoadScene(name);
         return;
     }
