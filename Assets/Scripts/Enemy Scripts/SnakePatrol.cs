@@ -52,7 +52,9 @@ public class SnakePatrol : MonoBehaviour
     private bool DetectedWallOrFall()
     {
         // Raycast -> right (If ground : flip)
-        return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y + 0.5f), Vector2.right * transform.localScale , 0.6f, whatIsGround)
+        Debug.DrawRay(new Vector2(transform.position.x, transform.position.y), Vector2.right * transform.localScale, Color.blue, 0.6f, true); 
+        
+        return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.right * transform.localScale , 0.6f, whatIsGround)
             || !Physics2D.Raycast(fallCheckPoint.position, Vector2.down, 0.6f, whatIsGround);
     }
 
