@@ -8,13 +8,13 @@ public class PlayerShoot : MonoBehaviour
     public GameObject projectile;
     public Transform spawnPoint;
 
-    private PlayerMovement _playerMovement;
+    private PlayerCubeMovement _playerCubeMovement;
     private InputManager _inputManager;
 
     private void Start()
     {
         timeBtwShots = startTimeBtwShots;
-        _playerMovement.GetComponent<PlayerMovement>();
+        _playerCubeMovement.GetComponent<PlayerCubeMovement>();
         _inputManager.GetComponent<InputManager>();
     }
 

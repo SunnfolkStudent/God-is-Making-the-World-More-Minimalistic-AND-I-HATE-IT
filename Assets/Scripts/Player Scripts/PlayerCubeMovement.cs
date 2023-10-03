@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class PlayerCubeMovement : MonoBehaviour
 {
-    /*[Header("Movement")]
+    [Header("Movement")]
     public float moveSpeed = 5f;
     public float jumpSpeed = 12f;
     private Vector2 _desiredVelocity;
@@ -55,17 +55,16 @@ public class PlayerCubeMovement : MonoBehaviour
         
         _desiredVelocity = _rigidbody2D.velocity;
 
-        if (!animator.GetBool("isDead") && !animator.GetBool("isRising") && canMove)
+        
+        /*if (_keyboard.dKey.isPressed)
         {
-            if (_keyboard.dKey.isPressed)
-            {
-                transform.localScale = new Vector3(-1, 1, 1f);
-            }
-            else if (_keyboard.aKey.isPressed)
-            {
-                transform.localScale = new Vector3(1, 1, 1f);
-            }
+            transform.localScale = new Vector3(-1, 1, 1f);
         }
+        else if (_keyboard.aKey.isPressed)
+        { 
+            transform.localScale = new Vector3(1, 1, 1f);
+        }*/
+        
 
         if (jumpBufferCounter > 0 && coyoteTimeCounter > 0)
         {
@@ -82,9 +81,7 @@ public class PlayerCubeMovement : MonoBehaviour
             coyoteTimeCounter = 0f;
         }
 
-
-        if (animator.GetBool("isDead") || !canMove || animator.GetBool("isRising"))
-        { return; }
+        
         
         if (IsPlayerGrounded())
         { coyoteTimeCounter = coyoteTime; } else { coyoteTimeCounter -= 1 * Time.deltaTime; }
@@ -93,11 +90,6 @@ public class PlayerCubeMovement : MonoBehaviour
         { jumpBufferCounter = jumpBufferTime; } else { jumpBufferCounter -= 1 * Time.deltaTime; }
         
         _rigidbody2D.velocity = _desiredVelocity;
-        
-        animator.SetFloat("Speed", Mathf.Abs(_desiredVelocity.x));
-        animator.SetBool("isJumping", !IsPlayerGrounded());
-        animator.SetBool("isFalling", _rigidbody2D.velocity.y < 0);
-        animator.SetBool("isDead", healthManager.lives <= 0);
         
     }
     
@@ -124,12 +116,7 @@ public class PlayerCubeMovement : MonoBehaviour
         Debug.DrawRay(transform.position, Vector2.down, Color.red, 1f, true);
         return Physics2D.Raycast(transform.position, Vector2.down, 0.2f, whatIsGround);
     }
-
-    public void setIsRisingToFalse()
-    {
-        animator.SetBool("isRising", false);
-        return;
-    }
+    
     
     /*
     public void playWalkSound()
@@ -137,6 +124,6 @@ public class PlayerCubeMovement : MonoBehaviour
         
         _audioSource.PlayOneShot(walkClips[Random.Range(0, walkClips.Length)]);
         return;
-    }
-    */
+    }*/
+    
 }
