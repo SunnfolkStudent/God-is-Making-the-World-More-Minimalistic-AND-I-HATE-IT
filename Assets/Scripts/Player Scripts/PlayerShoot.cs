@@ -7,15 +7,15 @@ public class PlayerShoot : MonoBehaviour
 
     public GameObject projectile;
     public Transform spawnPoint;
-
-    private PlayerCubeMovement _playerCubeMovement;
+    
     private InputCubeManager _inputCubeManager;
+    private Projektile _projektile;
 
     private void Start()
     {
         timeBtwShots = startTimeBtwShots;
-        _playerCubeMovement = GetComponent<PlayerCubeMovement>();
         _inputCubeManager = GetComponent<InputCubeManager>();
+        _projektile = GetComponent<Projektile>();
     }
 
     private void Update()
@@ -23,7 +23,6 @@ public class PlayerShoot : MonoBehaviour
         
         if (timeBtwShots <= 0 && _inputCubeManager.attackPressed)
         {
-         
             var clone = Instantiate(projectile, spawnPoint.position, Quaternion.identity);
             clone.GetComponent<Projektile>().shootDirection = transform.localScale.x;
             Destroy(clone, 5f);
@@ -33,5 +32,11 @@ public class PlayerShoot : MonoBehaviour
         {
             timeBtwShots -= Time.deltaTime;
         }
+    }
+
+    private void ShootDirection()
+    {
+        _projektile.speed = _inputCubeManager.shootDirection.x * 10;
+        _projektile.arc = _inputCubeManager.shootDirection.y * 10;
     }
 }

@@ -24,12 +24,12 @@ public class GodMovment : MonoBehaviour
 
     private void FixedUpdate()
     {
-       /* if (Random.Range(0, attacks) == 1)
+       if (Random.Range(0, attacks) == 1)
         {
-            if (attackStopTime <= attackTime)
+            if (attackTime <= attackStopTime)
             {
                 _rigidbody2D.velocity = new Vector2(speed * transform.localScale.x, _rigidbody2D.velocity.y);
-                attackStopTime = Time.deltaTime;
+                attackTime = Time.deltaTime;
             }
              
         }
@@ -45,7 +45,7 @@ public class GodMovment : MonoBehaviour
             
             _rigidbody2D.gravityScale = 1;
              
-        }*/
+        }
         
     }
 
