@@ -1390,7 +1390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6653487166236394425, guid: 3117cc78fad25f545b9f8844eef7e153, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 6653487166236394425, guid: 3117cc78fad25f545b9f8844eef7e153, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3129,6 +3129,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1510103247 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2109785789749733882, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+  m_PrefabInstance: {fileID: 3182743687880086005}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1510491543
 GameObject:
   m_ObjectHideFlags: 0
@@ -3413,7 +3418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6653487166236394425, guid: 3117cc78fad25f545b9f8844eef7e153, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 6653487166236394425, guid: 3117cc78fad25f545b9f8844eef7e153, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4168,25 +4173,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2920355578495400352, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1510103247}
+    - target: {fileID: 3832436980193895260, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1510103247}
     - target: {fileID: 6390774003641410433, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_Size.x
-      value: 0.6666667
-      objectReference: {fileID: 0}
-    - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_Size.y
-      value: 1.2916666
-      objectReference: {fileID: 0}
-    - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 6224353763164857526, guid: 1c587761db92d084abf6d9632258df55, type: 3}
-    - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
