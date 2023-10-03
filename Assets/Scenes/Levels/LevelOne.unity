@@ -1390,7 +1390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6653487166236394425, guid: 3117cc78fad25f545b9f8844eef7e153, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 6653487166236394425, guid: 3117cc78fad25f545b9f8844eef7e153, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3418,7 +3418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6653487166236394425, guid: 3117cc78fad25f545b9f8844eef7e153, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: 6653487166236394425, guid: 3117cc78fad25f545b9f8844eef7e153, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4184,22 +4184,6 @@ PrefabInstance:
     - target: {fileID: 6390774003641410433, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_Size.x
-      value: 0.6666667
-      objectReference: {fileID: 0}
-    - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_Size.y
-      value: 1.2916666
-      objectReference: {fileID: 0}
-    - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 6224353763164857526, guid: 1c587761db92d084abf6d9632258df55, type: 3}
-    - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
