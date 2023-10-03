@@ -8,7 +8,6 @@ using UnityEngine.Serialization;
 public class GodEndFightDialog : MonoBehaviour
 {
     public GameObject dialoguePanel;
-    public GameObject GodInteractPromt;
     
     public InputCubeManager _inputCubeManager;
     public PlayerCubeMovement _playerCubeMovement;
@@ -36,14 +35,13 @@ public class GodEndFightDialog : MonoBehaviour
     {
         
         
-        if (Input.GetKeyDown(KeyCode.E) && godIsDead)
+        if (godIsDead)
         {
             if (!dialoguePanel.activeInHierarchy)
             {
                 _inputCubeManager.canMove = false;
                 _playerCubeMovement.canMove = false;
                 dialoguePanel.SetActive(true);
-                GodInteractPromt.SetActive(false);
                 StartCoroutine(Typing());
             }
             else if (dialogueText.text == dialogue[index])

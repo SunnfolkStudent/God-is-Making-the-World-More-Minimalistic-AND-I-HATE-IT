@@ -28,7 +28,7 @@ public class GodMovment : MonoBehaviour
 
     private void FixedUpdate()
     {
-       if (Random.Range(0, attacks) == 1 && GodIsAlive == true)
+       /*if (Random.Range(0, attacks) == 1 && GodIsAlive == true)
        {
             if (attackTime <= attackStopTime)
             {
@@ -49,7 +49,7 @@ public class GodMovment : MonoBehaviour
             
             _rigidbody2D.gravityScale = 1;
              
-       }
+       }*/
         
     }
 
