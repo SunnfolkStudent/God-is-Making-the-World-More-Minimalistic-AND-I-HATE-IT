@@ -24,7 +24,7 @@ public class GodMovmen : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Random.Range(0, attacks) == 1)
+       /* if (Random.Range(0, attacks) == 1)
         {
             if (attackStopTime <= attackTime)
             {
@@ -45,7 +45,7 @@ public class GodMovmen : MonoBehaviour
             
             _rigidbody2D.gravityScale = 1;
              
-        }
+        }*/
         
     }
 
@@ -63,6 +63,18 @@ public class GodMovmen : MonoBehaviour
         // Raycast -> right (If ground : flip)
         return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y + 3f),
             Vector2.right * transform.localScale, 3.5f, whatIsGround);
+    }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Projektile") && health > 0)
+        {
+            health--;
+        }
+        
+        if (other.gameObject.CompareTag("Projektile"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 
     private bool DetectPlayer()
