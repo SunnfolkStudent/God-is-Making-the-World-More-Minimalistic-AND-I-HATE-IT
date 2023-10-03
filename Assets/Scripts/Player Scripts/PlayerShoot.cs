@@ -14,8 +14,8 @@ public class PlayerShoot : MonoBehaviour
     private void Start()
     {
         timeBtwShots = startTimeBtwShots;
-        _playerCubeMovement.GetComponent<PlayerCubeMovement>();
-        _inputCubeManager.GetComponent<InputCubeManager>();
+        _playerCubeMovement = GetComponent<PlayerCubeMovement>();
+        _inputCubeManager = GetComponent<InputCubeManager>();
     }
 
     private void Update()
