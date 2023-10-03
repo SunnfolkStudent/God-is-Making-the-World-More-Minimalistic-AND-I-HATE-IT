@@ -104,7 +104,11 @@ public class PlayerMovement : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if (!canMove) return;
+        if (!canMove)
+        {
+            animator.SetFloat("Speed", 0f);
+            animator.SetBool("isJumping", false);
+        }
         
         if (_input.moveDirection.x != 0)
         {
