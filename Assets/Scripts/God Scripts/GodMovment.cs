@@ -10,7 +10,7 @@ public class GodMovmen : MonoBehaviour
     
     private Rigidbody2D _rigidbody2D;
 
-    private int attacks;
+    private int attacks = 2;
     private float attackTime;
     private float attackStopTime = 10;
     
@@ -37,13 +37,13 @@ public class GodMovmen : MonoBehaviour
         {
             _rigidbody2D.gravityScale = 0;
             transform.position = new Vector2(transform.position.x, transform.position.y + 10);
-            if (!DetectPlayer())
+            /*while (!DetectPlayer())
             {
                 _rigidbody2D.velocity = new Vector2(speed * transform.localScale.x, _rigidbody2D.velocity.y);
             }
-
-            _rigidbody2D.gravityScale = 1;
-
+            
+            _rigidbody2D.gravityScale = 1;*/
+             
         }
         
     }
