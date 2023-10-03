@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class GodMovmen : MonoBehaviour
@@ -7,9 +6,13 @@ public class GodMovmen : MonoBehaviour
     public int health = 35;
     
     public LayerMask whatIsGround;
-    //public LayerMask whatIsPlayer;
+    public LayerMask whatIsPlayer;
     
     private Rigidbody2D _rigidbody2D;
+
+    private int attacks;
+    private float attackTime;
+    private float attackStopTime = 10;
     
     //public PlayerHealthManager playerHealthManager;
 
@@ -21,8 +24,20 @@ public class GodMovmen : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
-        _rigidbody2D.velocity = new Vector2(speed * transform.localScale.x, _rigidbody2D.velocity.y);
+        if (Random.Range(0, attacks) == 1)
+        {
+            if (attackStopTime <= attackTime)
+            {
+                _rigidbody2D.velocity = new Vector2(speed * transform.localScale.x, _rigidbody2D.velocity.y);
+                attackStopTime = Time.deltaTime;
+            }
+             
+        }
+        else
+        {
+            _rigidbody2D.gravityScale = 0;
+            //transform.position = new 
+        }
         
     }
 
