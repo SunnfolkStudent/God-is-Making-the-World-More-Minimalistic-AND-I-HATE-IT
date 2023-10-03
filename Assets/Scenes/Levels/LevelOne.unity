@@ -3129,6 +3129,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1510103247 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2109785789749733882, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+  m_PrefabInstance: {fileID: 3182743687880086005}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1510491543
 GameObject:
   m_ObjectHideFlags: 0
@@ -4168,6 +4173,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2920355578495400352, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1510103247}
+    - target: {fileID: 3832436980193895260, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1510103247}
     - target: {fileID: 6390774003641410433, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_Name
       value: Player

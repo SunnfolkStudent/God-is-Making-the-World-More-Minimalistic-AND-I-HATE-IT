@@ -20,6 +20,8 @@ public class PlayerHealthManager : MonoBehaviour
     public AudioClip[] hurtClips;
     public AudioClip[] pickupClips;
 
+    public Animator animator;
+
     public void Start()
     {
         _audioSource = GetComponent<AudioSource>();
@@ -39,7 +41,7 @@ public class PlayerHealthManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (canTakeDamage && (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Projektile")) && lives > 0)
+        if (canTakeDamage && (other.gameObject.CompareTag("Enemy") || other.gameObject.CompareTag("Projektile") || other.gameObject.CompareTag("Spike")) && lives > 0)
         {
             canTakeDamage = false;
             canTakeDamageCounter = Time.time + canTakeDamageTime;            
@@ -57,12 +59,13 @@ public class PlayerHealthManager : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (canTakeDamage && (other.CompareTag("Enemy") || other.CompareTag("Projektile")) && lives > 0)
+        if (canTakeDamage && (other.CompareTag("Enemy") || other.CompareTag("Projektile") || other.CompareTag("Spike")) && lives > 0)
         {
             
             canTakeDamage = false;
             canTakeDamageCounter = Time.time + canTakeDamageTime;
             lives--;
+            animator.SetTrigger("damaged");
             _audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
             
         }

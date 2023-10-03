@@ -10,6 +10,8 @@ public class PlayerCombat : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
 
+    public Animator animator;
+    
     private void Start()
     {
         _inputManager = GetComponent<InputManager>();
@@ -20,7 +22,7 @@ public class PlayerCombat : MonoBehaviour
     {
         if (_inputManager.attackPressed)
         {
-            Attack();
+            animator.SetBool("isAttacking", true);
         }
     }
 
@@ -32,6 +34,7 @@ public class PlayerCombat : MonoBehaviour
             Debug.Log("hitEnemy");
             Destroy(enemy.gameObject);
         }
+        animator.SetBool("isAttacking", false);
     }
 
     private void OnDrawGizmosSelected()
