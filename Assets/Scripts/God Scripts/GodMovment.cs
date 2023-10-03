@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GodMovmen : MonoBehaviour
+public class GodMovment : MonoBehaviour
 {
     public float speed = 5f;
     public int health = 35;
@@ -64,7 +64,7 @@ public class GodMovmen : MonoBehaviour
         return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y + 3f),
             Vector2.right * transform.localScale, 3.5f, whatIsGround);
     }
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Projektile") && health > 0)
         {

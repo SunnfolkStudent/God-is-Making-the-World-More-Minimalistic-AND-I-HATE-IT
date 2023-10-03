@@ -20,7 +20,6 @@ public class PlayerShoot : MonoBehaviour
 
     private void Update()
     {
-
         
         if (timeBtwShots <= 0 && _inputCubeManager.attackPressed)
         {
