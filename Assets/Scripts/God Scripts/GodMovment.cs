@@ -36,7 +36,14 @@ public class GodMovmen : MonoBehaviour
         else
         {
             _rigidbody2D.gravityScale = 0;
-            //transform.position = new 
+            transform.position = new Vector2(transform.position.x, transform.position.y + 10);
+            if (!DetectPlayer())
+            {
+                _rigidbody2D.velocity = new Vector2(speed * transform.localScale.x, _rigidbody2D.velocity.y);
+            }
+
+            _rigidbody2D.gravityScale = 1;
+
         }
         
     }
@@ -55,5 +62,11 @@ public class GodMovmen : MonoBehaviour
         // Raycast -> right (If ground : flip)
         return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y + 3f),
             Vector2.right * transform.localScale, 3.5f, whatIsGround);
+    }
+
+    private bool DetectPlayer()
+    {
+        return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 3f),
+            Vector2.down * transform.localScale, 11f, whatIsPlayer);
     }
 }
