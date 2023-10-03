@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class PlayerCubeMovement : MonoBehaviour
 {
-    [Header("Movement")]
+    /*[Header("Movement")]
     public float moveSpeed = 5f;
     public float jumpSpeed = 12f;
     private Vector2 _desiredVelocity;
