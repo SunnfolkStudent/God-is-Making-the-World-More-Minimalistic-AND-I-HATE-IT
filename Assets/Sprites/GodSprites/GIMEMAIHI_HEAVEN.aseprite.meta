@@ -1,0 +1,556 @@
+fileFormatVersion: 2
+guid: fdf1e88e8bff5d74d9dfc192f3bd9527
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 0
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 0
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638319566290552240
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Background
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 480
+      height: 270
+    spriteID: ef20a3b150891f042b87e18fe27b5ba5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Layer 1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 282
+      width: 480
+      height: 270
+    spriteID: f597055b45d02d348acaea1de430837f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 282}
+  - name: Clouds in background
+    originalName: 
+    pivot: {x: 0.56359106, y: -1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 837
+      width: 401
+      height: 115
+    spriteID: f6367f31d3dd4f04e9b782eebd435742
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 837}
+  - name: Layer 2
+    originalName: 
+    pivot: {x: 0.56423175, y: -1.1500001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 492
+      y: 4
+      width: 397
+      height: 100
+    spriteID: a5d8c471d5ff40144929ff1f7c218f44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 492, y: 4}
+  - name: Stairsss
+    originalName: 
+    pivot: {x: 1.0714285, y: 0.18750001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 695
+      y: 223
+      width: 224
+      height: 96
+    spriteID: 0beb0f316f206134db117e67c0e36873
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 695, y: 223}
+  - name: Clouds
+    originalName: 
+    pivot: {x: 0.56684494, y: -0.43103448}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 960
+      width: 374
+      height: 58
+    spriteID: ee8545634b05daf42a1b50446b3cd0c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 960}
+  - name: God
+    originalName: 
+    pivot: {x: -0.23076925, y: -0.37755105}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 492
+      y: 112
+      width: 195
+      height: 196
+    spriteID: 79c621d03831c794a89a48b0353370c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 492, y: 112}
+  - name: Joe
+    originalName: 
+    pivot: {x: 3.75, y: -2.548387}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 386
+      y: 960
+      width: 16
+      height: 31
+    spriteID: 49f009ac8425e1242ad3f198bab508e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 386, y: 960}
+  - name: HAND
+    originalName: 
+    pivot: {x: 0.07511737, y: -1.0679611}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 695
+      y: 112
+      width: 213
+      height: 103
+    spriteID: ba1961c5f5cbbfb4a89880abcbe89a91
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 695, y: 112}
+  - name: God Copy
+    originalName: 
+    pivot: {x: -0.9834709, y: -0.9852941}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 492
+      y: 316
+      width: 121
+      height: 136
+    spriteID: 90492cd01976b9e47aa46c796c8bce4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 492, y: 316}
+  - name: Light
+    originalName: 
+    pivot: {x: 0.5117271, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 560
+      width: 469
+      height: 269
+    spriteID: 10059c973c2b25849b6acf6dfb049f36
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 560}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1021688250
+    name: Background
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Background
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 480
+        height: 270
+      spriteId: ef20a3b150891f042b87e18fe27b5ba5
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 1
+    guid: 1317222745
+    name: Layer 1
+    layerFlags: 3
+    layerType: 0
+    blendMode: 1
+    cells:
+    - name: Layer 1
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 480
+        height: 270
+      spriteId: f597055b45d02d348acaea1de430837f
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 2
+    guid: 795873473
+    name: Clouds in background
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Clouds in background
+      frameIndex: 0
+      cellRect:
+        x: 14
+        y: 115
+        width: 401
+        height: 115
+      spriteId: f6367f31d3dd4f04e9b782eebd435742
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 3
+    guid: 1317221554
+    name: Layer 2
+    layerFlags: 3
+    layerType: 0
+    blendMode: 5
+    cells:
+    - name: Layer 2
+      frameIndex: 0
+      cellRect:
+        x: 16
+        y: 115
+        width: 397
+        height: 100
+      spriteId: a5d8c471d5ff40144929ff1f7c218f44
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 4
+    guid: 1503909202
+    name: Stairsss
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Stairsss
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: -18
+        width: 224
+        height: 96
+      spriteId: 0beb0f316f206134db117e67c0e36873
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 5
+    guid: -1166010755
+    name: Clouds
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Clouds
+      frameIndex: 0
+      cellRect:
+        x: 28
+        y: 25
+        width: 374
+        height: 58
+      spriteId: ee8545634b05daf42a1b50446b3cd0c6
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 6
+    guid: -468485986
+    name: God
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: God
+      frameIndex: 0
+      cellRect:
+        x: 285
+        y: 74
+        width: 195
+        height: 196
+      spriteId: 79c621d03831c794a89a48b0353370c6
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 7
+    guid: -468344661
+    name: Joe
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Joe
+      frameIndex: 0
+      cellRect:
+        x: 180
+        y: 79
+        width: 16
+        height: 31
+      spriteId: 49f009ac8425e1242ad3f198bab508e8
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 8
+    guid: -1289442417
+    name: HAND
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: HAND
+      frameIndex: 0
+      cellRect:
+        x: 224
+        y: 110
+        width: 213
+        height: 103
+      spriteId: ba1961c5f5cbbfb4a89880abcbe89a91
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 9
+    guid: -1337851804
+    name: God Copy
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: God Copy
+      frameIndex: 0
+      cellRect:
+        x: 359
+        y: 134
+        width: 121
+        height: 136
+      spriteId: 90492cd01976b9e47aa46c796c8bce4f
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 10
+    guid: 585263676
+    name: Light
+    layerFlags: 3
+    layerType: 0
+    blendMode: 3
+    cells:
+    - name: Light
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 469
+        height: 269
+      spriteId: 10059c973c2b25849b6acf6dfb049f36
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 480, y: 270}
