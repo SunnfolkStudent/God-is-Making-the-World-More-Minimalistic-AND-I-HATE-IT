@@ -13,6 +13,9 @@ public class GodMovment : MonoBehaviour
     private int attacks = 2;
     private float attackTime;
     private float attackStopTime = 10;
+
+    private GodEndFightDialog _godEndFightDialog;
+    private bool GodIsAlive = true;
     
     //public PlayerHealthManager playerHealthManager;
 
@@ -20,21 +23,22 @@ public class GodMovment : MonoBehaviour
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _godEndFightDialog = GetComponent<GodEndFightDialog>();
     }
 
     private void FixedUpdate()
     {
-       if (Random.Range(0, attacks) == 1)
-        {
+       if (Random.Range(0, attacks) == 1 && GodIsAlive == true)
+       {
             if (attackTime <= attackStopTime)
             {
                 _rigidbody2D.velocity = new Vector2(speed * transform.localScale.x, _rigidbody2D.velocity.y);
                 attackTime = Time.deltaTime;
             }
              
-        }
-        else
-        {
+       }
+       else
+       {
             _rigidbody2D.gravityScale = 0;
             transform.position = new Vector2(transform.position.x, transform.position.y + 10);
             
@@ -45,7 +49,7 @@ public class GodMovment : MonoBehaviour
             
             _rigidbody2D.gravityScale = 1;
              
-        }
+       }
         
     }
 
@@ -81,5 +85,12 @@ public class GodMovment : MonoBehaviour
     {
         return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 3f),
             Vector2.down * transform.localScale, 11f, whatIsPlayer);
+    }
+
+    private void GodIsDead()
+    {
+        if (health !<= 0) return;
+        _godEndFightDialog.godIsDead = true;
+        GodIsAlive = false;
     }
 }

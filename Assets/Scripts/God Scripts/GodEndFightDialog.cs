@@ -22,7 +22,7 @@ public class GodEndFightDialog : MonoBehaviour
     private int index = 0;
 
     public float wordSpeed;
-    public bool healthIsZero;
+    public bool godIsDead;
     //public bool canGoToNextLine = true;
 
 
@@ -36,7 +36,7 @@ public class GodEndFightDialog : MonoBehaviour
     {
         
         
-        if (Input.GetKeyDown(KeyCode.E) && healthIsZero)
+        if (Input.GetKeyDown(KeyCode.E) && godIsDead)
         {
             if (!dialoguePanel.activeInHierarchy)
             {
@@ -94,24 +94,7 @@ public class GodEndFightDialog : MonoBehaviour
         {
             RemoveText();
         }
+        
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            playerIsClose = true;
-            GodInteractPromt.SetActive(true);
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            playerIsClose = false;
-            RemoveText();
-            GodInteractPromt.SetActive(false);
-        }
-    }
+    
 }
