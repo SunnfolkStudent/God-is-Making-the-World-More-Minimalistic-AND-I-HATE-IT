@@ -1886,13 +1886,15 @@ GameObject:
   m_Component:
   - component: {fileID: 1207722660}
   - component: {fileID: 1207722659}
-  - component: {fileID: 1207722658}
   - component: {fileID: 1207722656}
   - component: {fileID: 1207722655}
   - component: {fileID: 1207722661}
-  m_Layer: 0
+  - component: {fileID: 1207722662}
+  - component: {fileID: 1207722664}
+  - component: {fileID: 1207722663}
+  m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1911,7 +1913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBtwShots: 0
   startTimeBtwShots: 0
-  projectile: {fileID: 0}
+  projectile: {fileID: 5038929330910607004, guid: 894fd1cf609d6824dbb930996832f4f7, type: 3}
   spawnPoint: {fileID: 0}
 --- !u!114 &1207722656
 MonoBehaviour:
@@ -1932,33 +1934,6 @@ MonoBehaviour:
   canTakeDamageCounter: 0
   hurtClips: []
   pickupClips: []
---- !u!114 &1207722658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207722654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0158782f78b6c0b45a254b5f7a8a2775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveDirection: {x: 0, y: 0}
-  canJump: 0
-  jumpPressed: 0
-  jumpReleased: 0
-  jumpHeld: 0
-  canInteract: 0
-  interactPressed: 0
-  interactReleased: 0
-  interactHeld: 0
-  canAttack: 0
-  attackPressed: 0
-  canMove: 1
-  usingGamepad: 0
-  usingDpad: 0
-  animator: {fileID: 0}
 --- !u!212 &1207722659
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2049,10 +2024,108 @@ MonoBehaviour:
   jumpBufferCounter: 0
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   canMove: 1
-  animator: {fileID: 0}
-  healthManager: {fileID: 0}
+  healthManager: {fileID: 1207722656}
+--- !u!114 &1207722662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207722654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7db7f194a24b5646a93d04daad0397d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveDirection: {x: 0, y: 0}
+  canJump: 0
+  jumpPressed: 0
+  jumpReleased: 0
+  jumpHeld: 0
+  canInteract: 0
+  interactPressed: 0
+  interactReleased: 0
+  interactHeld: 0
+  canAttack: 0
+  attackPressed: 0
+  canMove: 1
+  usingGamepad: 0
+  usingDpad: 0
+--- !u!61 &1207722663
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207722654}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!50 &1207722664
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207722654}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1214028378
 GameObject:
   m_ObjectHideFlags: 0
@@ -3116,6 +3189,9 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1676495742
 GameObject:
   m_ObjectHideFlags: 0

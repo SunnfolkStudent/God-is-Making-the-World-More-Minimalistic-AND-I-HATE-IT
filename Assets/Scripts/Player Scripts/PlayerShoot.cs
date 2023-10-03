@@ -9,20 +9,20 @@ public class PlayerShoot : MonoBehaviour
     public Transform spawnPoint;
 
     private PlayerCubeMovement _playerCubeMovement;
-    private InputManager _inputManager;
+    private InputCubeManager _inputCubeManager;
 
     private void Start()
     {
         timeBtwShots = startTimeBtwShots;
         _playerCubeMovement.GetComponent<PlayerCubeMovement>();
-        _inputManager.GetComponent<InputManager>();
+        _inputCubeManager.GetComponent<InputCubeManager>();
     }
 
     private void Update()
     {
 
         
-        if (timeBtwShots <= 0 && _inputManager.attackPressed)
+        if (timeBtwShots <= 0 && _inputCubeManager.attackPressed)
         {
          
             var clone = Instantiate(projectile, spawnPoint.position, Quaternion.identity);

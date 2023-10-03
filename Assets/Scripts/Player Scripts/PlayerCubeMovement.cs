@@ -68,7 +68,7 @@ public class PlayerCubeMovement : MonoBehaviour
 
         if (jumpBufferCounter > 0 && coyoteTimeCounter > 0)
         {
-            //_rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, jumpSpeed);
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, jumpSpeed);
             _desiredVelocity.y = jumpSpeed;
             jumpBufferCounter = 0f;
         }
@@ -76,7 +76,7 @@ public class PlayerCubeMovement : MonoBehaviour
         if (_input.jumpReleased && _desiredVelocity.y > 0f)
         {
             //_audioSource.PlayOneShot(jumpClips[Random.Range(0, jumpClips.Length)]);
-            //_rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _rigidbody2D.velocity.y * 0.2f);
+            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _rigidbody2D.velocity.y * 0.2f);
             _desiredVelocity.y *= 0.5f;
             coyoteTimeCounter = 0f;
         }
