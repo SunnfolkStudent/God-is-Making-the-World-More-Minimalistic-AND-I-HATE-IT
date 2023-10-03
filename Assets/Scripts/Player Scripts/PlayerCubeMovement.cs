@@ -15,11 +15,7 @@ public class PlayerCubeMovement : MonoBehaviour
     public float accelerationTime = 0.02f;
     public float groundFriction = 0.03f;
     public float airFriction = 0.005f;
-
-    [Header("CoyoteTime")]
-    public float coyoteTime = 0.2f;
-    public float coyoteTimeCounter;
-
+    
     [Header("JumpBuffer")]
     public float jumpBufferTime = 0.2f;
     public float jumpBufferCounter;
@@ -29,7 +25,7 @@ public class PlayerCubeMovement : MonoBehaviour
     
     [Header("Components")]
     private Rigidbody2D _rigidbody2D;
-    private InputManager _input;
+    private InputCubeManager _input;
     
     public bool canMove = true;
     
@@ -44,7 +40,7 @@ public class PlayerCubeMovement : MonoBehaviour
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _input = GetComponent<InputManager>();
+        _input = GetComponent<InputCubeManager>();
         //_audioSource = GetComponent<AudioSource>();
         _keyboard = Keyboard.current;
         
@@ -66,7 +62,7 @@ public class PlayerCubeMovement : MonoBehaviour
         }*/
         
 
-        if (jumpBufferCounter > 0 && coyoteTimeCounter > 0)
+        if (jumpBufferCounter > 0 && IsPlayerGrounded())
         {
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, jumpSpeed);
             _desiredVelocity.y = jumpSpeed;
@@ -76,15 +72,11 @@ public class PlayerCubeMovement : MonoBehaviour
         if (_input.jumpReleased && _desiredVelocity.y > 0f)
         {
             //_audioSource.PlayOneShot(jumpClips[Random.Range(0, jumpClips.Length)]);
-            _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _rigidbody2D.velocity.y * 0.2f);
+            //_rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _rigidbody2D.velocity.y * 0.2f);
             _desiredVelocity.y *= 0.5f;
-            coyoteTimeCounter = 0f;
         }
 
         
-        
-        if (IsPlayerGrounded())
-        { coyoteTimeCounter = coyoteTime; } else { coyoteTimeCounter -= 1 * Time.deltaTime; }
 
         if (_input.jumpPressed)
         { jumpBufferCounter = jumpBufferTime; } else { jumpBufferCounter -= 1 * Time.deltaTime; }
@@ -99,12 +91,10 @@ public class PlayerCubeMovement : MonoBehaviour
         
         if (_input.moveDirection.x != 0)
         {
-            
             _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x, moveSpeed * _input.moveDirection.x, accelerationTime);
         }
         else
         {
-            
             _desiredVelocity.x = Mathf.Lerp(_desiredVelocity.x, 0f, IsPlayerGrounded() ? groundFriction : airFriction);
         }
 
@@ -113,8 +103,7 @@ public class PlayerCubeMovement : MonoBehaviour
 
     private bool IsPlayerGrounded()
     {
-        Debug.DrawRay(transform.position, Vector2.down, Color.red, 1f, true);
-        return Physics2D.Raycast(transform.position, Vector2.down, 0.2f, whatIsGround);
+        return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 1), Vector2.down, 0.1f, whatIsGround);
     }
     
     
