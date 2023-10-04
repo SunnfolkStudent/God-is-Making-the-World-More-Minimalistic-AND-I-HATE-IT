@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
@@ -36,6 +37,12 @@ public class PlayerMovement : MonoBehaviour
     
     public Animator animator;
     public PlayerHealthManager healthManager;
+
+    public PlayableDirector playableDirector;
+    
+    private float timer;
+    private bool timerDone;
+    private bool timerOn;
     
     //private AudioSource _audioSource;
     //public AudioClip[] jumpClips;
@@ -54,7 +61,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        
+        if (timerOn)
+        {
+            print("timer on");
+            timer += Time.deltaTime;
+            if (timer > 1.5f && !timerDone)
+            {
+                SceneManager.LoadScene("HeavenScene");
+            }
+        }
         _desiredVelocity = _rigidbody2D.velocity;
 
         if (!animator.GetBool("isDead") && !animator.GetBool("isRising") && canMove)
@@ -137,12 +152,18 @@ public class PlayerMovement : MonoBehaviour
         return;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("DeathBox"))
         {
             print("Die");
             SceneManager.LoadScene("DeathScene");
+        }
+
+        if (other.gameObject.CompareTag("HevenBox"))
+        {
+            playableDirector.Play();
+            timerOn = true;
         }
     }
 
