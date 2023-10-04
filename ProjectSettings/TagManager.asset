@@ -9,6 +9,7 @@ TagManager:
   - Projektile
   - UIDialogue
   - Spike
+  - DeathBox
   layers:
   - Default
   - TransparentFX
