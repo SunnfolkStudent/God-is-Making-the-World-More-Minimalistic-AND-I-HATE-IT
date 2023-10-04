@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
@@ -135,7 +136,16 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("isRising", false);
         return;
     }
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("DeathBox"))
+        {
+            print("Die");
+            SceneManager.LoadScene("DeathScene");
+        }
+    }
+
     /*
     public void playWalkSound()
     {
