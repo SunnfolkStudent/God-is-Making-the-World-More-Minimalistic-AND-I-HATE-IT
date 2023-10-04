@@ -23,6 +23,8 @@ public class PlayerShoot : MonoBehaviour
         
         if (timeBtwShots <= 0 && _inputCubeManager.attackPressed)
         {
+            ShootDirection();
+            
             var clone = Instantiate(projectile, spawnPoint.position, Quaternion.identity);
             clone.GetComponent<Projektile>().shootDirection = transform.localScale.x;
             Destroy(clone, 5f);
