@@ -46,7 +46,7 @@ public class PlayerHealthManager : MonoBehaviour
             canTakeDamage = false;
             canTakeDamageCounter = Time.time + canTakeDamageTime;            
             lives--;
-            _audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
+//            _audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
         }
         
         if (other.gameObject.CompareTag("Projektile"))
@@ -65,15 +65,15 @@ public class PlayerHealthManager : MonoBehaviour
             canTakeDamage = false;
             canTakeDamageCounter = Time.time + canTakeDamageTime;
             lives--;
-            animator.SetTrigger("damaged");
-            _audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
+            //animator.SetTrigger("damaged");
+            //_audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
             
         }
         
         if (other.CompareTag("Projektile"))
         {
                          
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
         }
     }
 

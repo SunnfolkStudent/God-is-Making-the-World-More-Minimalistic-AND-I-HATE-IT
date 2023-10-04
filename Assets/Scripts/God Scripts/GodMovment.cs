@@ -1,4 +1,7 @@
 using UnityEngine;
+using UnityEngine.Playables;
+using UnityEngine.Serialization;
+using UnityEngine.Timeline;
 
 public class GodMovment : MonoBehaviour
 {
@@ -10,12 +13,18 @@ public class GodMovment : MonoBehaviour
     
     private Rigidbody2D _rigidbody2D;
 
-    private int attacks = 2;
-    private float attackTime;
-    private float attackStopTime = 10;
+    public int attacks = 2;
+    public float attackTime;
+    public float attackStopTime = 10;
 
-    private GodEndFightDialog _godEndFightDialog;
-    private bool GodIsAlive = true;
+    public GodEndFightDialog _godEndFightDialog;
+    public bool GodIsAlive = false;
+    public bool canChekIfGodIsDead = false;
+    public bool flyingAttack;
+
+    public TimelineClip _clip;
+    public PlayableDirector _dir;
+
     
     //public PlayerHealthManager playerHealthManager;
 
@@ -23,42 +32,56 @@ public class GodMovment : MonoBehaviour
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _godEndFightDialog = GetComponent<GodEndFightDialog>();
+        //_godEndFightDialog = GetComponent<GodEndFightDialog>();
+        //_godStartFight = GetComponent<GodStartFightDialog>();
     }
 
     private void FixedUpdate()
     {
-       /*if (Random.Range(0, attacks) == 1 && GodIsAlive == true)
-       {
-            if (attackTime <= attackStopTime)
-            {
-                _rigidbody2D.velocity = new Vector2(speed * transform.localScale.x, _rigidbody2D.velocity.y);
-                attackTime = Time.deltaTime;
-            }
-             
+        if (canChekIfGodIsDead)
+        {
+           GodIsDead(); 
+        }
+        
+        if (!DetectPlayer() && flyingAttack)
+        {
+            _rigidbody2D.velocity = new Vector2(speed * transform.localScale.x, _rigidbody2D.velocity.y);
+        }
+        if (DetectPlayer())
+        {
+            flyingAttack = false;
+            attackTime = 0;
+        }
+
+        print(Time.time);
+        if (Time.time < attackTime) return;
+        print("This is running?");
+        
+        _rigidbody2D.gravityScale = 1;
+        flyingAttack = false;
+        
+        attacks = Random.Range(0, 2);
+        print("Attacks: "+attacks);
+        
+       if (attacks == 1 && GodIsAlive == true)
+       { 
+           _rigidbody2D.velocity = new Vector2(speed * transform.localScale.x, _rigidbody2D.velocity.y);
        }
        else
        {
             _rigidbody2D.gravityScale = 0;
             transform.position = new Vector2(transform.position.x, transform.position.y + 10);
-            
-            if (!DetectPlayer())
-            {
-                _rigidbody2D.velocity = new Vector2(speed * transform.localScale.x, _rigidbody2D.velocity.y);
-            }
-            
-            _rigidbody2D.gravityScale = 1;
-             
-       }*/
-        
+            flyingAttack = true;
+       }
+
+       attackTime = Time.time + attackStopTime;
     }
 
     private void LateUpdate()
     {
         if (DetectedWall())
         {
-            transform.localScale = new Vector3(
-                -transform.localScale.x, 5f, 1f);
+            transform.localScale = new Vector3(-transform.localScale.x, 5f, 1f);
         }
     }
 
@@ -89,8 +112,11 @@ public class GodMovment : MonoBehaviour
 
     private void GodIsDead()
     {
-        if (health !<= 0) return;
-        _godEndFightDialog.godIsDead = true;
+        if (health > 0 || !GodIsAlive) 
+            return;
+        
         GodIsAlive = false;
+        
+        _godEndFightDialog.godIsDead = true; print("What now?");
     }
 }

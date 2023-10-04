@@ -1,17 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.Playables;
 using UnityEngine.Serialization;
+using UnityEngine.Playables;
 
-public class GodEndFightDialog : MonoBehaviour
+public class GodStartFightDialog : MonoBehaviour
 {
     public GameObject dialoguePanel;
     
     public InputCubeManager _inputCubeManager;
     public PlayerCubeMovement _playerCubeMovement;
+    public GodMovment _godMovment;
     
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI nameText;
@@ -22,34 +24,47 @@ public class GodEndFightDialog : MonoBehaviour
     private int index = 0;
 
     public float wordSpeed;
-    public bool godIsDead;
+    public bool godHasDesended;
+
+    public PlayableDirector playableDirector;
     //public bool canGoToNextLine = true;
 
-
+    private float timer;
+    private bool timerDone;
+    
     void Start()
     {
         dialogueText.text = "";
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (godIsDead)
+        timer += Time.deltaTime; // Count seconds
+
+        if (timer > 5 && !timerDone)
+        {
+            timerDone = true;
+            
+            godHasDesended = true;
+        }
+        
+        
+        
+        if (godHasDesended && Input.GetKeyDown(KeyCode.E))
         {
             if (!dialoguePanel.activeInHierarchy)
             {
                 _inputCubeManager.canMove = false;
                 _playerCubeMovement.canMove = false;
-                
                 dialoguePanel.SetActive(true);
-                
                 StartCoroutine(Typing());
             }
-            else if (dialogueText.text == dialogue[index] && Input.GetKeyDown(KeyCode.E))
+            else if (dialogueText.text == dialogue[index])
             {
                 NextLine();
             } 
-            
             if (dialogueText.text == dialogue[index])
             {
                 //canGoToNextLine = true;
@@ -69,7 +84,10 @@ public class GodEndFightDialog : MonoBehaviour
         dialoguePanel.SetActive(false);
         _inputCubeManager.canMove = true;
         _playerCubeMovement.canMove = true;
-        godIsDead = false;
+        playableDirector.Play();
+        godHasDesended = false;
+        _godMovment.GodIsAlive = true;
+        _godMovment.canChekIfGodIsDead = true;
     }
 
     IEnumerator Typing()
@@ -97,5 +115,6 @@ public class GodEndFightDialog : MonoBehaviour
         }
         
     }
+    
     
 }
