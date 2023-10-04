@@ -43,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
     private float timer;
     private bool timerDone;
     private bool timerOn;
+    private int wichTimer = 0;
     
     private AudioSource _audioSource;
     public AudioClip[] jumpClips;
@@ -63,12 +64,23 @@ public class PlayerMovement : MonoBehaviour
     {
         if (timerOn)
         {
-            print("timer on");
-            timer += Time.deltaTime;
-            if (timer > 1.5f && !timerDone)
+            if (wichTimer == 1)
             {
-                SceneManager.LoadScene("HeavenScene");
+                timer += Time.deltaTime;
+                if (timer > 1.5f && !timerDone)
+                {
+                    SceneManager.LoadScene("HeavenScene");
+                }
             }
+            else
+            {
+                timer += Time.deltaTime;
+                if (timer > 1.5f && !timerDone)
+                {
+                    SceneManager.LoadScene("HeavenSceneTwo");
+                }
+            }
+            
         }
         _desiredVelocity = _rigidbody2D.velocity;
 
@@ -161,6 +173,13 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (other.gameObject.CompareTag("HevenBox"))
+        {
+            playableDirector.Play();
+            timerOn = true;
+            wichTimer = 1;
+        }
+        
+        if (other.gameObject.CompareTag("HevenWarpBoxTwo"))
         {
             playableDirector.Play();
             timerOn = true;
