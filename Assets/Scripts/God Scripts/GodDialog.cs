@@ -30,6 +30,7 @@ public class GodDialog : MonoBehaviour
     public AudioClip[] godClips;
     public AudioClip[] minimalistGodClips;
     public AudioClip[] joeClips;
+    public AudioClip harp;
 
     public float wordSpeed;
     public bool playerIsClose;
@@ -64,7 +65,8 @@ public class GodDialog : MonoBehaviour
             {
                 if (index == 0)
                 {
-                    God.SetActive(true); 
+                    God.SetActive(true);
+                    _audioSource.PlayOneShot(harp);
                     playableDirector.Play(); 
                 }
                 

@@ -31,7 +31,12 @@ public class SnakeShoot : MonoBehaviour
       if (timeBtwShots >= 2.5f && timeBtwShots <= 3)
       {
          _snakePatrol.isShooting = false;
-         animator.SetBool("isAttacking", false);
+      }
+
+      if (timeBtwShots == 4)
+      {
+         
+        animator.SetBool("isAttacking", false); 
       }
       
       if (timeBtwShots <= 0)
