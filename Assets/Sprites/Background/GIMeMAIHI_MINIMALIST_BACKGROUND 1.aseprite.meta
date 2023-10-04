@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d6dc7dec34835df4ab6f84360eecbb9f
+guid: b0b237503323d78468e876fe816a55c0
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638319567949328910
+  platformSettingsDirtyTick: 638320099356588319
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,7 +122,7 @@ ScriptedImporter:
   - name: Background
     originalName: 
     pivot: {x: 0.5, y: 0}
-    alignment: 9
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 480
       height: 270
-    spriteID: 559394c825e5b2d4d8a0f635a9da44cc
+    spriteID: 1d1af55a70aeba046a4553254004cdfd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,6 +139,66 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: Second Hill
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 282
+      width: 480
+      height: 160
+    spriteID: 46868bc9c410d484080220306153cf30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 282}
+  - name: Hill
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 618
+      width: 480
+      height: 128
+    spriteID: f3cb111a8b3357441a9956b39810b06c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 618}
+  - name: Trees
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 450
+      width: 480
+      height: 160
+    spriteID: ce5cfbd545cf7e34fa3afc0c9038ec4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 450}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -155,43 +215,58 @@ ScriptedImporter:
         y: 0
         width: 480
         height: 270
-      spriteId: 559394c825e5b2d4d8a0f635a9da44cc
+      spriteId: 1d1af55a70aeba046a4553254004cdfd
     linkedCells: []
     parentIndex: -1
   - layerIndex: 1
     guid: -832943404
     name: Second Hill
     layerFlags: 3
-    layerType: 2
+    layerType: 0
     blendMode: 0
-    cells: []
+    cells:
+    - name: Second Hill
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: -18
+        width: 480
+        height: 160
+      spriteId: 46868bc9c410d484080220306153cf30
     linkedCells: []
     parentIndex: -1
   - layerIndex: 2
     guid: -1029572849
     name: Hill
     layerFlags: 3
-    layerType: 2
+    layerType: 0
     blendMode: 0
-    cells: []
+    cells:
+    - name: Hill
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: -18
+        width: 480
+        height: 128
+      spriteId: f3cb111a8b3357441a9956b39810b06c
     linkedCells: []
     parentIndex: -1
   - layerIndex: 3
     guid: -2051070610
     name: Trees
     layerFlags: 3
-    layerType: 2
+    layerType: 0
     blendMode: 0
-    cells: []
-    linkedCells: []
-    parentIndex: -1
-  - layerIndex: 4
-    guid: -515702358
-    name: Ground/ Platforms
-    layerFlags: 3
-    layerType: 2
-    blendMode: 0
-    cells: []
+    cells:
+    - name: Trees
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 78
+        width: 480
+        height: 160
+      spriteId: ce5cfbd545cf7e34fa3afc0c9038ec4d
     linkedCells: []
     parentIndex: -1
   platformSettings:
