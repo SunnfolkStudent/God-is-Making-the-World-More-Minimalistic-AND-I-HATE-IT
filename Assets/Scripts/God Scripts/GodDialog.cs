@@ -41,19 +41,19 @@ public class GodDialog : MonoBehaviour
     public Transform tFollowTarget;
     public CinemachineVirtualCamera vcam;
     
-    
     void Start()
     {
         dialogueText.text = "";
-
     }
 
     // Update is called once per frame
     void Update()
     {
         
+        
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
+            
             
             tFollowTarget = dialogueCamPos.transform; 
             vcam.LookAt = tFollowTarget; 
