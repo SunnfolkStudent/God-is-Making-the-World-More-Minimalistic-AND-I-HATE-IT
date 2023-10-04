@@ -32,6 +32,9 @@ public class GodStartFightDialog : MonoBehaviour
     private float timer;
     private bool timerDone;
     
+    private float timerTwo;
+    private bool timerDoneTwo;
+    private bool timerTwoOn;
     void Start()
     {
         dialogueText.text = "";
@@ -50,6 +53,16 @@ public class GodStartFightDialog : MonoBehaviour
             godHasDesended = true;
         }
         
+        if (timerTwoOn)
+        {
+            timerTwo += Time.deltaTime;
+            if (timerTwo > 5 && !timerDoneTwo)
+            {
+                timerDoneTwo = true;
+
+                _godMovment.GodIsAlive = true;
+            }
+        }
         
         
         if (godHasDesended && Input.GetKeyDown(KeyCode.E))
@@ -86,7 +99,6 @@ public class GodStartFightDialog : MonoBehaviour
         _playerCubeMovement.canMove = true;
         playableDirector.Play();
         godHasDesended = false;
-        _godMovment.GodIsAlive = true;
         _godMovment.canChekIfGodIsDead = true;
     }
 

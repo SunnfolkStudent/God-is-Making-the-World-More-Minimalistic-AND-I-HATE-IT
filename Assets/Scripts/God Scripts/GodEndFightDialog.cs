@@ -23,6 +23,10 @@ public class GodEndFightDialog : MonoBehaviour
 
     public float wordSpeed;
     public bool godIsDead;
+    
+    private float timer;
+    private bool timerDone;
+    private bool timerOn;
     //public bool canGoToNextLine = true;
 
 
@@ -34,6 +38,8 @@ public class GodEndFightDialog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        
         if (godIsDead)
         {
             if (!dialoguePanel.activeInHierarchy)
