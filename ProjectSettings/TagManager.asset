@@ -10,6 +10,7 @@ TagManager:
   - UIDialogue
   - Spike
   - DeathBox
+  - HevenBox
   layers:
   - Default
   - TransparentFX
