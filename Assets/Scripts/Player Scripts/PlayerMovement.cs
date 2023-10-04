@@ -44,9 +44,9 @@ public class PlayerMovement : MonoBehaviour
     private bool timerDone;
     private bool timerOn;
     
-    //private AudioSource _audioSource;
-    //public AudioClip[] jumpClips;
-    //public AudioClip[] walkClips;
+    private AudioSource _audioSource;
+    public AudioClip[] jumpClips;
+    public AudioClip[] walkClips;
 
     private Keyboard _keyboard;
     
@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _input = GetComponent<InputManager>();
-        //_audioSource = GetComponent<AudioSource>();
+        _audioSource = GetComponent<AudioSource>();
         _keyboard = Keyboard.current;
         animator.SetBool("isRising", true);
     }
@@ -93,12 +93,12 @@ public class PlayerMovement : MonoBehaviour
         
         if (_input.jumpReleased && _desiredVelocity.y > 0f)
         {
-            //_audioSource.PlayOneShot(jumpClips[Random.Range(0, jumpClips.Length)]);
             //_rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, _rigidbody2D.velocity.y * 0.2f);
             _desiredVelocity.y *= 0.5f;
             coyoteTimeCounter = 0f;
         }
 
+        if (_input.jumpPressed) { _audioSource.PlayOneShot(jumpClips[Random.Range(0, jumpClips.Length)]); }
 
         if (animator.GetBool("isDead") || !canMove || animator.GetBool("isRising"))
         { return; }
@@ -167,12 +167,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    /*
+    
     public void playWalkSound()
     {
         
         _audioSource.PlayOneShot(walkClips[Random.Range(0, walkClips.Length)]);
         return;
     }
-    */
+    
 }

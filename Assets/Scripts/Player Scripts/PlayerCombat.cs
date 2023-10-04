@@ -20,7 +20,7 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_inputManager.attackPressed)
+        if (_inputManager.attackPressed && !animator.GetBool("isRising"))
         {
             animator.SetBool("isAttacking", true);
         }
