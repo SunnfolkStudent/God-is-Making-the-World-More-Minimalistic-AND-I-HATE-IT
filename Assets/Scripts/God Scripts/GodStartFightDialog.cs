@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,18 +28,30 @@ public class GodStartFightDialog : MonoBehaviour
     public PlayableDirector playableDirector;
     //public bool canGoToNextLine = true;
 
-
+    private float timer;
+    private bool timerDone;
+    
     void Start()
     {
         dialogueText.text = "";
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        timer += Time.deltaTime; // Count seconds
+
+        if (timer > 5 && !timerDone)
+        {
+            timerDone = true;
+            
+            godHasDesended = true;
+        }
         
         
-        if (godHasDesended)
+        
+        if (godHasDesended && Input.GetKeyDown(KeyCode.E))
         {
             if (!dialoguePanel.activeInHierarchy)
             {
@@ -99,5 +112,6 @@ public class GodStartFightDialog : MonoBehaviour
         }
         
     }
+    
     
 }

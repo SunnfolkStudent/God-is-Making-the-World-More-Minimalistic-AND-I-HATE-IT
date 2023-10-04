@@ -9,13 +9,13 @@ public class PlayerShoot : MonoBehaviour
     public Transform spawnPoint;
     
     private InputCubeManager _inputCubeManager;
-    private Projektile _projektile;
+    [SerializeField] private Projektile _projektile;
 
     private void Start()
     {
         timeBtwShots = startTimeBtwShots;
         _inputCubeManager = GetComponent<InputCubeManager>();
-        _projektile = GetComponent<Projektile>();
+        //_projektile = GetComponent<Projektile>();
     }
 
     private void Update()

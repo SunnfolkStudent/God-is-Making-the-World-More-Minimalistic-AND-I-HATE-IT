@@ -15,10 +15,10 @@ public class GodMovment : MonoBehaviour
     private float attackTime;
     private float attackStopTime = 10;
 
-    private GodEndFightDialog _godEndFightDialog;
+    public GodEndFightDialog _godEndFightDialog;
     private bool GodIsAlive = true;
 
-    [FormerlySerializedAs("godHasDesended")] public GodStartFightDialog _godStartFight;
+   
     
     //public PlayerHealthManager playerHealthManager;
 
@@ -26,8 +26,8 @@ public class GodMovment : MonoBehaviour
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        _godEndFightDialog = GetComponent<GodEndFightDialog>();
-        _godStartFight = GetComponent<GodStartFightDialog>();
+        //_godEndFightDialog = GetComponent<GodEndFightDialog>();
+        //_godStartFight = GetComponent<GodStartFightDialog>();
     }
 
     private void FixedUpdate()
@@ -94,13 +94,11 @@ public class GodMovment : MonoBehaviour
 
     private void GodIsDead()
     {
-        if (health !<= 0) return;
-        _godEndFightDialog.godIsDead = true;
+        if (health > 0 || !GodIsAlive) 
+            return;
+        
         GodIsAlive = false;
-    }
-
-    private void GodHasDesended()
-    {
-        _godStartFight.godHasDesended = true;
+        
+        _godEndFightDialog.godIsDead = true; print("What now?");
     }
 }

@@ -989,7 +989,7 @@ GameObject:
   - component: {fileID: 402781614}
   - component: {fileID: 402781613}
   m_Layer: 6
-  m_Name: Grond
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1129,8 +1129,8 @@ Transform:
   m_GameObject: {fileID: 402781612}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.4926, y: -9.59, z: 0}
-  m_LocalScale: {x: 44.0866, y: 15, z: 1}
+  m_LocalPosition: {x: -0.4575, y: -9.59, z: 0}
+  m_LocalScale: {x: 44.020496, y: 15, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1370,6 +1370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 604236890}
   - component: {fileID: 604236889}
+  - component: {fileID: 604236891}
   m_Layer: 0
   m_Name: GodDesend
   m_TagString: Untagged
@@ -1412,6 +1413,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &604236891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604236888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: d005e9ef36bad614482c8cec586763bf, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &623290370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1811,7 +1830,7 @@ MonoBehaviour:
   - kill
   name:
   - God
-  - hoe
+  - joe
   wordSpeed: 0.06
   godHasDesended: 0
   playableDirector: {fileID: 668913919}
@@ -2848,6 +2867,7 @@ MonoBehaviour:
   startTimeBtwShots: 1
   projectile: {fileID: 5038929330910607004, guid: 894fd1cf609d6824dbb930996832f4f7, type: 3}
   spawnPoint: {fileID: 1207722660}
+  _projektile: {fileID: 8908311562794876755, guid: 894fd1cf609d6824dbb930996832f4f7, type: 3}
 --- !u!114 &1207722656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4490,7 +4510,7 @@ MonoBehaviour:
   whatIsPlayer:
     serializedVersion: 2
     m_Bits: 8
-  _godStartFight: {fileID: 0}
+  _godEndFightDialog: {fileID: 237615093}
 --- !u!114 &1675964280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4717,8 +4737,8 @@ Transform:
   m_GameObject: {fileID: 1717180285}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.76, y: 11.68, z: 0}
-  m_LocalScale: {x: 2, y: -2, z: 1}
+  m_LocalPosition: {x: 13.76, y: 11.6756, z: 0}
+  m_LocalScale: {x: 2, y: -1.98, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 200878912}

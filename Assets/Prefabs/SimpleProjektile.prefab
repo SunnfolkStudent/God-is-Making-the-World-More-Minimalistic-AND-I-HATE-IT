@@ -100,9 +100,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  arc: 0
+  arc: 1
   rigidbody2D: {fileID: -3237592975821033006}
-  shootDirection: 0
+  shootDirection: 1
 --- !u!50 &-3237592975821033006
 Rigidbody2D:
   serializedVersion: 4

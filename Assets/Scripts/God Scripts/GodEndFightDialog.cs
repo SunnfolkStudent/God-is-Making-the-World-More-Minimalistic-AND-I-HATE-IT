@@ -34,21 +34,22 @@ public class GodEndFightDialog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
         if (godIsDead)
         {
             if (!dialoguePanel.activeInHierarchy)
             {
                 _inputCubeManager.canMove = false;
                 _playerCubeMovement.canMove = false;
+                
                 dialoguePanel.SetActive(true);
+                
                 StartCoroutine(Typing());
             }
-            else if (dialogueText.text == dialogue[index])
+            else if (dialogueText.text == dialogue[index] && Input.GetKeyDown(KeyCode.E))
             {
                 NextLine();
             } 
+            
             if (dialogueText.text == dialogue[index])
             {
                 //canGoToNextLine = true;
@@ -68,6 +69,7 @@ public class GodEndFightDialog : MonoBehaviour
         dialoguePanel.SetActive(false);
         _inputCubeManager.canMove = true;
         _playerCubeMovement.canMove = true;
+        godIsDead = false;
     }
 
     IEnumerator Typing()

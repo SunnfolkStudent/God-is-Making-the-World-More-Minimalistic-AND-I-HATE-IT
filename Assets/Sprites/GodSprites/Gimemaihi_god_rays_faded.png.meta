@@ -152,7 +152,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gimemaihi_god_rays_faded_0: -4131972560057168171
+      Gimemaihi_god_rays_faded_1: 7192062699518363412
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
