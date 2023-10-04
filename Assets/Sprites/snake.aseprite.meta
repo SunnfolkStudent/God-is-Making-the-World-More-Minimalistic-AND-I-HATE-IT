@@ -1,0 +1,1110 @@
+fileFormatVersion: 2
+guid: a4d359c1a6259e44d9c615acfd3fad81
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638320145839759720
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: snake_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 186
+      width: 25
+      height: 31
+    spriteID: 18b315a26f249b64088b47875ae2a491
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 186}
+  - name: snake_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 4
+      width: 26
+      height: 29
+    spriteID: 342b61c432b6cc74aa36caa4c2b6ffc4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 4}
+  - name: snake_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 26
+      height: 31
+    spriteID: c6a7d48b2a9d277438e77b00ef99c351
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: snake_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 41
+      width: 26
+      height: 29
+    spriteID: c925ed7e9ba73a54ab1388b8dc47dafb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 41}
+  - name: snake_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 35
+      width: 25
+      height: 31
+    spriteID: 7d46b986c78008f418d9472923f67635
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 35}
+  - name: snake_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 78
+      width: 26
+      height: 29
+    spriteID: a88c6a8034eaf194d85831ed90bab607
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 78}
+  - name: snake_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 43
+      width: 26
+      height: 31
+    spriteID: 87efa04eb3c5d9c4d957b71aed0e43bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 43}
+  - name: snake_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 110
+      width: 26
+      height: 30
+    spriteID: 8e817814c40791441b0f37704c1b6d4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 110}
+  - name: snake_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 160
+      width: 25
+      height: 32
+    spriteID: 5d8d4c3badcfc98418dc3f2e291dd796
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 160}
+  - name: snake_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 74
+      width: 25
+      height: 31
+    spriteID: 6b2b2cf36bea7584985a09bd37ae9417
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 74}
+  - name: snake_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 135
+      y: 82
+      width: 25
+      height: 30
+    spriteID: 8ca2536004196cb4b938350091aaa333
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 135, y: 82}
+  - name: snake_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 113
+      width: 25
+      height: 31
+    spriteID: 24a32c0e87be04c49808c51c5715a13a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 113}
+  - name: snake_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 53
+      width: 28
+      height: 24
+    spriteID: f4a4f770f868df04bae2e3367c8161e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 53}
+  - name: snake_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 4
+      width: 35
+      height: 23
+    spriteID: 86692a58da29e5f4cb092ca26c2a69b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 4}
+  - name: snake_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 4
+      width: 46
+      height: 17
+    spriteID: aff261ec0e7cc4148b6e00a824b0e77c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 4}
+  - name: snake_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 29
+      width: 46
+      height: 17
+    spriteID: 0154792673c434f4f8b05f4f672ed2d6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 29}
+  - name: snake_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 152
+      width: 25
+      height: 31
+    spriteID: 70fe747a214082948ae4f3bbf29b323b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 152}
+  - name: snake_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 115
+      width: 26
+      height: 29
+    spriteID: 4bdc8b652f0986747bdffff33a784a8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 115}
+  - name: snake_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 82
+      width: 26
+      height: 31
+    spriteID: f5a68524c711e9f4ab2726df9b48fdbb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 82}
+  - name: snake_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 152
+      width: 26
+      height: 29
+    spriteID: 2ce8b635356db004982517d6639bd1f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 152}
+  - name: snake_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 38
+      y: 191
+      width: 25
+      height: 31
+    spriteID: 20d2e2dab5a9f9140ab93392dc4fc3b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 38, y: 191}
+  - name: snake_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 189
+      width: 26
+      height: 29
+    spriteID: d06ce137ef5412240b3bc00d03dbbf45
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 189}
+  - name: snake_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 121
+      width: 26
+      height: 31
+    spriteID: c57e12e4ff5c8154b863e32b291c6c31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 121}
+  - name: snake_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 148
+      width: 26
+      height: 30
+    spriteID: fda9df48e99396f49961e07b601364cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 148}
+  - name: snake_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 200
+      width: 25
+      height: 32
+    spriteID: fb8f2623a1163d1468f6fde77d24cf67
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 200}
+  - name: snake_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 135
+      y: 4
+      width: 25
+      height: 31
+    spriteID: 8b9958f1def86744fbfb1d2de6f07ba3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 135, y: 4}
+  - name: snake_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 135
+      y: 120
+      width: 25
+      height: 30
+    spriteID: c4b6baed595df114cbab7f8edd0b8cb6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 135, y: 120}
+  - name: snake_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 135
+      y: 43
+      width: 25
+      height: 31
+    spriteID: 3018099aa0bf71b49813ee2d73cc1b8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 135, y: 43}
+  - name: snake_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 85
+      width: 28
+      height: 24
+    spriteID: 13d9cc3c2e6b4f141b5a79f786d866c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 85}
+  - name: snake_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 54
+      width: 34
+      height: 23
+    spriteID: 2f6e15c0121c9ff409e9773a4c8b44e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 54}
+  - name: snake_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 85
+      width: 46
+      height: 17
+    spriteID: 7e1b57c99b293cf448ca26569f797c5e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 85}
+  - name: snake_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 4
+      width: 46
+      height: 16
+    spriteID: 13ec76dd59ca60b4ea1678dae9ac0dd9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 4}
+  - name: snake_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 225
+      width: 44
+      height: 17
+    spriteID: e5fdae99ff17442498ec6e17aa143fc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 225}
+  - name: snake_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 28
+      width: 42
+      height: 17
+    spriteID: 2de58086fa95e6a40a1bf6be4e2b8f98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 28}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1663602250
+    name: snake
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: snake_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 31
+      spriteId: 18b315a26f249b64088b47875ae2a491
+    - name: snake_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 20
+        y: 0
+        width: 26
+        height: 29
+      spriteId: 342b61c432b6cc74aa36caa4c2b6ffc4
+    - name: snake_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 20
+        y: 0
+        width: 26
+        height: 31
+      spriteId: c6a7d48b2a9d277438e77b00ef99c351
+    - name: snake_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 20
+        y: 0
+        width: 26
+        height: 29
+      spriteId: c925ed7e9ba73a54ab1388b8dc47dafb
+    - name: snake_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 31
+      spriteId: 7d46b986c78008f418d9472923f67635
+    - name: snake_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 20
+        y: 0
+        width: 26
+        height: 29
+      spriteId: a88c6a8034eaf194d85831ed90bab607
+    - name: snake_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 20
+        y: 0
+        width: 26
+        height: 31
+      spriteId: 87efa04eb3c5d9c4d957b71aed0e43bd
+    - name: snake_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 20
+        y: 0
+        width: 26
+        height: 30
+      spriteId: 8e817814c40791441b0f37704c1b6d4e
+    - name: snake_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 32
+      spriteId: 5d8d4c3badcfc98418dc3f2e291dd796
+    - name: snake_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 31
+      spriteId: 6b2b2cf36bea7584985a09bd37ae9417
+    - name: snake_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 30
+      spriteId: 8ca2536004196cb4b938350091aaa333
+    - name: snake_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 31
+      spriteId: 24a32c0e87be04c49808c51c5715a13a
+    - name: snake_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 18
+        y: 0
+        width: 28
+        height: 24
+      spriteId: f4a4f770f868df04bae2e3367c8161e3
+    - name: snake_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 13
+        y: 0
+        width: 35
+        height: 23
+      spriteId: 86692a58da29e5f4cb092ca26c2a69b5
+    - name: snake_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 1
+        y: 0
+        width: 46
+        height: 17
+      spriteId: aff261ec0e7cc4148b6e00a824b0e77c
+    - name: snake_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 0
+        y: 0
+        width: 46
+        height: 17
+      spriteId: 0154792673c434f4f8b05f4f672ed2d6
+    - name: snake_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 31
+      spriteId: 70fe747a214082948ae4f3bbf29b323b
+    - name: snake_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 20
+        y: 0
+        width: 26
+        height: 29
+      spriteId: 4bdc8b652f0986747bdffff33a784a8e
+    - name: snake_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 20
+        y: 0
+        width: 26
+        height: 31
+      spriteId: f5a68524c711e9f4ab2726df9b48fdbb
+    - name: snake_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 20
+        y: 0
+        width: 26
+        height: 29
+      spriteId: 2ce8b635356db004982517d6639bd1f2
+    - name: snake_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 31
+      spriteId: 20d2e2dab5a9f9140ab93392dc4fc3b3
+    - name: snake_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 20
+        y: 0
+        width: 26
+        height: 29
+      spriteId: d06ce137ef5412240b3bc00d03dbbf45
+    - name: snake_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 20
+        y: 0
+        width: 26
+        height: 31
+      spriteId: c57e12e4ff5c8154b863e32b291c6c31
+    - name: snake_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 20
+        y: 0
+        width: 26
+        height: 30
+      spriteId: fda9df48e99396f49961e07b601364cd
+    - name: snake_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 32
+      spriteId: fb8f2623a1163d1468f6fde77d24cf67
+    - name: snake_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 31
+      spriteId: 8b9958f1def86744fbfb1d2de6f07ba3
+    - name: snake_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 30
+      spriteId: c4b6baed595df114cbab7f8edd0b8cb6
+    - name: snake_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 21
+        y: 0
+        width: 25
+        height: 31
+      spriteId: 3018099aa0bf71b49813ee2d73cc1b8d
+    - name: snake_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 18
+        y: 0
+        width: 28
+        height: 24
+      spriteId: 13d9cc3c2e6b4f141b5a79f786d866c0
+    - name: snake_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 14
+        y: 0
+        width: 34
+        height: 23
+      spriteId: 2f6e15c0121c9ff409e9773a4c8b44e0
+    - name: snake_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 1
+        y: 0
+        width: 46
+        height: 17
+      spriteId: 7e1b57c99b293cf448ca26569f797c5e
+    - name: snake_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 0
+        y: 0
+        width: 46
+        height: 16
+      spriteId: 13ec76dd59ca60b4ea1678dae9ac0dd9
+    - name: snake_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 3
+        y: 0
+        width: 44
+        height: 17
+      spriteId: e5fdae99ff17442498ec6e17aa143fc9
+    - name: snake_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 5
+        y: 0
+        width: 42
+        height: 17
+      spriteId: 2de58086fa95e6a40a1bf6be4e2b8f98
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 48, y: 32}

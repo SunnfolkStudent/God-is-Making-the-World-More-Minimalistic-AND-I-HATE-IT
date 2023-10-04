@@ -1747,9 +1747,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 19835114847490515, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7302169135175180694, guid: a4d359c1a6259e44d9c615acfd3fad81, type: 3}
+    - target: {fileID: 19835114847490515, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19835114847490515, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19835114847490515, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1575555320987399899, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
       propertyPath: m_Name
       value: EnemySnake_VariantOne
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435942127655991750, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
+      propertyPath: m_Size.x
+      value: 1.3931422
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435942127655991750, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
+      propertyPath: m_Size.y
+      value: 2.0046964
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435942127655991750, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.021841288
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435942127655991750, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.021841288
+      objectReference: {fileID: 0}
+    - target: {fileID: 8322488797373438925, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8322488797373438925, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1757,7 +1793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8322488797373438925, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.1972475
+      value: -4.96
       objectReference: {fileID: 0}
     - target: {fileID: 8322488797373438925, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1794,7 +1830,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1575555320987399899, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1915276033}
   m_SourcePrefab: {fileID: 100100000, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
 --- !u!1 &1217883264
 GameObject:
@@ -2797,94 +2836,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 730347392}
     m_Modifications:
-    - target: {fileID: -7054692535680340243, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -6366194544608300047, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -6214988197324432394, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4984860601545160475, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4947671309390871349, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_Color.a
-      value: 0.2901961
-      objectReference: {fileID: 0}
-    - target: {fileID: -4947671309390871349, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4645749938945256589, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -3023569450579249390, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: -2412310294726558950, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_Name
-      value: Hill
-      objectReference: {fileID: 0}
-    - target: {fileID: -1640656250171692561, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_Name
-      value: Foreground
-      objectReference: {fileID: 0}
-    - target: {fileID: -741390431881571961, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1455614189450367268, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2333884228572389627, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2643861668510013944, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_Name
-      value: Gradient over ground
-      objectReference: {fileID: 0}
-    - target: {fileID: 2796242267661036795, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3166194513905411529, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4274594653243272587, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_Name
-      value: Light
-      objectReference: {fileID: 0}
-    - target: {fileID: 4980302381605060872, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_Name
-      value: Clouds
-      objectReference: {fileID: 0}
-    - target: {fileID: 5909409737824513752, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_Name
-      value: Hill 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7845386848916627304, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8061955852591797925, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8930872070195998735, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: -6366194544608300047, guid: 273df7adcff95ee4aa0973242c0a163e, type: 3}
       propertyPath: m_LocalPosition.z
       value: 2
@@ -3004,6 +2955,94 @@ PrefabInstance:
     - target: {fileID: 8079046178962249060, guid: 273df7adcff95ee4aa0973242c0a163e, type: 3}
       propertyPath: m_Name
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: -7054692535680340243, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6366194544608300047, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6214988197324432394, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4984860601545160475, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4947671309390871349, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_Color.a
+      value: 0.2901961
+      objectReference: {fileID: 0}
+    - target: {fileID: -4947671309390871349, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4645749938945256589, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -3023569450579249390, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -2412310294726558950, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_Name
+      value: Hill
+      objectReference: {fileID: 0}
+    - target: {fileID: -1640656250171692561, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_Name
+      value: Foreground
+      objectReference: {fileID: 0}
+    - target: {fileID: -741390431881571961, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455614189450367268, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2333884228572389627, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643861668510013944, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_Name
+      value: Gradient over ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 2796242267661036795, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166194513905411529, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274594653243272587, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_Name
+      value: Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 4980302381605060872, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_Name
+      value: Clouds
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909409737824513752, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_Name
+      value: Hill 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7845386848916627304, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061955852591797925, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8930872070195998735, guid: ae79dfb2c30e63c40a1f7044f11fd55d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -3584,6 +3623,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1915276032 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1575555320987399899, guid: f9a7149c44553d54eba3c3b3f6f0772d, type: 3}
+  m_PrefabInstance: {fileID: 1181587967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1915276033
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915276032}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1968128696
 GameObject:
   m_ObjectHideFlags: 0
