@@ -13,6 +13,7 @@ public class GodStartFightDialog : MonoBehaviour
     
     public InputCubeManager _inputCubeManager;
     public PlayerCubeMovement _playerCubeMovement;
+    public GodMovment _godMovment;
     
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI nameText;
@@ -85,6 +86,8 @@ public class GodStartFightDialog : MonoBehaviour
         _playerCubeMovement.canMove = true;
         playableDirector.Play();
         godHasDesended = false;
+        _godMovment.GodIsAlive = true;
+        _godMovment.canChekIfGodIsDead = true;
     }
 
     IEnumerator Typing()
