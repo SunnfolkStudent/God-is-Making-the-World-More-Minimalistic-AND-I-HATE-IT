@@ -10,17 +10,29 @@ public class SnakeShoot : MonoBehaviour
 
    private SnakePatrol _snakePatrol;
 
+   private Animator animator;
+   
    private void Start()
    {
       timeBtwShots = startTimeBtwShots;
       _snakePatrol = GetComponent<SnakePatrol>();
+      animator = GetComponent<Animator>();
    }
 
    private void Update()
    {
 
-      if (timeBtwShots <= 1) { _snakePatrol.isShooting = true; }
-      if (timeBtwShots >= 2.5f && timeBtwShots <= 3) { _snakePatrol.isShooting = false; }
+      if (timeBtwShots <= 1)
+      {
+         _snakePatrol.isShooting = true;
+         animator.SetBool("isAttacking", true);
+      }
+
+      if (timeBtwShots >= 2.5f && timeBtwShots <= 3)
+      {
+         _snakePatrol.isShooting = false;
+         animator.SetBool("isAttacking", false);
+      }
       
       if (timeBtwShots <= 0)
       {

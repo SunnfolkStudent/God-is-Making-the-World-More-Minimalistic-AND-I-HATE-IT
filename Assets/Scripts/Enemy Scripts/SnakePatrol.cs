@@ -1,3 +1,4 @@
+using System;
 using System.Numerics;
 using UnityEngine;
 using Vector2 = UnityEngine.Vector2;
@@ -19,14 +20,25 @@ public class SnakePatrol : MonoBehaviour
 
     public PlayerHealthManager playerHealthManager;
 
+    private Animator animator;
+
     private void Start()
-    { _rigidbody2D = GetComponent<Rigidbody2D>(); }
+    {
+        _rigidbody2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+    }
+    
 
     private void FixedUpdate()
     {
         if (!isShooting)
         {
+            animator.SetBool("isMoving", true);
             _rigidbody2D.velocity = new Vector2(moveSpeed * transform.localScale.x, _rigidbody2D.velocity.y);
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
         }
 
         return;
