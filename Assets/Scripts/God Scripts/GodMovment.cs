@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class GodMovment : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class GodMovment : MonoBehaviour
 
     private GodEndFightDialog _godEndFightDialog;
     private bool GodIsAlive = true;
+
+    [FormerlySerializedAs("godHasDesended")] public GodStartFightDialog _godStartFight;
     
     //public PlayerHealthManager playerHealthManager;
 
@@ -24,10 +27,12 @@ public class GodMovment : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _godEndFightDialog = GetComponent<GodEndFightDialog>();
+        _godStartFight = GetComponent<GodStartFightDialog>();
     }
 
     private void FixedUpdate()
     {
+        GodIsDead();
        /*if (Random.Range(0, attacks) == 1 && GodIsAlive == true)
        {
             if (attackTime <= attackStopTime)
@@ -92,5 +97,10 @@ public class GodMovment : MonoBehaviour
         if (health !<= 0) return;
         _godEndFightDialog.godIsDead = true;
         GodIsAlive = false;
+    }
+
+    private void GodHasDesended()
+    {
+        _godStartFight.godHasDesended = true;
     }
 }

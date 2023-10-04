@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.Playables;
 using UnityEngine.Serialization;
+using UnityEngine.Playables;
 
-public class GodEndFightDialog : MonoBehaviour
+public class GodStartFightDialog : MonoBehaviour
 {
     public GameObject dialoguePanel;
     
@@ -22,7 +22,9 @@ public class GodEndFightDialog : MonoBehaviour
     private int index = 0;
 
     public float wordSpeed;
-    public bool godIsDead;
+    public bool godHasDesended;
+
+    public PlayableDirector playableDirector;
     //public bool canGoToNextLine = true;
 
 
@@ -36,7 +38,7 @@ public class GodEndFightDialog : MonoBehaviour
     {
         
         
-        if (godIsDead)
+        if (godHasDesended)
         {
             if (!dialoguePanel.activeInHierarchy)
             {
@@ -68,6 +70,8 @@ public class GodEndFightDialog : MonoBehaviour
         dialoguePanel.SetActive(false);
         _inputCubeManager.canMove = true;
         _playerCubeMovement.canMove = true;
+        playableDirector.Play();
+        godHasDesended = false;
     }
 
     IEnumerator Typing()
