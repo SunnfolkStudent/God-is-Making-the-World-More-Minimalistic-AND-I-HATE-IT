@@ -10,10 +10,11 @@ public class PlayerCombat : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
 
-    public Animator animator;
+    private Animator animator;
     
     private void Start()
     {
+        animator = GetComponent<Animator>();
         _inputManager = GetComponent<InputManager>();
     }
 

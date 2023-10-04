@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     
     public bool canMove = true;
     
-    public Animator animator;
+    private Animator animator;
     public PlayerHealthManager healthManager;
 
     public PlayableDirector playableDirector;
@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _input = GetComponent<InputManager>();
         _audioSource = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
         _keyboard = Keyboard.current;
         animator.SetBool("isRising", true);
     }

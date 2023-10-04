@@ -32,13 +32,14 @@ public class InputManager : MonoBehaviour
     private Keyboard _keyboard;
     private Gamepad _gamepad;
 
-    public Animator animator;
+    private Animator animator;
     
     private void Start()
     {
     //Assign Input Sources to Variables
         _keyboard = Keyboard.current;
         _gamepad = Gamepad.current;
+        animator = GetComponent<Animator>();
     }
 
     private void Update()

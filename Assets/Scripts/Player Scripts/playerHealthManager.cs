@@ -20,10 +20,11 @@ public class PlayerHealthManager : MonoBehaviour
     public AudioClip[] hurtClips;
     public AudioClip[] pickupClips;
 
-    public Animator animator;
+    private Animator animator;
 
     public void Start()
     {
+        animator = GetComponent<Animator>();
         _audioSource = GetComponent<AudioSource>();
     }
 
