@@ -8,6 +8,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine.Serialization;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class GodDialog : MonoBehaviour
 {
@@ -42,6 +43,11 @@ public class GodDialog : MonoBehaviour
     public Transform tFollowTarget;
     public CinemachineVirtualCamera vcam;
     
+    private float timer;
+    private bool timerDone;
+    private bool timerOn = false;
+
+    public PlayableDirector crushed;
     void Start()
     {
         dialogueText.text = "";
@@ -50,7 +56,14 @@ public class GodDialog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (timerOn)
+        {
+            timer += Time.deltaTime;
+            if (timer > 1.5f && !timerDone)
+            {
+                SceneManager.LoadScene("LevelTwo");
+            }
+        }
         
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
@@ -105,6 +118,8 @@ public class GodDialog : MonoBehaviour
         dialoguePanel.SetActive(false);
         _inputManager.canMove = true;
         _playerMovement.canMove = true;
+        crushed.Play();
+        timerOn = true;
     }
 
     IEnumerator Typing()
