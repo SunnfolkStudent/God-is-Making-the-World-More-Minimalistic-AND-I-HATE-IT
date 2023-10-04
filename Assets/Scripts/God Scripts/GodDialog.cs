@@ -61,7 +61,9 @@ public class GodDialog : MonoBehaviour
             timer += Time.deltaTime;
             if (timer > 1.5f && !timerDone)
             {
-                SceneManager.LoadScene("LevelTwo");
+                if (SceneManager.GetActiveScene().name.Equals("HeavenScene")) { SceneManager.LoadScene("LevelTwo"); }
+                if (SceneManager.GetActiveScene().name.Equals("HeavenSceneTwo")) { SceneManager.LoadScene("LevelThree"); }
+                if (SceneManager.GetActiveScene().name.Equals("HeavenSceneThree")) { SceneManager.LoadScene("LevelFour"); }
             }
         }
         
@@ -171,7 +173,7 @@ public class GodDialog : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerIsClose = false;
-            RemoveText();
+            //RemoveText();
             GodInteractPromt.SetActive(false);
         }
     }

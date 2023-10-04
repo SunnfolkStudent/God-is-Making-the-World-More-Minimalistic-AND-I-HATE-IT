@@ -469,11 +469,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!82 &212071561 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7945004843922761234, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-  m_PrefabInstance: {fileID: 347082664}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &257297180 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5598454896254902090, guid: 273df7adcff95ee4aa0973242c0a163e, type: 3}
@@ -498,28 +493,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 1770652108}
   parallaxEffect: 0.5
---- !u!114 &264102852 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9215342506160369187, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-  m_PrefabInstance: {fileID: 347082664}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0158782f78b6c0b45a254b5f7a8a2775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &264102853 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 415399950155563687, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-  m_PrefabInstance: {fileID: 347082664}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd40dc0c06ed03c4a9e4a855d8612b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &270868155
 GameObject:
   m_ObjectHideFlags: 3
@@ -709,72 +682,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &347082664
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1405099163}
-    m_Modifications:
-    - target: {fileID: 988028317560058166, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -28.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 988028317560058166, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -13.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 988028317560058166, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0628358
-      objectReference: {fileID: 0}
-    - target: {fileID: 988028317560058166, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 988028317560058166, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 988028317560058166, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 988028317560058166, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 988028317560058166, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 988028317560058166, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 988028317560058166, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6390774003641410433, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_Name
-      value: Player (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: m_SortingOrder
-      value: 27
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
---- !u!4 &347082665 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 988028317560058166, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-  m_PrefabInstance: {fileID: 347082664}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &375530355
 GameObject:
   m_ObjectHideFlags: 0
@@ -2455,7 +2362,7 @@ MonoBehaviour:
   m_Priority: 10
   m_StandbyUpdate: 2
   m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 347082665}
+  m_Follow: {fileID: 1524267362}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 3.71
@@ -2492,6 +2399,63 @@ MonoBehaviour:
   m_BoundingShape2D: {fileID: 1080315005}
   m_ConfineScreenEdges: 1
   m_Damping: 0
+--- !u!1001 &1124005698
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1405099163}
+    m_Modifications:
+    - target: {fileID: 4860388331736297658, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+      propertyPath: m_Name
+      value: Player_Minimalist
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258802244263612003, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -28.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258802244263612003, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -14.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258802244263612003, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.08460556
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258802244263612003, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258802244263612003, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258802244263612003, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258802244263612003, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258802244263612003, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258802244263612003, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258802244263612003, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
 --- !u!1 &1153802729
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,7 +2923,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 347082665}
+  - {fileID: 1524267362}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1422413897
@@ -3327,42 +3291,31 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1869098949}
   GodInteractPromt: {fileID: 710475963}
   God: {fileID: 531712300}
-  _inputManager: {fileID: 264102852}
-  _playerMovement: {fileID: 264102853}
+  _inputManager: {fileID: 1524267365}
+  _playerMovement: {fileID: 1524267366}
   dialogueText: {fileID: 1450176041}
   nameText: {fileID: 1422413899}
   dialogue:
-  - My child, what hath bringeth thy to seek me?
-  - I need you to remove minimalism! I hate it so much!!
-  - Abstain, thou hast seeketh mine realm to ask upon me to removeth minen minimalism?
-  - ...yes?
-  - NOOOOOOOOOOOOOOOOOOooooooooo.....
-  - THOU SHALT NOT HAVE THE BOLDNESS TO CHALLENGE UPON ME TO REMOVETH MINE MINIMALISM
-    WITH THY MORTAL SELF!!!!  I HATH CREATED THY HEAVEN AND THY STARS. I HATH CREATED
-    THY WORLD AND I HATH CREATED THYSELF. THOU HAS NOT THE POWER NOR THE MEANS TO
-    FORCETH ME TO REMOVETH MINE MINIMALISM!!!!!!
-  - Thou must cherish thy simplicity, for it shines upon thee with it's beauty. Thine
-    minimalistic realm is a beacon of enchantress. Cherish it, for it shalt guide
-    thee. It shalt provideth the means to marvel at thy world.
-  - Remove it you unholy bastard!
-  - KILL THINESELF!!!!!
-  - No, fuck you!
-  - HAVE AT IT!! I SHALT SEND YOU BACK TO MINE REALM THOU HATH ENTERED FROM!!!! THOU
-    SHALT PONDER UPON THINE FOOLISH BLUNDER!! THOU SHALT OBSERVETH HOW MINIMALISM
-    IS A BEACON OF HOPE FOR THY FOOLISH RACE.
+  - 'My child, hath thou concluded with thy reflection on thine foolish blunder?
+    That pleases me so. '
+  - FUCK YOU MINIMALIST GOD!!!!! UNDO THIS!!!!
+  - 'HATH I NOT MADE MY COMMAND PURE AND CONCISE??!! MINIMALISM IS THE ESSENCE OF
+    THY SOUL!!! THOU FOOLISH, IGNORANT PIECE OF SHIT. A PLAGUE HATH BEEN CREATETH
+    ON THY REALM, A PLAGUE UPON THY WORLD. MAXIMALISM IS THY PLAGUE. HUMANITY WILL
+    COMETH TO DESIRE MINIMALISM. '
+  - THOU HATH COMITTETH AN ACT OF BLASPHEMY!!!! DISOBEYETH MINIMALIST GOD'S DIRECT
+    COMMAND!!!!
+  - A command from the biggest piece of shit ever.
+  - 'REFLECT UPON THINE BLUNDER ONCE MORE!!!!!!!! THOU SHALT LEARN: MINIMALISM IS
+    GOD!!!!!'
   name:
   - God
   - Maximalist Joe
-  - God
-  - Maximalist Joe
-  - God
   - Minimalist God
   - Minimalist God
   - Maximalist Joe
   - Minimalist God
-  - Maximalist Joe
-  - Minimalist God
-  _audioSource: {fileID: 212071561}
+  _audioSource: {fileID: 1524267367}
   godClips:
   - {fileID: 8300000, guid: 2993fef0114335049aba2ac1cd2f55c6, type: 3}
   minimalistGodClips:
@@ -3545,10 +3498,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -3592,7 +3545,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1391202805}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1760410113}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3650,6 +3603,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 531712301}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1524267362 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8258802244263612003, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+  m_PrefabInstance: {fileID: 1124005698}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1524267365 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2811389354004522213, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+  m_PrefabInstance: {fileID: 1124005698}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0158782f78b6c0b45a254b5f7a8a2775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1524267366 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4998828752240689293, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+  m_PrefabInstance: {fileID: 1124005698}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd40dc0c06ed03c4a9e4a855d8612b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &1524267367 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5035181312227755946, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+  m_PrefabInstance: {fileID: 1124005698}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1567923032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3987,10 +3972,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -4034,7 +4019,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1634121084}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1760410113}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4374,6 +4359,8 @@ Transform:
   - {fileID: 531712301}
   - {fileID: 1325670974}
   - {fileID: 375530356}
+  - {fileID: 1498850977}
+  - {fileID: 1654159742}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1770652108
@@ -4464,7 +4451,7 @@ Transform:
   m_GameObject: {fileID: 1770652108}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.928642, y: -10.739259, z: -9.852559}
+  m_LocalPosition: {x: -13.598642, y: -10.999259, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9107,6 +9094,4 @@ SceneRoots:
   - {fileID: 1202982270}
   - {fileID: 2095495861}
   - {fileID: 710475966}
-  - {fileID: 1498850977}
   - {fileID: 938402641}
-  - {fileID: 1654159742}
