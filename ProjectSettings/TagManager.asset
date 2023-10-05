@@ -13,6 +13,7 @@ TagManager:
   - HevenBox
   - HevenWarpBoxTwo
   - PlayerProjektile
+  - HevenWarpBoxThree
   layers:
   - Default
   - TransparentFX
