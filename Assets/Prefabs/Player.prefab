@@ -331,8 +331,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   canMove: 1
-  animator: {fileID: 2109785789749733882}
-  healthManager: {fileID: 2920355578495400352}
   playableDirector: {fileID: 0}
   jumpClips:
   - {fileID: 8300000, guid: 56751f2f9afe64b4081b6dbf474fe4d8, type: 3}
@@ -364,7 +362,6 @@ MonoBehaviour:
   canMove: 1
   usingGamepad: 0
   usingDpad: 0
-  animator: {fileID: 2109785789749733882}
 --- !u!114 &2920355578495400352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,7 +387,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a6fdffef7e9667e4a8512bbec3723fc3, type: 3}
   - {fileID: 8300000, guid: ae61164781465ad44a7ffcf273feb968, type: 3}
   - {fileID: 8300000, guid: 8c5b30633ada0ab43a6f7fa605443318, type: 3}
-  animator: {fileID: 2109785789749733882}
 --- !u!114 &3832436980193895260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,4 +404,7 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
-  animator: {fileID: 2109785789749733882}
+  slashClip:
+  - {fileID: 8300000, guid: d52544cef6aa4264386757412660287c, type: 3}
+  snakeExplosionClip:
+  - {fileID: 8300000, guid: 32a565d935c49a74cb6ee8c7c828b8b9, type: 3}

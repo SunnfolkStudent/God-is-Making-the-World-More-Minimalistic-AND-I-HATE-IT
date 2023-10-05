@@ -36,7 +36,8 @@ public class PlayerMovement : MonoBehaviour
     public bool canMove = true;
     
     private Animator animator;
-    public PlayerHealthManager healthManager;
+    
+    private PlayerHealthManager healthManager;
 
     public PlayableDirector playableDirector;
     
@@ -45,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
     private bool timerOn;
     private int wichTimer = 0;
     
+    [Header("Audio")]
     private AudioSource _audioSource;
     public AudioClip[] jumpClips;
     public AudioClip[] walkClips;
@@ -57,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
         _input = GetComponent<InputManager>();
         _audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
+        healthManager = GetComponent<PlayerHealthManager>();
         _keyboard = Keyboard.current;
         animator.SetBool("isRising", true);
     }

@@ -29,6 +29,7 @@ public class InputManager : MonoBehaviour
     [SerializeField] private bool usingGamepad, usingDpad;
 
 // These variables are used to hold the current Input source
+    
     private Keyboard _keyboard;
     private Gamepad _gamepad;
 
