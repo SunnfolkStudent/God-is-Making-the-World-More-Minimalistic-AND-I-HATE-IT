@@ -20,6 +20,8 @@ public class GodMovment : MonoBehaviour
     public float attackStopTime = 10;
 
     public GodEndFightDialog _godEndFightDialog;
+    public PlayerHealthManager _playerHealthManager;
+    
     public bool GodIsAlive = false;
     public bool canChekIfGodIsDead = false;
     public bool flyingAttack;
@@ -138,8 +140,8 @@ public class GodMovment : MonoBehaviour
             return;
         
         GodIsAlive = false;
-        
-        _godEndFightDialog.godIsDead = true; print("What now?");
+        _playerHealthManager.lives = 10;
+        _godEndFightDialog.godIsDead = true;
     }
     
 }
