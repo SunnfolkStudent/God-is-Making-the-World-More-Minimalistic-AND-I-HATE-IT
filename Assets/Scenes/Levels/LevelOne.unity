@@ -2821,7 +2821,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'God
+  m_text: 'Joe
 
 '
   m_isRightToLeft: 0
@@ -46572,10 +46572,12 @@ MonoBehaviour:
   dialogueText: {fileID: 143974849}
   nameText: {fileID: 677377408}
   dialogue:
+  - ...
   - Where am i
   - in the garden of Eden, how convinient
   - im gona ask god to remove Minimalisem
   name:
+  - Joe
   - Joe
   - Joe
   - Joe
