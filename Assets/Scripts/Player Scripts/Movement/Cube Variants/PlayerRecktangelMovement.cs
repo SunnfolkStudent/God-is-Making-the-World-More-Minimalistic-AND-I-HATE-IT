@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
+
 public class PlayerRecktangelMovement : MonoBehaviour
 {
     [Header("Movement")]
@@ -29,6 +30,13 @@ public class PlayerRecktangelMovement : MonoBehaviour
     
     public bool canMove = true;
     
+    /*public PlayableDirector playableDirector;
+    private float timer;
+    private bool timerDone;
+    private bool timerOn;
+    private int wichTimer = 0;
+    */
+    
     private PlayerHealthManager healthManager;
     
     //private AudioSource _audioSource;
@@ -36,6 +44,8 @@ public class PlayerRecktangelMovement : MonoBehaviour
     //public AudioClip[] walkClips;
 
     private Keyboard _keyboard;
+
+    private SceneController _sceneController;
     
     private void Start()
     {
@@ -44,7 +54,7 @@ public class PlayerRecktangelMovement : MonoBehaviour
         healthManager = GetComponent<PlayerHealthManager>();
         //_audioSource = GetComponent<AudioSource>();
         _keyboard = Keyboard.current;
-        
+        _sceneController = GetComponent<SceneController>();
     }
 
     private void Update()
@@ -101,7 +111,22 @@ public class PlayerRecktangelMovement : MonoBehaviour
 
         _rigidbody2D.velocity = _desiredVelocity;
     }
-
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("DeathBox"))
+        {
+            print("Die");
+            _sceneController.LoadSceneByName("DeathScene");
+        }
+        
+        if (other.gameObject.CompareTag("HevenWarpBoxThree"))
+        {
+            //playableDirector.Play();
+            //timerOn = true;
+        }
+    }
+    
     private bool IsPlayerGrounded()
     {
         return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.down, 0.2f, whatIsGround);
