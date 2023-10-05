@@ -4956,7 +4956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a087d590e3c9a30428a7201ada4b7764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
   health: 36
   whatIsGround:
     serializedVersion: 2

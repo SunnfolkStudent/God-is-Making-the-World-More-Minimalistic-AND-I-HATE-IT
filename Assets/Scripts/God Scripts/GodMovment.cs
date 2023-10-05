@@ -72,7 +72,7 @@ public class GodMovment : MonoBehaviour
         if (DetectPlayer() && flyingAttack)
         {
             flyingAttack = false;
-            _rigidbody2D.gravityScale = 1;
+            _rigidbody2D.gravityScale = 2;
             attackTime = 0;
         }
         
