@@ -73,7 +73,6 @@ public class GodLvlThreeDialog : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
             
-            
             tFollowTarget = dialogueCamPos.transform; 
             vcam.LookAt = tFollowTarget; 
             vcam.Follow = tFollowTarget;

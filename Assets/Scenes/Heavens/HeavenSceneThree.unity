@@ -778,11 +778,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1760410113}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &381084609 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5054663990586610830, guid: 9d13a7a6286aaf14a875244eb1e9a98c, type: 3}
-  m_PrefabInstance: {fileID: 619969968}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &381084610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6230146994278753211, guid: 9d13a7a6286aaf14a875244eb1e9a98c, type: 3}
@@ -793,7 +788,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4552190081271857024, guid: 9d13a7a6286aaf14a875244eb1e9a98c, type: 3}
   m_PrefabInstance: {fileID: 619969968}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381084609}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 401ea6fc27c46084d9015b70e8bd2810, type: 3}
@@ -804,12 +799,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 954848696675314076, guid: 9d13a7a6286aaf14a875244eb1e9a98c, type: 3}
   m_PrefabInstance: {fileID: 619969968}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381084609}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7db7f194a24b5646a93d04daad0397d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &381084613 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4822485888204167288, guid: 9d13a7a6286aaf14a875244eb1e9a98c, type: 3}
+  m_PrefabInstance: {fileID: 619969968}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &400108295
 GameObject:
   m_ObjectHideFlags: 0
@@ -3570,7 +3570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e75c7d4d802ae5c4dadd4ee29b6bc94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 381084609}
+  dialoguePanel: {fileID: 1869098949}
   GodInteractPromt: {fileID: 710475963}
   God: {fileID: 531712300}
   dialogueText: {fileID: 1450176041}
@@ -3581,14 +3581,14 @@ MonoBehaviour:
   - God
   _inputManager: {fileID: 381084612}
   _playerMovement: {fileID: 381084611}
-  _audioSource: {fileID: 0}
+  _audioSource: {fileID: 381084613}
   godClips:
   - {fileID: 8300000, guid: 2993fef0114335049aba2ac1cd2f55c6, type: 3}
   minimalistGodClips:
   - {fileID: 8300000, guid: abaed2aefd0a54041a16a1790e52a8b7, type: 3}
   joeClips:
   - {fileID: 8300000, guid: 178847bc43de4a04cb0be8d7af7580c2, type: 3}
-  harp: {fileID: 0}
+  harp: {fileID: 8300000, guid: 0fe1db4f4e6dcad4ea4dceb82c15cd34, type: 3}
   wordSpeed: 0.06
   playerIsClose: 0
   playableDirector: {fileID: 1506468701}
