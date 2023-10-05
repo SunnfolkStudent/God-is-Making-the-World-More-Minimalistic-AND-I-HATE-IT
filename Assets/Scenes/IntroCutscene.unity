@@ -138,7 +138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &80265284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,6 +343,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 415399950155563687, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: canMove
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415399950155563687, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 988028317560058166, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.88
@@ -383,6 +391,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2920355578495400352, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832436980193895260, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6390774003641410433, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_Name
       value: Player
@@ -394,6 +410,10 @@ PrefabInstance:
     - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_Size.y
       value: 1.3333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215342506160369187, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -985,17 +1005,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e2a8f8b8961cd45b0f0e021f04b429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 0}
+  canvs: {fileID: 80265283}
   dialogueText: {fileID: 691367003}
   nameText: {fileID: 557388794}
   dialogue:
-  - i Hate Minimalism
-  - i hate it so much
+  - God, I hate minimalism so much. It's a plague on the world. I wish I could meet
+    God directly and tell him to remove minimalism.
   name:
   - Joe
-  - Joe
-  _inputManager: {fileID: 1767674368}
-  _playerMovement: {fileID: 1767674367}
   _audioSource: {fileID: 1767674371}
   joeClips:
   - {fileID: 8300000, guid: 178847bc43de4a04cb0be8d7af7580c2, type: 3}
@@ -1685,28 +1702,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 2109785789749733882, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
   m_PrefabInstance: {fileID: 396874842}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1767674367 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 415399950155563687, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-  m_PrefabInstance: {fileID: 396874842}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd40dc0c06ed03c4a9e4a855d8612b21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1767674368 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9215342506160369187, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-  m_PrefabInstance: {fileID: 396874842}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0158782f78b6c0b45a254b5f7a8a2775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1767674371 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 7945004843922761234, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
