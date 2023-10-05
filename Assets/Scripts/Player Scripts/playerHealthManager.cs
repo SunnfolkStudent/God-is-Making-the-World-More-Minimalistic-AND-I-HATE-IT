@@ -1,7 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
@@ -28,7 +26,8 @@ public class PlayerHealthManager : MonoBehaviour
     private float timer;
     private bool timerDone;
     private bool timerOn = false;
-    
+
+    public PlayableDirector playableDirector;
     public void Start()
     {
         animator = GetComponent<Animator>();
@@ -111,12 +110,20 @@ public class PlayerHealthManager : MonoBehaviour
         
         if (timerOn)
         { 
-            timer += Time.deltaTime; 
+            timer += Time.deltaTime;
+
             if (timer > 3f && !timerDone)
+            {
+                timerDone = true;
+                playableDirector.Play();
+            }
+            if (timer > 4f)
             {
                 SceneManager.LoadScene("DeathScene");
             }
+            
         }
         
     }
+    
 }
