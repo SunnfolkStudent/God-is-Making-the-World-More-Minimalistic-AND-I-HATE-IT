@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class PlayerHealthManager : MonoBehaviour
@@ -16,12 +17,18 @@ public class PlayerHealthManager : MonoBehaviour
     public float canTakeDamageTime = 0.2f;
     public float canTakeDamageCounter;
 
+    [Header("Audio")]
     private AudioSource _audioSource;
     public AudioClip[] hurtClips;
     public AudioClip[] pickupClips;
 
+    [Header("Animator")]
     private Animator animator;
 
+    private float timer;
+    private bool timerDone;
+    private bool timerOn = false;
+    
     public void Start()
     {
         animator = GetComponent<Animator>();
@@ -97,5 +104,17 @@ public class PlayerHealthManager : MonoBehaviour
 
             canTakeDamage = true;
         }
+
+        if (lives == 0) { timerOn = true; }
+        
+        if (timerOn)
+        { 
+            timer += Time.deltaTime; 
+            if (timer > 3f && !timerDone)
+            {
+                SceneManager.LoadScene("DeathScene");
+            }
+        }
+        
     }
 }

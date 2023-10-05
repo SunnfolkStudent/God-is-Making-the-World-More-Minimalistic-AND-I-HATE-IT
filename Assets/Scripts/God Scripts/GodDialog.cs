@@ -12,31 +12,34 @@ using UnityEngine.SceneManagement;
 
 public class GodDialog : MonoBehaviour
 {
+    [Header("Dialogue")]
     public GameObject dialoguePanel;
     public GameObject GodInteractPromt;
     public GameObject God;
-
-    public InputManager _inputManager;
-    public PlayerMovement _playerMovement;
-
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI nameText;
-
-    public string[] dialogue;
+    public string[] dialogue; 
     public string[] name;
-
+        
+    [Header("Player Input & Movement")]
+    public InputManager _inputManager;
+    public PlayerMovement _playerMovement;
+    
     private int index = 0;
 
+    [Header("Audio")]
     public AudioSource _audioSource;
     public AudioClip[] godClips;
     public AudioClip[] minimalistGodClips;
     public AudioClip[] joeClips;
     public AudioClip harp;
 
+    [Header("Word Speed & Disable Movement")]
     public float wordSpeed;
     public bool playerIsClose;
     //public bool canGoToNextLine = true;
 
+    [Header("Animation & Camera")]
     public PlayableDirector playableDirector;
 
     public GameObject dialogueCamPos;
