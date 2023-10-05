@@ -39188,6 +39188,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd40dc0c06ed03c4a9e4a855d8612b21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1366476453 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5035181312227755946, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+  m_PrefabInstance: {fileID: 876796530}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1366476458 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2811389354004522213, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
@@ -41147,14 +41152,19 @@ MonoBehaviour:
   dialogue:
   - ...
   - Where am i
-  - in the garden of Eden, how convinient
-  - im gona ask god to remove Minimalisem
+  - WHY IS IT MORE MINIMALISTIK
+  - I HATE IT
+  - I need to go make God change it back
   name:
   - Joe
   - Joe
   - Joe
   - Joe
+  - Joe
   wordSpeed: 0.06
+  joeClip:
+  - {fileID: 8300000, guid: 178847bc43de4a04cb0be8d7af7580c2, type: 3}
+  _audioSource: {fileID: 1366476453}
 --- !u!4 &2027859578
 Transform:
   m_ObjectHideFlags: 0
