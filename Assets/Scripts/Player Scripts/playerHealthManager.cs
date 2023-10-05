@@ -54,6 +54,7 @@ public class PlayerHealthManager : MonoBehaviour
             canTakeDamage = false;
             canTakeDamageCounter = Time.time + canTakeDamageTime;            
             lives--;
+            animator.SetTrigger("damaged");
             _audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
         }
         
@@ -92,6 +93,7 @@ public class PlayerHealthManager : MonoBehaviour
             canTakeDamage = false;
             canTakeDamageCounter = Time.time + canTakeDamageTime;
             lives--;
+            animator.SetTrigger("damaged");
             _audioSource.PlayOneShot(hurtClips[Random.Range(0, hurtClips.Length)]);
 
         }
