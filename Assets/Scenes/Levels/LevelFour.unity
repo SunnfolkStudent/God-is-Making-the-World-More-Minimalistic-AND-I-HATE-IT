@@ -372,7 +372,7 @@ Transform:
   m_GameObject: {fileID: 134761058}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0040073395, y: 2.965248, z: 0}
+  m_LocalPosition: {x: 0.06532097, y: -4.111362, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -813,7 +813,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1094417870}
   _inputCubeManager: {fileID: 1207722662}
-  _playerCubeMovement: {fileID: 1207722661}
+  _playerCubeMovement: {fileID: 0}
   dialogueText: {fileID: 1912676331}
   nameText: {fileID: 712215113}
   dialogue:
@@ -1594,7 +1594,7 @@ Transform:
   m_GameObject: {fileID: 635819769}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7559927, y: 7.364752, z: -10}
+  m_LocalPosition: {x: -3.4153209, y: 2.831362, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1822,7 +1822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 805085255}
   _inputCubeManager: {fileID: 1207722662}
-  _playerCubeMovement: {fileID: 1207722661}
+  _playerCubeMovement: {fileID: 0}
   _godMovment: {fileID: 1675964279}
   dialogueText: {fileID: 1236877545}
   nameText: {fileID: 1937915738}
@@ -2841,7 +2841,7 @@ GameObject:
   - component: {fileID: 1207722659}
   - component: {fileID: 1207722656}
   - component: {fileID: 1207722655}
-  - component: {fileID: 1207722661}
+  - component: {fileID: 1207722665}
   - component: {fileID: 1207722662}
   - component: {fileID: 1207722664}
   - component: {fileID: 1207722663}
@@ -2888,7 +2888,6 @@ MonoBehaviour:
   canTakeDamageCounter: 0
   hurtClips: []
   pickupClips: []
-  animator: {fileID: 0}
 --- !u!212 &1207722659
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2950,36 +2949,12 @@ Transform:
   m_GameObject: {fileID: 1207722654}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.76, y: 10.33, z: 0}
+  m_LocalPosition: {x: -3.35, y: -1.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1207722661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207722654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 401ea6fc27c46084d9015b70e8bd2810, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpSpeed: 12
-  accelerationTime: 0.1
-  groundFriction: 0.2
-  airFriction: 0.005
-  jumpBufferTime: 0.2
-  jumpBufferCounter: 0
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  canMove: 1
-  healthManager: {fileID: 1207722656}
 --- !u!114 &1207722662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3061,7 +3036,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207722654}
-  m_BodyType: 2
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -3080,6 +3055,29 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1207722665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207722654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a942e820d805d0943a1f5766d6400fab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpSpeed: 12
+  accelerationTime: 0.2
+  groundFriction: 0.3
+  airFriction: 0.005
+  jumpBufferTime: 0.2
+  jumpBufferCounter: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  canMove: 1
 --- !u!1 &1214028378
 GameObject:
   m_ObjectHideFlags: 0
@@ -4515,9 +4513,10 @@ MonoBehaviour:
   attackTime: 0
   attackStopTime: 10
   _godEndFightDialog: {fileID: 237615093}
-  GodIsAlive: 1
+  GodIsAlive: 0
   canChekIfGodIsDead: 0
   flyingAttack: 0
+  groundAttack: 0
   _clip:
     m_Version: 1
     m_Start: 0

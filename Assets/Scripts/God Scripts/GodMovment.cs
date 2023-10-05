@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Serialization;
 using UnityEngine.Timeline;
+using Random = UnityEngine.Random;
 
 public class GodMovment : MonoBehaviour
 {
@@ -21,6 +23,10 @@ public class GodMovment : MonoBehaviour
     public bool GodIsAlive = false;
     public bool canChekIfGodIsDead = false;
     public bool flyingAttack;
+    public bool groundAttack;
+
+    private Vector2 _startPosition;
+    private bool _canUpdateStartPos;
 
     public TimelineClip _clip;
     public PlayableDirector _dir;
@@ -38,6 +44,17 @@ public class GodMovment : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!GodIsAlive) return;
+        
+        if (_canUpdateStartPos)
+        {
+            if (Physics2D.Raycast(transform.position, Vector2.down * transform.localScale, 2.55f, whatIsGround))
+            {
+                _startPosition = transform.position;
+                _canUpdateStartPos = false;
+            }
+        }
+        
         if (canChekIfGodIsDead)
         {
            GodIsDead(); 
@@ -47,32 +64,37 @@ public class GodMovment : MonoBehaviour
         {
             _rigidbody2D.velocity = new Vector2(speed * transform.localScale.x, _rigidbody2D.velocity.y);
         }
-        if (DetectPlayer())
+        else if (!DetectPlayer() && groundAttack)
+        {
+            _rigidbody2D.velocity = new Vector2(speed * transform.localScale.x, _rigidbody2D.velocity.y);
+        }
+        
+        if (DetectPlayer() && flyingAttack)
         {
             flyingAttack = false;
+            _rigidbody2D.gravityScale = 1;
             attackTime = 0;
         }
-
-        print(Time.time);
-        if (Time.time < attackTime) return;
-        print("This is running?");
         
-        _rigidbody2D.gravityScale = 1;
+        if (Time.time < attackTime) return;
+        
         flyingAttack = false;
+        groundAttack = false;
         
         attacks = Random.Range(0, 2);
         print("Attacks: "+attacks);
-        
-       if (attacks == 1 && GodIsAlive == true)
-       { 
-           _rigidbody2D.velocity = new Vector2(speed * transform.localScale.x, _rigidbody2D.velocity.y);
-       }
-       else
-       {
+        if (attacks == 1 && GodIsAlive == true)
+        { 
+            _rigidbody2D.gravityScale = 1;
+            groundAttack = true;
+        }
+        else
+        {
             _rigidbody2D.gravityScale = 0;
-            transform.position = new Vector2(transform.position.x, transform.position.y + 10);
+            transform.position = new Vector2(transform.position.x, _startPosition.y + 10);
             flyingAttack = true;
-       }
+        }
+       
 
        attackTime = Time.time + attackStopTime;
     }
@@ -119,4 +141,5 @@ public class GodMovment : MonoBehaviour
         
         _godEndFightDialog.godIsDead = true; print("What now?");
     }
+    
 }

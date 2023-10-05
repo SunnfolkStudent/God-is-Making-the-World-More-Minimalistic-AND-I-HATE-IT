@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 public class GodEndFightDialog : MonoBehaviour
@@ -27,6 +28,7 @@ public class GodEndFightDialog : MonoBehaviour
     private float timer;
     private bool timerDone;
     private bool timerOn;
+    
     //public bool canGoToNextLine = true;
 
 
@@ -76,6 +78,7 @@ public class GodEndFightDialog : MonoBehaviour
         _inputCubeManager.canMove = true;
         _playerCubeMovement.canMove = true;
         godIsDead = false;
+        SceneManager.LoadScene("Credits");
     }
 
     IEnumerator Typing()

@@ -100,6 +100,7 @@ public class GodStartFightDialog : MonoBehaviour
         playableDirector.Play();
         godHasDesended = false;
         _godMovment.canChekIfGodIsDead = true;
+        timerTwoOn = true;
     }
 
     IEnumerator Typing()

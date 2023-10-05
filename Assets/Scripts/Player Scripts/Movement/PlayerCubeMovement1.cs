@@ -104,7 +104,7 @@ public class PlayerCubeMovement : MonoBehaviour
 
     private bool IsPlayerGrounded()
     {
-        return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.down, 0.2f, whatIsGround);
+        return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y), Vector2.down, 1f, whatIsGround);
     }
     
     
