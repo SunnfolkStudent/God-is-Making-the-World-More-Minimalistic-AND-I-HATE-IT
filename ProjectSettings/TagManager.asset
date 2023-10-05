@@ -12,6 +12,7 @@ TagManager:
   - DeathBox
   - HevenBox
   - HevenWarpBoxTwo
+  - PlayerProjektile
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Enemy
   - Projektile
   - Spike
-  - 
+  - PlayerProjektile
   - 
   - 
   - 

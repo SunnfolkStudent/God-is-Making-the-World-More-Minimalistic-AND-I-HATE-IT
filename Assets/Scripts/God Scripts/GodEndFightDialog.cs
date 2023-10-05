@@ -27,7 +27,9 @@ public class GodEndFightDialog : MonoBehaviour
     
     private float timer;
     private bool timerDone;
-    private bool timerOn;
+    private bool timerOn = false;
+
+    public PlayableDirector playableDirector;
     
     //public bool canGoToNextLine = true;
 
@@ -35,12 +37,22 @@ public class GodEndFightDialog : MonoBehaviour
     void Start()
     {
         dialogueText.text = "";
+        playableDirector = GetComponent<PlayableDirector>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (timerOn)
+        {
+            timer += Time.deltaTime; // Count seconds
+            
+            if (timer > 2 && !timerDone)
+            { 
+                SceneManager.LoadScene("Credits");
+            }
+        }
+        
         
         if (godIsDead)
         {
@@ -78,7 +90,8 @@ public class GodEndFightDialog : MonoBehaviour
         _inputCubeManager.canMove = true;
         _playerCubeMovement.canMove = true;
         godIsDead = false;
-        SceneManager.LoadScene("Credits");
+        timerOn = true;
+        playableDirector.Play();
     }
 
     IEnumerator Typing()

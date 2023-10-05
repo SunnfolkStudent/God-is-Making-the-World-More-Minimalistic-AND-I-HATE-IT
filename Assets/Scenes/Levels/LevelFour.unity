@@ -777,6 +777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 237615092}
   - component: {fileID: 237615093}
+  - component: {fileID: 237615094}
   m_Layer: 0
   m_Name: GodEndFigthDialog
   m_TagString: Untagged
@@ -813,7 +814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1094417870}
   _inputCubeManager: {fileID: 1207722662}
-  _playerCubeMovement: {fileID: 0}
+  _playerCubeMovement: {fileID: 1207722665}
   dialogueText: {fileID: 1912676331}
   nameText: {fileID: 712215113}
   dialogue:
@@ -826,6 +827,26 @@ MonoBehaviour:
   - God
   wordSpeed: 0.06
   godIsDead: 0
+  playableDirector: {fileID: 0}
+--- !u!320 &237615094
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237615091}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: cbd39b4787ab5504089a758d18ae9aaf, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 6857327357801457953, guid: cbd39b4787ab5504089a758d18ae9aaf, type: 2}
+    value: {fileID: 639465897}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &277349709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,6 +1700,104 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!1 &639465895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 639465896}
+  - component: {fileID: 639465899}
+  - component: {fileID: 639465898}
+  - component: {fileID: 639465897}
+  m_Layer: 5
+  m_Name: fadeOute
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &639465896
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639465895}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1402090406}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -910, y: -490}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &639465897
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639465895}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &639465898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639465895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &639465899
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639465895}
+  m_CullTransparentMesh: 1
 --- !u!1 &644090466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,8 +1941,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 805085255}
   _inputCubeManager: {fileID: 1207722662}
-  _playerCubeMovement: {fileID: 0}
+  _playerCubeMovement: {fileID: 1207722665}
   _godMovment: {fileID: 1675964279}
+  _playerShoot: {fileID: 1207722655}
   dialogueText: {fileID: 1236877545}
   nameText: {fileID: 1937915738}
   dialogue:
@@ -2864,11 +2984,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acd86898867fc3646a25f7767171b9e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBtwShots: 2
-  startTimeBtwShots: 1
+  timeBtwShots: 0.5
+  startTimeBtwShots: 0.5
   projectile: {fileID: 5038929330910607004, guid: 894fd1cf609d6824dbb930996832f4f7, type: 3}
   spawnPoint: {fileID: 1207722660}
-  _projektile: {fileID: 8908311562794876755, guid: 894fd1cf609d6824dbb930996832f4f7, type: 3}
+  _projektile: {fileID: 5315994091157256309, guid: 894fd1cf609d6824dbb930996832f4f7, type: 3}
+  canAttack: 0
 --- !u!114 &1207722656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3618,6 +3739,7 @@ RectTransform:
   - {fileID: 1559788240}
   - {fileID: 1094417871}
   - {fileID: 805085256}
+  - {fileID: 639465896}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

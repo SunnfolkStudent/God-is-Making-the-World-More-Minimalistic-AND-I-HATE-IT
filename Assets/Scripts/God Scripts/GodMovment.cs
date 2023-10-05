@@ -115,12 +115,12 @@ public class GodMovment : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Projektile") && health > 0)
+        if (other.gameObject.CompareTag("PlayerProjektile") && health > 0)
         {
             health--;
         }
         
-        if (other.gameObject.CompareTag("Projektile"))
+        if (other.gameObject.CompareTag("PlayerProjektile"))
         {
             Destroy(other.gameObject);
         }

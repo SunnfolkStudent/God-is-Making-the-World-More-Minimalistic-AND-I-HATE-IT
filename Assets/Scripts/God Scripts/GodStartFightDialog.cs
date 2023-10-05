@@ -14,6 +14,7 @@ public class GodStartFightDialog : MonoBehaviour
     public InputCubeManager _inputCubeManager;
     public PlayerCubeMovement _playerCubeMovement;
     public GodMovment _godMovment;
+    public PlayerShoot _playerShoot;
     
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI nameText;
@@ -35,6 +36,8 @@ public class GodStartFightDialog : MonoBehaviour
     private float timerTwo;
     private bool timerDoneTwo;
     private bool timerTwoOn;
+
+    private bool firstActivasion = true;
     void Start()
     {
         dialogueText.text = "";
@@ -61,12 +64,14 @@ public class GodStartFightDialog : MonoBehaviour
                 timerDoneTwo = true;
 
                 _godMovment.GodIsAlive = true;
+                _playerShoot.canAttack = true;
             }
         }
         
         
-        if (godHasDesended && Input.GetKeyDown(KeyCode.E))
+        if ((godHasDesended && Input.GetKeyDown(KeyCode.E)) || godHasDesended && firstActivasion)
         {
+            firstActivasion = false;
             if (!dialoguePanel.activeInHierarchy)
             {
                 _inputCubeManager.canMove = false;

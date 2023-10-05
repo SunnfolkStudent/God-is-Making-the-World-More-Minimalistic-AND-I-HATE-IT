@@ -9,7 +9,11 @@ public class PlayerShoot : MonoBehaviour
     public Transform spawnPoint;
     
     private InputCubeManager _inputCubeManager;
-    [SerializeField] private Projektile _projektile;
+    [SerializeField] private PlayerProjektile _projektile;
+
+    public bool canAttack = false;
+
+    private Vector2 _shootDirection;
 
     private void Start()
     {
@@ -21,12 +25,12 @@ public class PlayerShoot : MonoBehaviour
     private void Update()
     {
         
-        if (timeBtwShots <= 0 && _inputCubeManager.attackPressed)
+        if (timeBtwShots <= 0 && _inputCubeManager.attackPressed && canAttack)
         {
             ShootDirection();
-            
+
             var clone = Instantiate(projectile, spawnPoint.position, Quaternion.identity);
-            clone.GetComponent<Projektile>().shootDirection = transform.localScale.x;
+            clone.GetComponent<Projektile>();
             Destroy(clone, 5f);
             timeBtwShots = startTimeBtwShots;
         }

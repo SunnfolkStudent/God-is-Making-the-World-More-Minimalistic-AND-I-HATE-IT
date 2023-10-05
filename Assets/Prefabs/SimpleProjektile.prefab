@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5129449064399532922}
   - component: {fileID: 7729457914488933159}
-  - component: {fileID: 8908311562794876755}
   - component: {fileID: -3237592975821033006}
   - component: {fileID: -8142366562630083690}
-  m_Layer: 8
+  - component: {fileID: 5315994091157256309}
+  m_Layer: 10
   m_Name: SimpleProjektile
-  m_TagString: Projektile
+  m_TagString: PlayerProjektile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,22 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8908311562794876755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5038929330910607004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f731fbf8e9d426248b5b50fb6d5b2dd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  arc: 1
-  rigidbody2D: {fileID: -3237592975821033006}
-  shootDirection: 1
 --- !u!50 &-3237592975821033006
 Rigidbody2D:
   serializedVersion: 4
@@ -180,3 +164,19 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
+--- !u!114 &5315994091157256309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5038929330910607004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 804ec3500b9b5e0419657b1781f866ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  arc: 0
+  rigidbody2D: {fileID: -3237592975821033006}
+  shootDirection: 0
