@@ -30,6 +30,10 @@ public class LevelStartDiolouge : MonoBehaviour
 
     private bool startDialuoge = false;
     private bool canDiolouge = false;
+
+    [Header("Audio")]
+    public AudioClip[] joeClip;
+    public AudioSource _audioSource;
     
     //public bool canGoToNextLine = true;
 
@@ -95,10 +99,19 @@ public class LevelStartDiolouge : MonoBehaviour
         foreach(char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
+            if (letter.ToString() != " ") { PlaySpeechClip();}
+
+            if (char.IsPunctuation(letter)) { yield return new WaitForSeconds(wordSpeed * 6); }
             yield return new WaitForSeconds(wordSpeed);
         }
     }
 
+    private void PlaySpeechClip()
+    {
+        _audioSource.PlayOneShot(joeClip[Random.Range(0, joeClip.Length)]);
+        return;
+    }
+    
     public void NextLine()
     {
         //canGoToNextLine = false;

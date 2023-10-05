@@ -146,6 +146,7 @@ public class GodDialog : MonoBehaviour
         else if (nameText.text == "Maximalist Joe") { _audioSource.PlayOneShot(joeClips[Random.Range(0, joeClips.Length)]); }
         return;
     }
+    
     public void NextLine()
     {
         //canGoToNextLine = false;
