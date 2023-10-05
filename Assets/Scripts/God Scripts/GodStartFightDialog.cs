@@ -49,7 +49,7 @@ public class GodStartFightDialog : MonoBehaviour
     {
         timer += Time.deltaTime; // Count seconds
 
-        if (timer > 5 && !timerDone)
+        if (timer > 6 && !timerDone)
         {
             timerDone = true;
             
