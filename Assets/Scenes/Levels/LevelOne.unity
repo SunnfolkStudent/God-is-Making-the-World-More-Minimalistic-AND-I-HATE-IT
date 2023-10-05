@@ -1433,15 +1433,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1304983268}
+  - {fileID: 1637267238}
+  - {fileID: 1266443831}
   - {fileID: 619394802}
   - {fileID: 122322095}
-  - {fileID: 1266443831}
-  - {fileID: 1637267238}
-  - {fileID: 1304983268}
   - {fileID: 674556016}
   - {fileID: 1511311367}
   - {fileID: 1493686459}
-  - {fileID: 1143318915}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
@@ -3220,11 +3219,11 @@ Transform:
   m_GameObject: {fileID: 1143318914}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.18, y: 5.05, z: 0}
+  m_LocalPosition: {x: -3.4858603, y: 6.6705866, z: -0.0005115834}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 488235317}
+  m_Father: {fileID: 1347868581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1143318916
 AudioSource:
@@ -3883,6 +3882,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1347868580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1347868581}
+  m_Layer: 0
+  m_Name: -----Audio-----
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1347868581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347868580}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3058603, y: -1.6205863, z: 0.0005115834}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1143318915}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1359403041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 690803502709367437, guid: 1f82d6651862e2247af68f9a24359413, type: 3}
@@ -46861,22 +46892,6 @@ PrefabInstance:
       propertyPath: playableDirector
       value: 
       objectReference: {fileID: 1511311368}
-    - target: {fileID: 415399950155563687, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: jumpClips.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 415399950155563687, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: walkClips.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 415399950155563687, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: 'jumpClips.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 56751f2f9afe64b4081b6dbf474fe4d8, type: 3}
-    - target: {fileID: 415399950155563687, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
-      propertyPath: 'walkClips.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 735c9d96f8318bb44a6c468fd41204b5, type: 3}
     - target: {fileID: 988028317560058166, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.6
@@ -46952,3 +46967,4 @@ SceneRoots:
   - {fileID: 851407454}
   - {fileID: 356993803}
   - {fileID: 375668774}
+  - {fileID: 1347868581}

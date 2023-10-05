@@ -29,7 +29,7 @@ public class PlayerCubeMovement : MonoBehaviour
     
     public bool canMove = true;
     
-    public PlayerHealthManager healthManager;
+    private PlayerHealthManager healthManager;
     
     //private AudioSource _audioSource;
     //public AudioClip[] jumpClips;
@@ -41,6 +41,7 @@ public class PlayerCubeMovement : MonoBehaviour
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _input = GetComponent<InputCubeManager>();
+        healthManager = GetComponent<PlayerHealthManager>();
         //_audioSource = GetComponent<AudioSource>();
         _keyboard = Keyboard.current;
         
