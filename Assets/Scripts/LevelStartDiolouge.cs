@@ -1,11 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-using UnityEngine.Playables;
-using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
+
 
 public class LevelStartDiolouge : MonoBehaviour
 {
@@ -13,7 +9,6 @@ public class LevelStartDiolouge : MonoBehaviour
     
     public InputManager _inputManager;
     public PlayerMovement _playerMovement;
-    
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI nameText;
     
@@ -56,16 +51,15 @@ public class LevelStartDiolouge : MonoBehaviour
         
         
         
-        if (startDialuoge || Input.GetKeyDown(KeyCode.E) && startDialuoge == false)
+        if (startDialuoge || Input.GetKeyDown(KeyCode.E) && canDiolouge == true)
         {
             startDialuoge = false;
+            canDiolouge = true;
             if (!dialoguePanel.activeInHierarchy)
             {
                 _inputManager.canMove = false;
                 _playerMovement.canMove = false;
-                
                 dialoguePanel.SetActive(true);
-                
                 StartCoroutine(Typing());
             }
             else if (dialogueText.text == dialogue[index] && Input.GetKeyDown(KeyCode.E))
@@ -92,6 +86,7 @@ public class LevelStartDiolouge : MonoBehaviour
         dialoguePanel.SetActive(false);
         _inputManager.canMove = true;
         _playerMovement.canMove = true;
+        canDiolouge = false;
     }
 
     IEnumerator Typing()
