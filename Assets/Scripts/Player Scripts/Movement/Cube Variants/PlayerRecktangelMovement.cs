@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Playables;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
@@ -30,12 +31,13 @@ public class PlayerRecktangelMovement : MonoBehaviour
     
     public bool canMove = true;
     
-    /*public PlayableDirector playableDirector;
+    public PlayableDirector playableDirector;
+    
     private float timer;
     private bool timerDone;
     private bool timerOn;
     private int wichTimer = 0;
-    */
+    
     
     private PlayerHealthManager healthManager;
     
@@ -59,7 +61,16 @@ public class PlayerRecktangelMovement : MonoBehaviour
 
     private void Update()
     {
-        
+        if (timerOn)
+        {
+
+            timer += Time.deltaTime;
+            if (timer > 1.5f && !timerDone)
+            {
+                _sceneController.LoadSceneByName("HeavenSceneThree");
+            }
+        }
+
         _desiredVelocity = _rigidbody2D.velocity;
 
         
@@ -122,8 +133,8 @@ public class PlayerRecktangelMovement : MonoBehaviour
         
         if (other.gameObject.CompareTag("HevenWarpBoxThree"))
         {
-            //playableDirector.Play();
-            //timerOn = true;
+            playableDirector.Play();
+            timerOn = true;
         }
     }
     

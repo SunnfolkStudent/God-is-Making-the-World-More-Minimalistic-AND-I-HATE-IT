@@ -42,7 +42,12 @@ public class PlayerShoot : MonoBehaviour
 
     private void ShootDirection()
     {
-        _projektile.speed = _inputCubeManager.shootDirection.x * 10;
-        _projektile.arc = _inputCubeManager.shootDirection.y * 10;
+        
+        if ( _inputCubeManager.shootDirection.x != 0 || _inputCubeManager.shootDirection.y * 10 != 0)
+        {
+            _projektile.speed = _inputCubeManager.shootDirection.x * 10;
+            _projektile.arc = _inputCubeManager.shootDirection.y * 10;
+        }
+        
     }
 }
