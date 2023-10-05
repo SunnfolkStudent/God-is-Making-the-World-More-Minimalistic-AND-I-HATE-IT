@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: JoeGetsAngry1
+  m_Name: JoeGetsAngry3
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -23,8 +23,10 @@ AnimationClip:
     - time: 0
       value: {fileID: 315188328275754685, guid: 8b625a9282c018b48a61739d0f3000da, type: 3}
     - time: 1
-      value: {fileID: 32742130012997153, guid: aa48ec16784902d44a2b8df7d1228ac8, type: 3}
-    - time: 2
+      value: {fileID: -4670594676861547181, guid: d3e3f9917e522044bb90aadb55cf8fb6, type: 3}
+    - time: 2.0333333
+      value: {fileID: 3728952650182222188, guid: c4f371833bbc60549a30dce84736420a, type: 3}
+    - time: 3
       value: {fileID: 315188328275754685, guid: 8b625a9282c018b48a61739d0f3000da, type: 3}
     attribute: m_Sprite
     path: 
@@ -49,14 +51,15 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - {fileID: 315188328275754685, guid: 8b625a9282c018b48a61739d0f3000da, type: 3}
-    - {fileID: 32742130012997153, guid: aa48ec16784902d44a2b8df7d1228ac8, type: 3}
+    - {fileID: -4670594676861547181, guid: d3e3f9917e522044bb90aadb55cf8fb6, type: 3}
+    - {fileID: 3728952650182222188, guid: c4f371833bbc60549a30dce84736420a, type: 3}
     - {fileID: 315188328275754685, guid: 8b625a9282c018b48a61739d0f3000da, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2.0166667
+    m_StopTime: 3.0166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
