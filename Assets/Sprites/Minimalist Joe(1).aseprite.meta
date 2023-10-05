@@ -1,53 +1,8 @@
 fileFormatVersion: 2
-guid: da4eef59937a5904fb1036bbe86e7187
+guid: 8b8d8c16ff545b74ea965fd2f3bd8a9c
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: behind bw
-    second: {fileID: 7400000, guid: 7f8451d74156e594685002a4ba061b21, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: death bw
-    second: {fileID: 7400000, guid: 04b28e61b65f122428f336d6e0d8d607, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: fall bw
-    second: {fileID: 7400000, guid: 0f560925fad29814ca7f08e09a4fb78a, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: hurt bw
-    second: {fileID: 7400000, guid: b8fa41fb6b3c60d4bb969452d8f44e19, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: idle bw
-    second: {fileID: 7400000, guid: 93f1ae6ac52d2a3439e8027668a60821, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: jump bw
-    second: {fileID: 7400000, guid: 167dd1706ea663944b7f5b7afd2b3ceb, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: rise bw
-    second: {fileID: 7400000, guid: 5584fba64b0ebd040bef614f768357b2, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: slash bw
-    second: {fileID: 7400000, guid: a8bdcc0e308c8c1498c4b68f3b243511, type: 2}
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: walk bw
-    second: {fileID: 7400000, guid: 917edb67ca1c84a4ebee82fc88be0c3f, type: 2}
+  externalObjects: {}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -140,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638321298942795185
+  platformSettingsDirtyTick: 638319510303445907
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -164,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Minimalist Joe_Frame_0
+  - name: Minimalist Joe(1)_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.41935483, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 175
+      x: 198
       y: 4
       width: 31
       height: 10
-    spriteID: 1b69d8aa2c6e5bb4289cc42aac6582cb
+    spriteID: 2fd17aadda0689947abfa37c491997fc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -183,39 +138,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 175, y: 4}
-  - name: Minimalist Joe_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 140
-      y: 4
-      width: 27
-      height: 16
-    spriteID: 5aa03446aefc19741bc1763bb13f31d5
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 140, y: 4}
-  - name: Minimalist Joe_Frame_2
+    uvTransform: {x: 198, y: 4}
+  - name: Minimalist Joe(1)_Frame_1
     originalName: 
     pivot: {x: 0.51851857, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 140
-      y: 106
+      x: 163
+      y: 4
       width: 27
-      height: 15
-    spriteID: 46153ed9fd43a3346a249adf855009a1
+      height: 16
+    spriteID: 51a2ac6f45190d544a145b94e784917a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -223,11 +158,31 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 140, y: 106}
-  - name: Minimalist Joe_Frame_3
+    uvTransform: {x: 163, y: 4}
+  - name: Minimalist Joe(1)_Frame_2
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.51851857, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 28
+      width: 27
+      height: 15
+    spriteID: adceb1c2dd37c144f8bbdaa4f0cb574f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 163, y: 28}
+  - name: Minimalist Joe(1)_Frame_3
+    originalName: 
+    pivot: {x: 0.31578946, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -235,7 +190,7 @@ ScriptedImporter:
       y: 80
       width: 19
       height: 24
-    spriteID: 476480a28ba01cb4da277728020646b1
+    spriteID: f1a59afe9424e9b4587a1d4775d4f696
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -244,18 +199,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 39, y: 80}
-  - name: Minimalist Joe_Frame_4
+  - name: Minimalist Joe(1)_Frame_4
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.13333333, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 140
-      y: 163
+      y: 113
       width: 15
       height: 25
-    spriteID: 2f242caa2534e7742b1acde82d7d0494
+    spriteID: 21eace5bc2788e84ba3c1737e3eb46af
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -263,11 +218,11 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 140, y: 163}
-  - name: Minimalist Joe_Frame_5
+    uvTransform: {x: 140, y: 113}
+  - name: Minimalist Joe(1)_Frame_5
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.13333333, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -275,7 +230,7 @@ ScriptedImporter:
       y: 226
       width: 15
       height: 26
-    spriteID: 5a089341e81f17c4fa79f366400fdd48
+    spriteID: f207da5faf85de141be5198e0e2c35e2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -284,50 +239,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 117, y: 226}
-  - name: Minimalist Joe_Frame_6
+  - name: Minimalist Joe(1)_Frame_6
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 94
-      y: 194
-      width: 15
-      height: 29
-    spriteID: 9b69762c137f15c4b9aecdde9a7566a2
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 94, y: 194}
-  - name: Minimalist Joe_Frame_7
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 39
-      y: 43
-      width: 16
-      height: 29
-    spriteID: 6272469f19808f24fb17553e37f11c41
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 39, y: 43}
-  - name: Minimalist Joe_Frame_8
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.20000003, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -335,7 +250,7 @@ ScriptedImporter:
       y: 4
       width: 15
       height: 29
-    spriteID: 5a730fd5d35ff0540943a7b700a9e4fa
+    spriteID: 3533d9b5efb29b7419479ad90b12ff5c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -344,38 +259,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 117, y: 4}
-  - name: Minimalist Joe_Frame_9
+  - name: Minimalist Joe(1)_Frame_7
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.18750003, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 39
-      y: 144
-      width: 15
-      height: 30
-    spriteID: c831bb12ef24edc40a91a14f51caa601
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 39, y: 144}
-  - name: Minimalist Joe_Frame_10
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 66
-      y: 155
+      y: 43
       width: 16
-      height: 30
-    spriteID: d0dd9282064a57341a0d09140367ea78
+      height: 29
+    spriteID: 7ee406d969c26ea4bb9ffc0ba465a7de
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -383,51 +278,11 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 66, y: 155}
-  - name: Minimalist Joe_Frame_11
+    uvTransform: {x: 39, y: 43}
+  - name: Minimalist Joe(1)_Frame_8
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 39
-      y: 182
-      width: 15
-      height: 30
-    spriteID: 5e18751e06180444c8666b2dd2446060
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 39, y: 182}
-  - name: Minimalist Joe_Frame_12
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 39
-      y: 220
-      width: 15
-      height: 30
-    spriteID: 938d3daaf0ecf8f49a70e569ac6b2461
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 39, y: 220}
-  - name: Minimalist Joe_Frame_13
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.20000003, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -435,7 +290,7 @@ ScriptedImporter:
       y: 41
       width: 15
       height: 29
-    spriteID: 84d51a2466d784d45bdb386cf7f6351b
+    spriteID: 0e4b9259f346df54e9f5818eb52e2295
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -444,10 +299,90 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 117, y: 41}
-  - name: Minimalist Joe_Frame_14
+  - name: Minimalist Joe(1)_Frame_9
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 144
+      width: 15
+      height: 30
+    spriteID: 65dac52555a28e648882654ef7040918
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 144}
+  - name: Minimalist Joe(1)_Frame_10
+    originalName: 
+    pivot: {x: 0.3125, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 157
+      width: 16
+      height: 30
+    spriteID: 18d220b926e89914b83af60eda574b8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 157}
+  - name: Minimalist Joe(1)_Frame_11
+    originalName: 
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 182
+      width: 15
+      height: 30
+    spriteID: 270c83b14986d764ea00c6b129ccdd78
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 182}
+  - name: Minimalist Joe(1)_Frame_12
+    originalName: 
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 220
+      width: 15
+      height: 30
+    spriteID: e2e94824367c3b742a82772ad63d3c04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 220}
+  - name: Minimalist Joe(1)_Frame_13
+    originalName: 
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -455,7 +390,7 @@ ScriptedImporter:
       y: 78
       width: 15
       height: 29
-    spriteID: c413a889444bbfa479bfc0f727bb1cda
+    spriteID: 69c49c0fd817ea64caa57f38c5149d75
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -464,50 +399,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 117, y: 78}
-  - name: Minimalist Joe_Frame_15
+  - name: Minimalist Joe(1)_Frame_14
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 94
-      y: 4
-      width: 15
-      height: 30
-    spriteID: 9929de3e8a6becc4d818f7dcf761909b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 94, y: 4}
-  - name: Minimalist Joe_Frame_16
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 66
-      y: 118
-      width: 17
-      height: 29
-    spriteID: db199551ea71ccf4bbc2146b1be60956
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 66, y: 118}
-  - name: Minimalist Joe_Frame_17
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -515,7 +410,7 @@ ScriptedImporter:
       y: 115
       width: 15
       height: 29
-    spriteID: 34b4522f65cc20c4fa4ba5378c53c341
+    spriteID: 0e88b8f6976bc96408de48da9f3c73ab
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -524,58 +419,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 117, y: 115}
-  - name: Minimalist Joe_Frame_18
+  - name: Minimalist Joe(1)_Frame_15
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 140
-      y: 196
-      width: 13
-      height: 28
-    spriteID: cedf517e0f49fba42af7ec62afa2a68a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 140, y: 196}
-  - name: Minimalist Joe_Frame_19
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 94
-      y: 42
-      width: 15
-      height: 30
-    spriteID: bfa33a484d0b68b4f90f30a3b33a46ff
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 94, y: 42}
-  - name: Minimalist Joe_Frame_20
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 66
       y: 4
-      width: 20
-      height: 29
-    spriteID: 58ae0a27ea68847408829749412ff0ab
+      width: 15
+      height: 30
+    spriteID: 41aa6a5cfd5211a40b1603a4d70831cc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -583,99 +438,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 66, y: 4}
-  - name: Minimalist Joe_Frame_21
+    uvTransform: {x: 94, y: 4}
+  - name: Minimalist Joe(1)_Frame_16
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.3529412, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 66
       y: 120
-      width: 24
-      height: 25
-    spriteID: 43131ab2a53a96949841cbdc40820717
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 120}
-  - name: Minimalist Joe_Frame_22
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 140
-      y: 66
-      width: 13
-      height: 32
-    spriteID: 99c6fde9a855ba643b859a24b247320d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 140, y: 66}
-  - name: Minimalist Joe_Frame_23
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 153
-      width: 20
-      height: 30
-    spriteID: 62c46239c3af5c344a81b30101ed5d8a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 153}
-  - name: Minimalist Joe_Frame_24
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 66
-      y: 78
-      width: 16
-      height: 32
-    spriteID: 89c419dc57b3a4643b768e335f56e88c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 66, y: 78}
-  - name: Minimalist Joe_Frame_25
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 66
-      y: 41
-      width: 20
+      width: 17
       height: 29
-    spriteID: c2d7fc3948883144cb7116d8de07b363
+    spriteID: 1c32e11ed68ff104aaaf97421bb1e4b2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -683,91 +458,11 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 66, y: 41}
-  - name: Minimalist Joe_Frame_26
+    uvTransform: {x: 66, y: 120}
+  - name: Minimalist Joe(1)_Frame_17
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 191
-      width: 24
-      height: 25
-    spriteID: e93628ff5719f384d9da11cfa95b8b4d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 191}
-  - name: Minimalist Joe_Frame_27
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 66
-      y: 193
-      width: 15
-      height: 31
-    spriteID: 8332a0a766ab1584697860bbc6803d45
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 66, y: 193}
-  - name: Minimalist Joe_Frame_28
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 94
-      y: 80
-      width: 15
-      height: 30
-    spriteID: 3d027b8e6ebca904cb4a61510d0a0a0a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 94, y: 80}
-  - name: Minimalist Joe_Frame_29
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 94
-      y: 118
-      width: 15
-      height: 30
-    spriteID: ab253ca911f315e48a33fd95b51417ad
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 94, y: 118}
-  - name: Minimalist Joe_Frame_30
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -775,7 +470,7 @@ ScriptedImporter:
       y: 152
       width: 15
       height: 29
-    spriteID: 7dadfd70116bdbd4baef0653f3b4b094
+    spriteID: 750641286ba6ab3419d5322e331f31a1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -784,18 +479,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 117, y: 152}
-  - name: Minimalist Joe_Frame_31
+  - name: Minimalist Joe(1)_Frame_18
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.3076923, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 140
-      y: 129
-      width: 15
-      height: 26
-    spriteID: ef8f218a99e92054982f87c7de64e0c3
+      y: 146
+      width: 13
+      height: 28
+    spriteID: 2646bd41ece2d6d47965b9568ec2318b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -803,99 +498,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 140, y: 129}
-  - name: Minimalist Joe_Frame_32
+    uvTransform: {x: 140, y: 146}
+  - name: Minimalist Joe(1)_Frame_19
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 39
-      y: 112
-      width: 19
-      height: 24
-    spriteID: f9fc18fbf2bbc0940a896003fb9053d2
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 39, y: 112}
-  - name: Minimalist Joe_Frame_33
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 175
-      y: 22
-      width: 31
-      height: 10
-    spriteID: f29da0cdfe17d6d408916c489325883c
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 175, y: 22}
-  - name: Minimalist Joe_Frame_34
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 175
-      y: 58
-      width: 31
-      height: 9
-    spriteID: a76ab5cb04668e34ca8e4d62dbc45d8d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 175, y: 58}
-  - name: Minimalist Joe_Frame_35
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 175
-      y: 40
-      width: 31
-      height: 10
-    spriteID: 9f7a9a7372b809a47b3f8d949a519435
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 175, y: 40}
-  - name: Minimalist Joe_Frame_36
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 94
-      y: 156
+      y: 42
       width: 15
       height: 30
-    spriteID: 52b1d357bea14e740b4819f426c49698
+    spriteID: e5adade32384ad5498886bbe25e647cc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -903,11 +518,211 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 94, y: 156}
-  - name: Minimalist Joe_Frame_37
+    uvTransform: {x: 94, y: 42}
+  - name: Minimalist Joe(1)_Frame_20
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.35, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 4
+      width: 20
+      height: 29
+    spriteID: d2b9a48e9095807438be9a4b53902ebe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 4}
+  - name: Minimalist Joe(1)_Frame_21
+    originalName: 
+    pivot: {x: 0.375, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 120
+      width: 24
+      height: 25
+    spriteID: 5886e083a670ee141bb6861f7e14a845
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 120}
+  - name: Minimalist Joe(1)_Frame_22
+    originalName: 
+    pivot: {x: 0.3076923, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 94
+      y: 194
+      width: 13
+      height: 34
+    spriteID: 95d7c6f358f4eb24085c82e4e8553dcf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 94, y: 194}
+  - name: Minimalist Joe(1)_Frame_23
+    originalName: 
+    pivot: {x: 0.35, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 153
+      width: 20
+      height: 30
+    spriteID: a335164128b35444aa5b361056c0bcd8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 153}
+  - name: Minimalist Joe(1)_Frame_24
+    originalName: 
+    pivot: {x: 0.3125, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 78
+      width: 16
+      height: 34
+    spriteID: beb7c5285a57f074ea16f37297b099b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 78}
+  - name: Minimalist Joe(1)_Frame_25
+    originalName: 
+    pivot: {x: 0.35, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 41
+      width: 20
+      height: 29
+    spriteID: 3c8773817ef8e694bad50afa1450d3e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 41}
+  - name: Minimalist Joe(1)_Frame_26
+    originalName: 
+    pivot: {x: 0.375, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 191
+      width: 24
+      height: 25
+    spriteID: 927b94ebca1ab7e4984e95a86f11f4cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 191}
+  - name: Minimalist Joe(1)_Frame_27
+    originalName: 
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 195
+      width: 15
+      height: 31
+    spriteID: 340d5fed76f7f024abcef2bb5386834f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 195}
+  - name: Minimalist Joe(1)_Frame_28
+    originalName: 
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 94
+      y: 80
+      width: 15
+      height: 30
+    spriteID: 49bdbc64e3a0d5347bfab23eae9afe9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 94, y: 80}
+  - name: Minimalist Joe(1)_Frame_29
+    originalName: 
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 94
+      y: 118
+      width: 15
+      height: 30
+    spriteID: 3b3af7c45776f634787c18f8970271e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 94, y: 118}
+  - name: Minimalist Joe(1)_Frame_30
+    originalName: 
+    pivot: {x: 0.20000003, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -915,7 +730,7 @@ ScriptedImporter:
       y: 189
       width: 15
       height: 29
-    spriteID: b70e95acbf44e5d49b37ec8358d2c922
+    spriteID: 18d469025e0713c44ba107c55208458d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -924,18 +739,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 117, y: 189}
-  - name: Minimalist Joe_Frame_38
+  - name: Minimalist Joe(1)_Frame_31
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.13333333, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 140
-      y: 28
-      width: 14
-      height: 30
-    spriteID: e8b61ec2c49e73a41a6b6405e9f096f0
+      y: 79
+      width: 15
+      height: 26
+    spriteID: 13740654d9bdca34a859b5882ec731a8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -943,11 +758,151 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 140, y: 28}
-  - name: Minimalist Joe_Frame_39
+    uvTransform: {x: 140, y: 79}
+  - name: Minimalist Joe(1)_Frame_32
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.31578946, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 112
+      width: 19
+      height: 24
+    spriteID: 62b124e569fd69d4e95fc57698ac7d31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 112}
+  - name: Minimalist Joe(1)_Frame_33
+    originalName: 
+    pivot: {x: 0.41935483, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 198
+      y: 22
+      width: 31
+      height: 10
+    spriteID: 0ef94fbe00aa74a4a995bd347d99b3d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 198, y: 22}
+  - name: Minimalist Joe(1)_Frame_34
+    originalName: 
+    pivot: {x: 0.41935483, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 198
+      y: 58
+      width: 31
+      height: 9
+    spriteID: c75c32f5b4cc9ad49bcbd022802db056
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 198, y: 58}
+  - name: Minimalist Joe(1)_Frame_35
+    originalName: 
+    pivot: {x: 0.41935483, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 198
+      y: 40
+      width: 31
+      height: 10
+    spriteID: 844da7b8b138665458744de8cfd2f845
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 198, y: 40}
+  - name: Minimalist Joe(1)_Frame_36
+    originalName: 
+    pivot: {x: 0.33333337, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 94
+      y: 156
+      width: 15
+      height: 30
+    spriteID: 66c51536c6fc7be469470690fe2fcdd6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 94, y: 156}
+  - name: Minimalist Joe(1)_Frame_37
+    originalName: 
+    pivot: {x: 0.20000003, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 140
+      y: 4
+      width: 15
+      height: 29
+    spriteID: 1c710de7d896b3846a8bebd8c727fcab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 140, y: 4}
+  - name: Minimalist Joe(1)_Frame_38
+    originalName: 
+    pivot: {x: 0.28571427, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 140
+      y: 41
+      width: 14
+      height: 30
+    spriteID: 251c5a84c6af0eb44bf5e0372107f068
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 140, y: 41}
+  - name: Minimalist Joe(1)_Frame_39
+    originalName: 
+    pivot: {x: 0.31578946, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -955,7 +910,7 @@ ScriptedImporter:
       y: 4
       width: 19
       height: 31
-    spriteID: 6acd7e7f9eb0cdc44a2e7c4aaa0ac6e7
+    spriteID: 9eed9b1303a1fc34381005b8ef99c6fc
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -964,10 +919,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 39, y: 4}
-  - name: Minimalist Joe_Frame_40
+  - name: Minimalist Joe(1)_Frame_40
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.29999998, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -975,7 +930,7 @@ ScriptedImporter:
       y: 80
       width: 20
       height: 32
-    spriteID: 272bd4ac665a0fe4988faa450ff89241
+    spriteID: d4658da1e9cca4842acb105fe3278f84
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -984,10 +939,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 80}
-  - name: Minimalist Joe_Frame_41
+  - name: Minimalist Joe(1)_Frame_41
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.6666667, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -995,7 +950,7 @@ ScriptedImporter:
       y: 4
       width: 27
       height: 31
-    spriteID: 7c05e578452a742449a2b2be51d41d0f
+    spriteID: ff3c6bf91119ddf449f1571f5bbcd09f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1004,10 +959,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Minimalist Joe_Frame_42
+  - name: Minimalist Joe(1)_Frame_42
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.65384614, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1015,7 +970,7 @@ ScriptedImporter:
       y: 43
       width: 26
       height: 29
-    spriteID: 288ecc9db742ef0458e277c3bcfd0647
+    spriteID: ccb542ca8f911c44db0931f911654665
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1024,10 +979,10 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 43}
-  - name: Minimalist Joe_Frame_43
+  - name: Minimalist Joe(1)_Frame_43
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.41176474, y: 0}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -1035,7 +990,7 @@ ScriptedImporter:
       y: 224
       width: 17
       height: 28
-    spriteID: 59e2825d30c388c4ba6a3b36cb55df95
+    spriteID: e5a70d9469e2b034aab719695f0d2b80
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -1047,364 +1002,364 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1371775541
-    name: Minimalist Joe
+    guid: 1592742617
+    name: Minimalist Joe(1)
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Minimalist Joe_Frame_0
+    - name: Minimalist Joe(1)_Frame_0
       frameIndex: 0
       cellRect:
         x: 5
         y: 0
         width: 31
         height: 10
-      spriteId: 1b69d8aa2c6e5bb4289cc42aac6582cb
-    - name: Minimalist Joe_Frame_1
+      spriteId: 2fd17aadda0689947abfa37c491997fc
+    - name: Minimalist Joe(1)_Frame_1
       frameIndex: 1
       cellRect:
         x: 4
         y: 0
         width: 27
         height: 16
-      spriteId: 5aa03446aefc19741bc1763bb13f31d5
-    - name: Minimalist Joe_Frame_2
+      spriteId: 51a2ac6f45190d544a145b94e784917a
+    - name: Minimalist Joe(1)_Frame_2
       frameIndex: 2
       cellRect:
         x: 4
         y: 0
         width: 27
         height: 15
-      spriteId: 46153ed9fd43a3346a249adf855009a1
-    - name: Minimalist Joe_Frame_3
+      spriteId: adceb1c2dd37c144f8bbdaa4f0cb574f
+    - name: Minimalist Joe(1)_Frame_3
       frameIndex: 3
       cellRect:
         x: 12
         y: 0
         width: 19
         height: 24
-      spriteId: 476480a28ba01cb4da277728020646b1
-    - name: Minimalist Joe_Frame_4
+      spriteId: f1a59afe9424e9b4587a1d4775d4f696
+    - name: Minimalist Joe(1)_Frame_4
       frameIndex: 4
       cellRect:
         x: 16
         y: 0
         width: 15
         height: 25
-      spriteId: 2f242caa2534e7742b1acde82d7d0494
-    - name: Minimalist Joe_Frame_5
+      spriteId: 21eace5bc2788e84ba3c1737e3eb46af
+    - name: Minimalist Joe(1)_Frame_5
       frameIndex: 5
       cellRect:
         x: 16
         y: 0
         width: 15
         height: 26
-      spriteId: 5a089341e81f17c4fa79f366400fdd48
-    - name: Minimalist Joe_Frame_6
+      spriteId: f207da5faf85de141be5198e0e2c35e2
+    - name: Minimalist Joe(1)_Frame_6
       frameIndex: 6
       cellRect:
         x: 15
         y: 0
         width: 15
         height: 29
-      spriteId: 9b69762c137f15c4b9aecdde9a7566a2
-    - name: Minimalist Joe_Frame_7
+      spriteId: 3533d9b5efb29b7419479ad90b12ff5c
+    - name: Minimalist Joe(1)_Frame_7
       frameIndex: 7
       cellRect:
         x: 15
         y: 0
         width: 16
         height: 29
-      spriteId: 6272469f19808f24fb17553e37f11c41
-    - name: Minimalist Joe_Frame_8
+      spriteId: 7ee406d969c26ea4bb9ffc0ba465a7de
+    - name: Minimalist Joe(1)_Frame_8
       frameIndex: 8
       cellRect:
         x: 15
         y: 0
         width: 15
         height: 29
-      spriteId: 5a730fd5d35ff0540943a7b700a9e4fa
-    - name: Minimalist Joe_Frame_9
+      spriteId: 0e4b9259f346df54e9f5818eb52e2295
+    - name: Minimalist Joe(1)_Frame_9
       frameIndex: 9
       cellRect:
         x: 13
         y: 0
         width: 15
         height: 30
-      spriteId: c831bb12ef24edc40a91a14f51caa601
-    - name: Minimalist Joe_Frame_10
+      spriteId: 65dac52555a28e648882654ef7040918
+    - name: Minimalist Joe(1)_Frame_10
       frameIndex: 10
       cellRect:
         x: 13
         y: 0
         width: 16
         height: 30
-      spriteId: d0dd9282064a57341a0d09140367ea78
-    - name: Minimalist Joe_Frame_11
+      spriteId: 18d220b926e89914b83af60eda574b8d
+    - name: Minimalist Joe(1)_Frame_11
       frameIndex: 11
       cellRect:
         x: 13
         y: 0
         width: 15
         height: 30
-      spriteId: 5e18751e06180444c8666b2dd2446060
-    - name: Minimalist Joe_Frame_12
+      spriteId: 270c83b14986d764ea00c6b129ccdd78
+    - name: Minimalist Joe(1)_Frame_12
       frameIndex: 12
       cellRect:
         x: 13
         y: 0
         width: 15
         height: 30
-      spriteId: 938d3daaf0ecf8f49a70e569ac6b2461
-    - name: Minimalist Joe_Frame_13
+      spriteId: e2e94824367c3b742a82772ad63d3c04
+    - name: Minimalist Joe(1)_Frame_13
       frameIndex: 13
       cellRect:
         x: 13
         y: 0
         width: 15
         height: 29
-      spriteId: 84d51a2466d784d45bdb386cf7f6351b
-    - name: Minimalist Joe_Frame_14
+      spriteId: 69c49c0fd817ea64caa57f38c5149d75
+    - name: Minimalist Joe(1)_Frame_14
       frameIndex: 14
       cellRect:
         x: 13
         y: 0
         width: 15
         height: 29
-      spriteId: c413a889444bbfa479bfc0f727bb1cda
-    - name: Minimalist Joe_Frame_15
+      spriteId: 0e88b8f6976bc96408de48da9f3c73ab
+    - name: Minimalist Joe(1)_Frame_15
       frameIndex: 15
       cellRect:
         x: 13
         y: 0
         width: 15
         height: 30
-      spriteId: 9929de3e8a6becc4d818f7dcf761909b
-    - name: Minimalist Joe_Frame_16
+      spriteId: 41aa6a5cfd5211a40b1603a4d70831cc
+    - name: Minimalist Joe(1)_Frame_16
       frameIndex: 16
       cellRect:
         x: 12
         y: 0
         width: 17
         height: 29
-      spriteId: db199551ea71ccf4bbc2146b1be60956
-    - name: Minimalist Joe_Frame_17
+      spriteId: 1c32e11ed68ff104aaaf97421bb1e4b2
+    - name: Minimalist Joe(1)_Frame_17
       frameIndex: 17
       cellRect:
         x: 13
         y: 0
         width: 15
         height: 29
-      spriteId: 34b4522f65cc20c4fa4ba5378c53c341
-    - name: Minimalist Joe_Frame_18
+      spriteId: 750641286ba6ab3419d5322e331f31a1
+    - name: Minimalist Joe(1)_Frame_18
       frameIndex: 18
       cellRect:
         x: 14
         y: 0
         width: 13
         height: 28
-      spriteId: cedf517e0f49fba42af7ec62afa2a68a
-    - name: Minimalist Joe_Frame_19
+      spriteId: 2646bd41ece2d6d47965b9568ec2318b
+    - name: Minimalist Joe(1)_Frame_19
       frameIndex: 19
       cellRect:
         x: 13
         y: 0
         width: 15
         height: 30
-      spriteId: bfa33a484d0b68b4f90f30a3b33a46ff
-    - name: Minimalist Joe_Frame_20
+      spriteId: e5adade32384ad5498886bbe25e647cc
+    - name: Minimalist Joe(1)_Frame_20
       frameIndex: 20
       cellRect:
         x: 11
         y: 0
         width: 20
         height: 29
-      spriteId: 58ae0a27ea68847408829749412ff0ab
-    - name: Minimalist Joe_Frame_21
+      spriteId: d2b9a48e9095807438be9a4b53902ebe
+    - name: Minimalist Joe(1)_Frame_21
       frameIndex: 21
       cellRect:
         x: 9
         y: 0
         width: 24
         height: 25
-      spriteId: 43131ab2a53a96949841cbdc40820717
-    - name: Minimalist Joe_Frame_22
+      spriteId: 5886e083a670ee141bb6861f7e14a845
+    - name: Minimalist Joe(1)_Frame_22
       frameIndex: 22
       cellRect:
         x: 14
         y: 0
         width: 13
-        height: 32
-      spriteId: 99c6fde9a855ba643b859a24b247320d
-    - name: Minimalist Joe_Frame_23
+        height: 34
+      spriteId: 95d7c6f358f4eb24085c82e4e8553dcf
+    - name: Minimalist Joe(1)_Frame_23
       frameIndex: 23
       cellRect:
         x: 11
         y: 0
         width: 20
         height: 30
-      spriteId: 62c46239c3af5c344a81b30101ed5d8a
-    - name: Minimalist Joe_Frame_24
+      spriteId: a335164128b35444aa5b361056c0bcd8
+    - name: Minimalist Joe(1)_Frame_24
       frameIndex: 24
       cellRect:
         x: 13
         y: 0
         width: 16
-        height: 32
-      spriteId: 89c419dc57b3a4643b768e335f56e88c
-    - name: Minimalist Joe_Frame_25
+        height: 34
+      spriteId: beb7c5285a57f074ea16f37297b099b8
+    - name: Minimalist Joe(1)_Frame_25
       frameIndex: 25
       cellRect:
         x: 11
         y: 0
         width: 20
         height: 29
-      spriteId: c2d7fc3948883144cb7116d8de07b363
-    - name: Minimalist Joe_Frame_26
+      spriteId: 3c8773817ef8e694bad50afa1450d3e6
+    - name: Minimalist Joe(1)_Frame_26
       frameIndex: 26
       cellRect:
         x: 9
         y: 0
         width: 24
         height: 25
-      spriteId: e93628ff5719f384d9da11cfa95b8b4d
-    - name: Minimalist Joe_Frame_27
+      spriteId: 927b94ebca1ab7e4984e95a86f11f4cb
+    - name: Minimalist Joe(1)_Frame_27
       frameIndex: 27
       cellRect:
         x: 13
         y: 0
         width: 15
         height: 31
-      spriteId: 8332a0a766ab1584697860bbc6803d45
-    - name: Minimalist Joe_Frame_28
+      spriteId: 340d5fed76f7f024abcef2bb5386834f
+    - name: Minimalist Joe(1)_Frame_28
       frameIndex: 28
       cellRect:
         x: 13
         y: 0
         width: 15
         height: 30
-      spriteId: 3d027b8e6ebca904cb4a61510d0a0a0a
-    - name: Minimalist Joe_Frame_29
+      spriteId: 49bdbc64e3a0d5347bfab23eae9afe9d
+    - name: Minimalist Joe(1)_Frame_29
       frameIndex: 29
       cellRect:
         x: 13
         y: 0
         width: 15
         height: 30
-      spriteId: ab253ca911f315e48a33fd95b51417ad
-    - name: Minimalist Joe_Frame_30
+      spriteId: 3b3af7c45776f634787c18f8970271e4
+    - name: Minimalist Joe(1)_Frame_30
       frameIndex: 30
       cellRect:
         x: 15
         y: 0
         width: 15
         height: 29
-      spriteId: 7dadfd70116bdbd4baef0653f3b4b094
-    - name: Minimalist Joe_Frame_31
+      spriteId: 18d469025e0713c44ba107c55208458d
+    - name: Minimalist Joe(1)_Frame_31
       frameIndex: 31
       cellRect:
         x: 16
         y: 0
         width: 15
         height: 26
-      spriteId: ef8f218a99e92054982f87c7de64e0c3
-    - name: Minimalist Joe_Frame_32
+      spriteId: 13740654d9bdca34a859b5882ec731a8
+    - name: Minimalist Joe(1)_Frame_32
       frameIndex: 32
       cellRect:
         x: 12
         y: 0
         width: 19
         height: 24
-      spriteId: f9fc18fbf2bbc0940a896003fb9053d2
-    - name: Minimalist Joe_Frame_33
+      spriteId: 62b124e569fd69d4e95fc57698ac7d31
+    - name: Minimalist Joe(1)_Frame_33
       frameIndex: 33
       cellRect:
         x: 5
         y: 0
         width: 31
         height: 10
-      spriteId: f29da0cdfe17d6d408916c489325883c
-    - name: Minimalist Joe_Frame_34
+      spriteId: 0ef94fbe00aa74a4a995bd347d99b3d0
+    - name: Minimalist Joe(1)_Frame_34
       frameIndex: 34
       cellRect:
         x: 5
         y: 0
         width: 31
         height: 9
-      spriteId: a76ab5cb04668e34ca8e4d62dbc45d8d
-    - name: Minimalist Joe_Frame_35
+      spriteId: c75c32f5b4cc9ad49bcbd022802db056
+    - name: Minimalist Joe(1)_Frame_35
       frameIndex: 35
       cellRect:
         x: 5
         y: 0
         width: 31
         height: 10
-      spriteId: 9f7a9a7372b809a47b3f8d949a519435
-    - name: Minimalist Joe_Frame_36
+      spriteId: 844da7b8b138665458744de8cfd2f845
+    - name: Minimalist Joe(1)_Frame_36
       frameIndex: 36
       cellRect:
         x: 13
         y: 0
         width: 15
         height: 30
-      spriteId: 52b1d357bea14e740b4819f426c49698
-    - name: Minimalist Joe_Frame_37
+      spriteId: 66c51536c6fc7be469470690fe2fcdd6
+    - name: Minimalist Joe(1)_Frame_37
       frameIndex: 37
       cellRect:
         x: 15
         y: 0
         width: 15
         height: 29
-      spriteId: b70e95acbf44e5d49b37ec8358d2c922
-    - name: Minimalist Joe_Frame_38
+      spriteId: 1c710de7d896b3846a8bebd8c727fcab
+    - name: Minimalist Joe(1)_Frame_38
       frameIndex: 38
       cellRect:
         x: 14
         y: 0
         width: 14
         height: 30
-      spriteId: e8b61ec2c49e73a41a6b6405e9f096f0
-    - name: Minimalist Joe_Frame_39
+      spriteId: 251c5a84c6af0eb44bf5e0372107f068
+    - name: Minimalist Joe(1)_Frame_39
       frameIndex: 39
       cellRect:
         x: 12
         y: 0
         width: 19
         height: 31
-      spriteId: 6acd7e7f9eb0cdc44a2e7c4aaa0ac6e7
-    - name: Minimalist Joe_Frame_40
+      spriteId: 9eed9b1303a1fc34381005b8ef99c6fc
+    - name: Minimalist Joe(1)_Frame_40
       frameIndex: 40
       cellRect:
         x: 12
         y: 0
         width: 20
         height: 32
-      spriteId: 272bd4ac665a0fe4988faa450ff89241
-    - name: Minimalist Joe_Frame_41
+      spriteId: d4658da1e9cca4842acb105fe3278f84
+    - name: Minimalist Joe(1)_Frame_41
       frameIndex: 41
       cellRect:
         x: 0
         y: 0
         width: 27
         height: 31
-      spriteId: 7c05e578452a742449a2b2be51d41d0f
-    - name: Minimalist Joe_Frame_42
+      spriteId: ff3c6bf91119ddf449f1571f5bbcd09f
+    - name: Minimalist Joe(1)_Frame_42
       frameIndex: 42
       cellRect:
         x: 1
         y: 0
         width: 26
         height: 29
-      spriteId: 288ecc9db742ef0458e277c3bcfd0647
-    - name: Minimalist Joe_Frame_43
+      spriteId: ccb542ca8f911c44db0931f911654665
+    - name: Minimalist Joe(1)_Frame_43
       frameIndex: 43
       cellRect:
         x: 11
         y: 0
         width: 17
         height: 28
-      spriteId: 59e2825d30c388c4ba6a3b36cb55df95
+      spriteId: e5a70d9469e2b034aab719695f0d2b80
     linkedCells: []
     parentIndex: -1
   platformSettings:
