@@ -53,14 +53,14 @@ public class PlayerCubeMovement : MonoBehaviour
         _desiredVelocity = _rigidbody2D.velocity;
 
         
-        /*if (_keyboard.dKey.isPressed)
+        if (_keyboard.dKey.isPressed)
         {
             transform.localScale = new Vector3(-1, 1, 1f);
         }
         else if (_keyboard.aKey.isPressed)
         { 
             transform.localScale = new Vector3(1, 1, 1f);
-        }*/
+        }
         
 
         if (jumpBufferCounter > 0 && IsPlayerGrounded())
@@ -104,7 +104,7 @@ public class PlayerCubeMovement : MonoBehaviour
 
     private bool IsPlayerGrounded()
     {
-        return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 1), Vector2.down, 0.1f, whatIsGround);
+        return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 0.5f), Vector2.down, 0.2f, whatIsGround);
     }
     
     
