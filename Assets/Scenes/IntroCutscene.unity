@@ -343,6 +343,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 415399950155563687, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: canMove
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 415399950155563687, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 988028317560058166, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.88
@@ -383,6 +391,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2920355578495400352, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3832436980193895260, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6390774003641410433, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_Name
       value: Player
@@ -394,6 +410,10 @@ PrefabInstance:
     - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_Size.y
       value: 1.3333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215342506160369187, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -989,7 +1009,8 @@ MonoBehaviour:
   dialogueText: {fileID: 691367003}
   nameText: {fileID: 557388794}
   dialogue:
-  - i hate minimalism
+  - God, I hate minimalism so much. It's a plague on the world. I wish I could meet
+    God directly and tell him to remove minimalism.
   name:
   - Joe
   _audioSource: {fileID: 1767674371}

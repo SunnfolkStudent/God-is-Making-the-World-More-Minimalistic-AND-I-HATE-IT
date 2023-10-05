@@ -53,7 +53,7 @@ public class CutseneDialog : MonoBehaviour
         
         print("timerOn");
         timer += Time.deltaTime;
-        if (timer > 5) 
+        if (timer > 11f) 
         {
             print("IwantTOleeve"); 
             SceneManager.LoadScene("LevelOne");
