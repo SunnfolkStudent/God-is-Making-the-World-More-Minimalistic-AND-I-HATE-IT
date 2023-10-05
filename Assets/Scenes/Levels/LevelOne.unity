@@ -46573,10 +46573,16 @@ MonoBehaviour:
   nameText: {fileID: 677377408}
   dialogue:
   - ...
-  - Where am i
-  - in the garden of Eden, how convinient
-  - im gona ask god to remove Minimalisem
+  - Where am I?
+  - ...
+  - Is this...
+  - the Garden of Eden?
+  - ...
+  - How convenient!!! I can finally go make God remove minimalism!!
   name:
+  - Joe
+  - Joe
+  - Joe
   - Joe
   - Joe
   - Joe
