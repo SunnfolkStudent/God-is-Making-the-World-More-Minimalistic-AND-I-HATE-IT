@@ -2,7 +2,6 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Playables;
-using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
@@ -52,6 +51,8 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip[] walkClips;
 
     private Keyboard _keyboard;
+
+    private SceneController _sceneController;
     
     private void Start()
     {
@@ -62,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
         healthManager = GetComponent<PlayerHealthManager>();
         _keyboard = Keyboard.current;
         animator.SetBool("isRising", true);
+        _sceneController = GetComponent<SceneController>();
     }
 
     private void Update()
@@ -73,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
                 timer += Time.deltaTime;
                 if (timer > 1.5f && !timerDone)
                 {
-                    SceneManager.LoadScene("HeavenScene");
+                    _sceneController.LoadSceneByName("HeavenScene");
                 }
             }
             else
@@ -81,7 +83,7 @@ public class PlayerMovement : MonoBehaviour
                 timer += Time.deltaTime;
                 if (timer > 1.5f && !timerDone)
                 {
-                    SceneManager.LoadScene("HeavenSceneTwo");
+                    _sceneController.LoadSceneByName("HeavenSceneTwo");
                 }
             }
             
@@ -173,7 +175,7 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.CompareTag("DeathBox"))
         {
             print("Die");
-            SceneManager.LoadScene("DeathScene");
+            _sceneController.LoadSceneByName("DeathScene");
         }
 
         if (other.gameObject.CompareTag("HevenBox"))
