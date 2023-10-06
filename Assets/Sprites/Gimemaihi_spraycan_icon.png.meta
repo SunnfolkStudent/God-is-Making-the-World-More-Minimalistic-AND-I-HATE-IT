@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gimemaihi_spraycan_icon_0: -2670963826011756
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

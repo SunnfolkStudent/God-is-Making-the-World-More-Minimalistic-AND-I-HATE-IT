@@ -56,6 +56,7 @@ public class GodEndFightDialog : MonoBehaviour
             if (timer > 2 && !timerDone)
             { 
                 SceneManager.LoadScene("Credits");
+                SceneManager.UnloadSceneAsync("LevelFour");
             }
         }
         
