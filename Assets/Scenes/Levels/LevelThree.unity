@@ -182,6 +182,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8959248714092497007, guid: cf080d5b16344a04db3ab3de9781cbb7, type: 3}
   m_PrefabInstance: {fileID: 1109166727}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &127746996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 127746998}
+  - component: {fileID: 127746997}
+  m_Layer: 0
+  m_Name: DethTimline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!320 &127746997
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127746996}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 0c4fa7177b0e54e4ca8a6a1ef6d85ee7, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 8988696797362223207, guid: 0c4fa7177b0e54e4ca8a6a1ef6d85ee7, type: 2}
+    value: {fileID: 371525356}
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &127746998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127746996}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0050520822, y: 0.102194384, z: 10.907566}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &160349798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9065781201152698842, guid: b019e7e71e5a5ba48a750278a552ee6d, type: 3}
@@ -13897,6 +13948,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8746878455715162319, guid: 9d13a7a6286aaf14a875244eb1e9a98c, type: 3}
+      propertyPath: playableDirector
+      value: 
+      objectReference: {fileID: 127746997}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14018,3 +14073,4 @@ SceneRoots:
   - {fileID: 1278675107}
   - {fileID: 452829977}
   - {fileID: 1358948380}
+  - {fileID: 127746998}

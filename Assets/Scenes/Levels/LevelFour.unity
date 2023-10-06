@@ -2451,6 +2451,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: abaed2aefd0a54041a16a1790e52a8b7, type: 3}
   joeClips:
   - {fileID: 8300000, guid: 178847bc43de4a04cb0be8d7af7580c2, type: 3}
+  backgroundMusic: {fileID: 1399892470}
 --- !u!1 &691280646
 GameObject:
   m_ObjectHideFlags: 0
@@ -4322,11 +4323,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1eeb364d8e7360b448f6fc611764732b, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: cd3a640d3ed1d734eaa9741e5ea19fb5, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -5897,6 +5898,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: 
   _dir: {fileID: 604236889}
+  backgroundMusic: {fileID: 1399892470}
   godHurt: {fileID: 8300000, guid: ed3af0d2e2fe94644992ae2e8bf32756, type: 3}
   godDeath: {fileID: 8300000, guid: 69f61af93b16a5245bfddb43f1365ee6, type: 3}
 --- !u!114 &1675964280
