@@ -19,7 +19,7 @@ public class MainMenuFadeOut : MonoBehaviour
 
     private void Update()
     {
-        if (timerOn = true)
+        if (timerOn == true)
         {
             timer += Time.deltaTime;
             if (timer > 1.5f) 
