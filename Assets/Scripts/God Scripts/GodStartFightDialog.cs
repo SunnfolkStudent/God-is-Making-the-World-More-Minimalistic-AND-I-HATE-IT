@@ -36,6 +36,7 @@ public class GodStartFightDialog : MonoBehaviour
     public AudioClip[] godClips;
     public AudioClip[] minimalistGodClips;
     public AudioClip[] joeClips;
+    public AudioSource backgroundMusic;
     
     private float timer;
     private bool timerDone;
@@ -72,6 +73,7 @@ public class GodStartFightDialog : MonoBehaviour
 
                 _godMovment.GodIsAlive = true;
                 _playerShoot.canAttack = true;
+                backgroundMusic.Play();
             }
         }
         

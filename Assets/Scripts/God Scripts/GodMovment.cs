@@ -34,9 +34,11 @@ public class GodMovment : MonoBehaviour
     public PlayableDirector _dir;
 
     private AudioSource _audioSource;
+    public AudioSource backgroundMusic;
 
     public AudioClip godHurt;
     public AudioClip godDeath;
+    
     //public PlayerHealthManager playerHealthManager;
 
 
@@ -145,6 +147,7 @@ public class GodMovment : MonoBehaviour
             return;
         
         GodIsAlive = false;
+        backgroundMusic.Pause();
         _audioSource.PlayOneShot(godDeath);
         _playerHealthManager.lives = 10;
         _godEndFightDialog.godIsDead = true;
