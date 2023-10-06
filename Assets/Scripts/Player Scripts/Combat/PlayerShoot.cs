@@ -15,22 +15,27 @@ public class PlayerShoot : MonoBehaviour
 
     private Vector2 _shootDirection;
 
+    public AudioClip shootClip;
+    private AudioSource _audioSource;
+
     private void Start()
     {
         timeBtwShots = startTimeBtwShots;
         _inputCubeManager = GetComponent<InputCubeManager>();
+        _audioSource = GetComponent<AudioSource>();
         //_projektile = GetComponent<Projektile>();
     }
 
     private void Update()
     {
         
-        if (timeBtwShots <= 0 && _inputCubeManager.attackPressed && canAttack)
+        if (timeBtwShots <= 0 && _inputCubeManager.attackHeld && canAttack)
         {
             ShootDirection();
 
             var clone = Instantiate(projectile, spawnPoint.position, Quaternion.identity);
             clone.GetComponent<Projektile>();
+            _audioSource.PlayOneShot(shootClip);
             Destroy(clone, 5f);
             timeBtwShots = startTimeBtwShots;
         }

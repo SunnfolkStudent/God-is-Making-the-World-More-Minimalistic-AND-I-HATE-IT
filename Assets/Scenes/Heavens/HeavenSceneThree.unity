@@ -1302,6 +1302,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player_Very_Minimalist
       objectReference: {fileID: 0}
+    - target: {fileID: 6057015069653881590, guid: 9d13a7a6286aaf14a875244eb1e9a98c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 6230146994278753211, guid: 9d13a7a6286aaf14a875244eb1e9a98c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -28.045143

@@ -31,6 +31,8 @@ public class PlayerCubeMovement : MonoBehaviour
     
     private PlayerHealthManager healthManager;
     
+    private PlayerShoot _playerShoot;
+    
     //private AudioSource _audioSource;
     //public AudioClip[] jumpClips;
     //public AudioClip[] walkClips;
@@ -44,7 +46,7 @@ public class PlayerCubeMovement : MonoBehaviour
         healthManager = GetComponent<PlayerHealthManager>();
         //_audioSource = GetComponent<AudioSource>();
         _keyboard = Keyboard.current;
-        
+        _playerShoot = GetComponent<PlayerShoot>();
     }
 
     private void Update()
@@ -52,18 +54,21 @@ public class PlayerCubeMovement : MonoBehaviour
         
         _desiredVelocity = _rigidbody2D.velocity;
 
-        
-        if (_keyboard.dKey.isPressed)
+        if (canMove)
         {
-            transform.localScale = new Vector3(-1, 1, 1f);
+            if (_keyboard.dKey.isPressed)
+            {
+                transform.localScale = new Vector3(-1, 1, 1f);
+            }
+            else if (_keyboard.aKey.isPressed)
+            {
+                transform.localScale = new Vector3(1, 1, 1f);
+            }
         }
-        else if (_keyboard.aKey.isPressed)
-        { 
-            transform.localScale = new Vector3(1, 1, 1f);
-        }
-        
 
-        if (jumpBufferCounter > 0 && IsPlayerGrounded())
+        if (healthManager.lives == 0) { transform.localScale = new Vector3(1, 0.5f, 0.4f); }
+        
+        if (jumpBufferCounter > 0 && IsPlayerGrounded() && canMove)
         {
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, jumpSpeed);
             _desiredVelocity.y = jumpSpeed;
@@ -77,9 +82,14 @@ public class PlayerCubeMovement : MonoBehaviour
             _desiredVelocity.y *= 0.5f;
         }
 
-        
+        if (healthManager.lives == 0)
+        {
+            canMove = false;
+            _input.canMove = false;
+            _playerShoot.canAttack = false;
+        }
 
-        if (_input.jumpPressed)
+        if (_input.jumpPressed && canMove)
         { jumpBufferCounter = jumpBufferTime; } else { jumpBufferCounter -= 1 * Time.deltaTime; }
         
         _rigidbody2D.velocity = _desiredVelocity;

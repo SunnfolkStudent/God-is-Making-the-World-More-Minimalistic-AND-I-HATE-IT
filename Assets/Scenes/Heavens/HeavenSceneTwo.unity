@@ -2472,6 +2472,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1405099163}
     m_Modifications:
+    - target: {fileID: 589713253536278795, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
+      propertyPath: m_SortingOrder
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 4860388331736297658, guid: f660ba26b238de742a1d9eaeb071b320, type: 3}
       propertyPath: m_Name
       value: Player_Minimalist

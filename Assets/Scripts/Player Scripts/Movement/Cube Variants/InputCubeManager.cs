@@ -22,6 +22,7 @@ public class InputCubeManager : MonoBehaviour
     [HideInInspector] public bool canAttack;
 
     [HideInInspector] public bool attackPressed;
+    [HideInInspector] public bool attackHeld;
 
     [HideInInspector] public Vector2 shootDirection;
 
@@ -70,6 +71,7 @@ public class InputCubeManager : MonoBehaviour
         interactHeld = _keyboard.fKey.isPressed;
     // Set the attack bools wen the g key is interacted with
         attackPressed = _keyboard.qKey.wasPressedThisFrame;
+        attackHeld = _keyboard.qKey.isPressed;
     // Set the value of shootDirection to be equal to the value of arrowKeys
         shootDirection.x = (_keyboard.leftArrowKey.isPressed ? -1 : 0) + (_keyboard.rightArrowKey.isPressed ? 1 : 0);
         shootDirection.y = (_keyboard.upArrowKey.isPressed ? 1 : 0) + (_keyboard.downArrowKey.isPressed ? -1 : 0);

@@ -11,7 +11,7 @@ public class creditscontroler : MonoBehaviour
     {
         timer += Time.deltaTime; // Count seconds
             
-        if (timer > 13)
+        if (timer > 15)
         { 
             SceneManager.LoadScene("Title");
         }

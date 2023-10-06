@@ -33,13 +33,17 @@ public class GodMovment : MonoBehaviour
     public TimelineClip _clip;
     public PlayableDirector _dir;
 
-    
+    private AudioSource _audioSource;
+
+    public AudioClip godHurt;
+    public AudioClip godDeath;
     //public PlayerHealthManager playerHealthManager;
 
 
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        _audioSource = GetComponent<AudioSource>();
         //_godEndFightDialog = GetComponent<GodEndFightDialog>();
         //_godStartFight = GetComponent<GodStartFightDialog>();
     }
@@ -120,6 +124,7 @@ public class GodMovment : MonoBehaviour
         if (other.gameObject.CompareTag("PlayerProjektile") && health > 0)
         {
             health--;
+            _audioSource.PlayOneShot(godHurt);
         }
         
         if (other.gameObject.CompareTag("PlayerProjektile"))
@@ -140,6 +145,7 @@ public class GodMovment : MonoBehaviour
             return;
         
         GodIsAlive = false;
+        _audioSource.PlayOneShot(godDeath);
         _playerHealthManager.lives = 10;
         _godEndFightDialog.godIsDead = true;
     }

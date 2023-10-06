@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Serialization;
 using UnityEngine.Playables;
+using Random = UnityEngine.Random;
 
 public class GodStartFightDialog : MonoBehaviour
 {
@@ -30,6 +31,12 @@ public class GodStartFightDialog : MonoBehaviour
     public PlayableDirector playableDirector;
     //public bool canGoToNextLine = true;
 
+    [Header("Audio")]
+    public AudioSource _audioSource;
+    public AudioClip[] godClips;
+    public AudioClip[] minimalistGodClips;
+    public AudioClip[] joeClips;
+    
     private float timer;
     private bool timerDone;
     
@@ -113,8 +120,19 @@ public class GodStartFightDialog : MonoBehaviour
         foreach(char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(wordSpeed);
+            if (letter.ToString() != " ") { PlaySpeechClip();}
+
+            if (char.IsPunctuation(letter)) { yield return new WaitForSeconds(wordSpeed * 6); }
+            else { yield return new WaitForSeconds(wordSpeed); }
         }
+    }
+
+    private void PlaySpeechClip()
+    {
+        if (nameText.text == "God") { _audioSource.PlayOneShot(godClips[Random.Range(0, godClips.Length)]); }
+        if (nameText.text == "Minimalist God") { _audioSource.PlayOneShot(minimalistGodClips[Random.Range(0, minimalistGodClips.Length)]); }
+        else if (nameText.text == "Maximalist Joe") { _audioSource.PlayOneShot(joeClips[Random.Range(0, joeClips.Length)]); }
+        return;
     }
 
     public void NextLine()

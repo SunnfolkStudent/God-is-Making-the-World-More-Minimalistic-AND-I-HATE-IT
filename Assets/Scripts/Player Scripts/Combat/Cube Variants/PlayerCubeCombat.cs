@@ -28,7 +28,7 @@ public class PlayerCubeCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_inputManager.attackPressed)
+        if (_inputManager.attackPressed && _inputManager.canMove)
         {
             playSlashSound();
             Attack();

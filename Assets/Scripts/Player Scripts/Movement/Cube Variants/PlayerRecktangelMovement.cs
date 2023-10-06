@@ -71,20 +71,30 @@ public class PlayerRecktangelMovement : MonoBehaviour
             }
         }
 
+        if (healthManager.lives == 0)
+        {
+            canMove = false;
+            _input.canMove = false;
+        }
+        
         _desiredVelocity = _rigidbody2D.velocity;
 
         
-        if (_keyboard.dKey.isPressed)
+        if (canMove)
         {
-            transform.localScale = new Vector3(-1, 1, 1f);
+            if (_keyboard.dKey.isPressed)
+            {
+                transform.localScale = new Vector3(-1, 1, 1f);
+            }
+            else if (_keyboard.aKey.isPressed)
+            {
+                transform.localScale = new Vector3(1, 1, 1f);
+            }
         }
-        else if (_keyboard.aKey.isPressed)
-        { 
-            transform.localScale = new Vector3(1, 1, 1f);
-        }
-        
 
-        if (jumpBufferCounter > 0 && IsPlayerGrounded())
+        if (healthManager.lives == 0) { transform.localScale = new Vector3(1, 0.5f, 0.4f); }
+
+        if (jumpBufferCounter > 0 && IsPlayerGrounded() && canMove)
         {
             _rigidbody2D.velocity = new Vector2(_rigidbody2D.velocity.x, jumpSpeed);
             _desiredVelocity.y = jumpSpeed;
@@ -100,7 +110,7 @@ public class PlayerRecktangelMovement : MonoBehaviour
 
         
 
-        if (_input.jumpPressed)
+        if (_input.jumpPressed && canMove)
         { jumpBufferCounter = jumpBufferTime; } else { jumpBufferCounter -= 1 * Time.deltaTime; }
         
         _rigidbody2D.velocity = _desiredVelocity;
@@ -109,7 +119,7 @@ public class PlayerRecktangelMovement : MonoBehaviour
     
     private void FixedUpdate()
     {
-        if (!canMove) return;
+        //if (!canMove) return;
         
         if (_input.moveDirection.x != 0)
         {
