@@ -53,7 +53,6 @@ public class GodMovment : MonoBehaviour
     private void FixedUpdate()
     {
         if (!GodIsAlive) return;
-        
         if (_canUpdateStartPos)
         {
             if (Physics2D.Raycast(transform.position, Vector2.down * transform.localScale, 2.55f, whatIsGround))
