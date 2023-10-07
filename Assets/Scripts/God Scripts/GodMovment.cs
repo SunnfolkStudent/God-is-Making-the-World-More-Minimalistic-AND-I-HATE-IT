@@ -35,11 +35,13 @@ public class GodMovment : MonoBehaviour
 
     private AudioSource _audioSource;
     public AudioSource backgroundMusic;
+    public AudioClip thud;
 
     public AudioClip godHurt;
     public AudioClip godDeath;
 
     private bool fallToGround;
+    private bool thudPlayed = false;
     
     private float timer;
     private bool timerOn;
@@ -95,6 +97,12 @@ public class GodMovment : MonoBehaviour
         if (fallToGround)
         {
             _rigidbody2D.velocity = new Vector2(0, _rigidbody2D.velocity.y);
+
+            if (DetectedGround() && !thudPlayed)
+            {
+                _audioSource.PlayOneShot(thud);
+                thudPlayed = true;
+            }
             
             if (timerOn)
             {
@@ -102,7 +110,8 @@ public class GodMovment : MonoBehaviour
             
                 if (timer > 1.5f && !timerDone)
                 {
-                    
+
+                    thudPlayed = false;
                     fallToGround = false;
                     timerDone = true;
                     timerOn = false;
@@ -148,6 +157,13 @@ public class GodMovment : MonoBehaviour
         // Raycast -> right (If ground : flip)
         return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y + 3f),
             Vector2.right * transform.localScale, 3.5f, whatIsGround);
+    }
+    
+    private bool DetectedGround()
+    {
+        // Raycast -> right (If ground : flip)
+        return Physics2D.Raycast(new Vector2(transform.position.x, transform.position.y - 3f),
+            Vector2.down * transform.localScale, 1f, whatIsGround);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

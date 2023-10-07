@@ -6150,6 +6150,7 @@ MonoBehaviour:
     m_DisplayName: 
   _dir: {fileID: 604236889}
   backgroundMusic: {fileID: 1399892470}
+  thud: {fileID: 8300000, guid: 2434f38165a2ebc4fad973fe91a7a7b0, type: 3}
   godHurt: {fileID: 8300000, guid: ed3af0d2e2fe94644992ae2e8bf32756, type: 3}
   godDeath: {fileID: 8300000, guid: 69f61af93b16a5245bfddb43f1365ee6, type: 3}
 --- !u!114 &1675964280
