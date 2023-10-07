@@ -80,16 +80,28 @@ public class GodStartFightDialog : MonoBehaviour
         
         if ((godHasDesended && Input.GetKeyDown(KeyCode.E)) || godHasDesended && firstActivasion)
         {
+            print("pressed E");
             firstActivasion = false;
             if (!dialoguePanel.activeInHierarchy)
             {
+                print("typing");
                 _inputCubeManager.canMove = false;
                 _playerCubeMovement.canMove = false;
                 dialoguePanel.SetActive(true);
                 StartCoroutine(Typing());
+               
             }
-            else if (dialogueText.text != dialogue[index] && _inputCubeManager.interactPressed) { wordSpeed = 0; } 
-            else if (dialogueText.text == dialogue[index] && Input.GetKeyDown(KeyCode.E)) { NextLine(); } 
+            else if (dialogueText.text != dialogue[index] || _inputCubeManager.interactPressed)
+            {
+                wordSpeed = 0; 
+                _audioSource.volume = 0.3f;
+                print("skip");
+            } 
+            else if  (dialogueText.text == dialogue[index] && Input.GetKeyDown(KeyCode.E))
+            {
+                NextLine(); 
+                print("next line");
+            } 
             
             if (dialogueText.text == dialogue[index])
             {
@@ -142,6 +154,7 @@ public class GodStartFightDialog : MonoBehaviour
         if (index < dialogue.Length - 1)
         {
             wordSpeed = 0.06f;
+            _audioSource.volume = 1f;
             index++;
             dialogueText.text = "";
             nameText.text = name[index];
