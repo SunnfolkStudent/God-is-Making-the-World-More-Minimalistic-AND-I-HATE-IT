@@ -35,6 +35,7 @@ public class InputManager : MonoBehaviour
 
     private Animator animator;
     
+    
     private void Start()
     {
     //Assign Input Sources to Variables
@@ -67,9 +68,9 @@ public class InputManager : MonoBehaviour
         jumpReleased = _keyboard.spaceKey.wasReleasedThisFrame;
         jumpHeld = _keyboard.spaceKey.isPressed; 
     // Set the interact bools when the f key is interacted with
-        interactPressed = _keyboard.fKey.wasPressedThisFrame;
-        interactReleased = _keyboard.fKey.wasReleasedThisFrame;
-        interactHeld = _keyboard.fKey.isPressed;
+        interactPressed = _keyboard.eKey.wasPressedThisFrame;
+        interactReleased = _keyboard.eKey.wasReleasedThisFrame;
+        interactHeld = _keyboard.eKey.isPressed;
     // Set the attack bools wen the g key is interacted with
         attackPressed = _keyboard.qKey.wasPressedThisFrame;
 
