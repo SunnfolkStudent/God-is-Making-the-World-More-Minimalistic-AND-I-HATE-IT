@@ -9,7 +9,7 @@ public class PlayerCombat : MonoBehaviour
 
     [Header("Attack Variables")]
     public Transform AttackPoint;
-    public float attackRange = 0.5f;
+    public float attackRange = 0.7f;
     public LayerMask enemyLayers;
 
     private Animator animator;

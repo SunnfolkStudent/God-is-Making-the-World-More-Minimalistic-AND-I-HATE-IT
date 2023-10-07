@@ -36,7 +36,7 @@ public class PlayerShoot : MonoBehaviour
             var clone = Instantiate(projectile, spawnPoint.position, Quaternion.identity);
             clone.GetComponent<Projektile>();
             _audioSource.PlayOneShot(shootClip);
-            Destroy(clone, 5f);
+            Destroy(clone, 4f);
             timeBtwShots = startTimeBtwShots;
         }
         else
