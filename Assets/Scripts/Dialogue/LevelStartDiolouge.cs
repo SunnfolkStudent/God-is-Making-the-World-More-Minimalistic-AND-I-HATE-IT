@@ -62,7 +62,11 @@ public class LevelStartDiolouge : MonoBehaviour
                 dialoguePanel.SetActive(true);
                 StartCoroutine(Typing());
             }
-            else if (dialogueText.text != dialogue[index] && _inputManager.interactPressed) { wordSpeed = 0; } 
+            else if (dialogueText.text != dialogue[index] && _inputManager.interactPressed)
+            {
+                wordSpeed = 0;
+                _audioSource.volume = 0.3f;
+            } 
             else if (dialogueText.text == dialogue[index] && Input.GetKeyDown(KeyCode.E)) { NextLine(); } 
             
             if (dialogueText.text == dialogue[index])
@@ -111,6 +115,7 @@ public class LevelStartDiolouge : MonoBehaviour
         if (index < dialogue.Length - 1)
         {
             wordSpeed = 0.06f;
+            _audioSource.volume = 1f;
             index++;
             dialogueText.text = "";
             nameText.text = name[index];

@@ -99,10 +99,12 @@ public class GodDialog : MonoBehaviour
                 StartCoroutine(Typing());
                 
             }
-            else if (dialogueText.text == dialogue[index])
+            else if (dialogueText.text != dialogue[index] && _inputManager.interactPressed)
             {
-                NextLine();
+                wordSpeed = 0;
+                _audioSource.volume = 0.3f;
             } 
+            else if (dialogueText.text == dialogue[index] && Input.GetKeyDown(KeyCode.E)) { NextLine(); } 
             
             if (dialogueText.text == dialogue[index])
             {
@@ -153,6 +155,8 @@ public class GodDialog : MonoBehaviour
         //canGoToNextLine = false;
         if (index < dialogue.Length - 1)
         {
+            wordSpeed = 0.06f;
+            _audioSource.volume = 1f;
             index++;
             dialogueText.text = "";
             nameText.text = name[index];

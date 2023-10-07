@@ -38,6 +38,12 @@ public class GodMovment : MonoBehaviour
 
     public AudioClip godHurt;
     public AudioClip godDeath;
+
+    private bool fallToGround;
+    
+    private float timer;
+    private bool timerOn;
+    private bool timerDone;
     
     //public PlayerHealthManager playerHealthManager;
 
@@ -79,8 +85,31 @@ public class GodMovment : MonoBehaviour
         if (DetectPlayer() && flyingAttack)
         {
             flyingAttack = false;
+            fallToGround = true;
+            timerOn = true;
+            timerDone = false;
             _rigidbody2D.gravityScale = 2;
-            attackTime = 0;
+            
+        }
+
+        if (fallToGround)
+        {
+            _rigidbody2D.velocity = new Vector2(0, _rigidbody2D.velocity.y);
+            
+            if (timerOn)
+            {
+                timer += Time.deltaTime; // Count seconds
+            
+                if (timer > 1.5f && !timerDone)
+                {
+                    
+                    fallToGround = false;
+                    timerDone = true;
+                    timerOn = false;
+                    timer = 0;
+                    attackTime = 0;
+                }
+            }
         }
         
         if (Time.time < attackTime) return;
