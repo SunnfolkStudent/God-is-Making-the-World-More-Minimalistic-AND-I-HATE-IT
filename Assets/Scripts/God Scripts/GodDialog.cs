@@ -54,6 +54,7 @@ public class GodDialog : MonoBehaviour
     void Start()
     {
         dialogueText.text = "";
+        _audioSource.volume = 0.5f;
     }
 
     // Update is called once per frame
