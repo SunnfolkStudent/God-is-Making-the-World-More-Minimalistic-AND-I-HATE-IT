@@ -44,7 +44,7 @@ public class SnakeShoot : MonoBehaviour
          
          var clone = Instantiate(projectile, spawnPoint.position, Quaternion.identity);
          clone.GetComponent<Projektile>().shootDirection = transform.localScale.x;
-         Destroy(clone, 5f);
+         Destroy(clone, 2f);
          timeBtwShots = startTimeBtwShots;
       }
       else
