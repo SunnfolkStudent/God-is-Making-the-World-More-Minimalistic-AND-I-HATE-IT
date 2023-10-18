@@ -1,4 +1,5 @@
 using System;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Timeline;
 using Random = UnityEngine.Random;
@@ -6,6 +7,7 @@ using Random = UnityEngine.Random;
 public class PlayerCombat : MonoBehaviour
 {
     private InputManager _inputManager;
+    public ParticleSystem particles;
 
     [Header("Attack Variables")]
     public Transform AttackPoint;
@@ -44,6 +46,7 @@ public class PlayerCombat : MonoBehaviour
         foreach (Collider2D enemy in hitEnemies)
         {
             Debug.Log("hitEnemy");
+            Instantiate(particles, new Vector2(enemy.transform.position.x, enemy.transform.position.y + 0.5f), quaternion.identity);
             Destroy(enemy.gameObject);
             _audioSource.PlayOneShot(snakeExplosionClip[Random.Range(0, snakeExplosionClip.Length)]);
         }
