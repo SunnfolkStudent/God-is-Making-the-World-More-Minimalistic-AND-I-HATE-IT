@@ -33,6 +33,8 @@ public class PlayerCubeMovement : MonoBehaviour
     
     private PlayerShoot _playerShoot;
     
+    private SceneController _sceneController;
+    
     //private AudioSource _audioSource;
     //public AudioClip[] jumpClips;
     //public AudioClip[] walkClips;
@@ -47,6 +49,7 @@ public class PlayerCubeMovement : MonoBehaviour
         //_audioSource = GetComponent<AudioSource>();
         _keyboard = Keyboard.current;
         _playerShoot = GetComponent<PlayerShoot>();
+        _sceneController = GetComponent<SceneController>();
     }
 
     private void Update()
@@ -118,12 +121,12 @@ public class PlayerCubeMovement : MonoBehaviour
     }
     
     
-    /*
-    public void playWalkSound()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
-        _audioSource.PlayOneShot(walkClips[Random.Range(0, walkClips.Length)]);
-        return;
-    }*/
-    
+        if (other.gameObject.CompareTag("DeathBox"))
+        {
+            print("Die");
+            _sceneController.LoadSceneByName("DeathScene");
+        }
+    }
 }
