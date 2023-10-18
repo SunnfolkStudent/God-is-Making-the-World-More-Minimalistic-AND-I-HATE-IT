@@ -1966,7 +1966,7 @@ GameObject:
   - component: {fileID: 639465898}
   - component: {fileID: 639465897}
   m_Layer: 5
-  m_Name: fadeOute
+  m_Name: fadeIn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3687,7 +3687,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 714b3428399f26c4f9f9cb616706587f, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -5408,7 +5408,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 714b3428399f26c4f9f9cb616706587f, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -6425,7 +6425,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 714b3428399f26c4f9f9cb616706587f, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
