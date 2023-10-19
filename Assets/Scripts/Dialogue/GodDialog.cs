@@ -103,7 +103,7 @@ public class GodDialog : MonoBehaviour
                 StartCoroutine(Typing());
                 
             }
-            else if (dialogueText.text != dialogue[index] && _inputManager.interactPressed)
+            else if (!dialogueText.text.Equals(dialogue[index]) && Input.GetKeyDown(KeyCode.E))
             {
                 wordSpeed = 0;
                 _audioSource.volume = 0.3f;
@@ -127,6 +127,7 @@ public class GodDialog : MonoBehaviour
     {
         dialogueText.text = "";
         index = 0;
+        wordSpeed = 0.6f;
         dialoguePanel.SetActive(false);
         _inputManager.canMove = true;
         _playerMovement.canMove = true;
@@ -162,7 +163,7 @@ public class GodDialog : MonoBehaviour
         if (index < dialogue.Length - 1)
         {
             wordSpeed = 0.06f;
-            _audioSource.volume = 1f;
+            _audioSource.volume = 0.5f;
             index++;
             dialogueText.text = "";
             nameText.text = name[index];

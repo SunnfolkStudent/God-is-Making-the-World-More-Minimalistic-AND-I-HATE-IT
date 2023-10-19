@@ -50,10 +50,14 @@ public class GodLvlThreeDialog : MonoBehaviour
     private bool timerDone;
     private bool timerOn = false;
 
+    private CinemachineImpulseSource _impulseSource;
+    
     public PlayableDirector crushed;
     void Start()
     {
         dialogueText.text = "";
+        _audioSource.volume = 0.5f;
+        _impulseSource = GetComponent<CinemachineImpulseSource>();
     }
 
     // Update is called once per frame
@@ -97,10 +101,12 @@ public class GodLvlThreeDialog : MonoBehaviour
                 StartCoroutine(Typing());
                 
             }
-            else if (dialogueText.text == dialogue[index])
+            else if (!dialogueText.text.Equals(dialogue[index]) && Input.GetKeyDown(KeyCode.E))
             {
-                NextLine();
+                wordSpeed = 0;
+                _audioSource.volume = 0.3f;
             } 
+            else if (dialogueText.text == dialogue[index] && Input.GetKeyDown(KeyCode.E)) { NextLine(); } 
             
             if (dialogueText.text == dialogue[index])
             {
@@ -119,6 +125,7 @@ public class GodLvlThreeDialog : MonoBehaviour
     {
         dialogueText.text = "";
         index = 0;
+        wordSpeed = 0.6f;
         dialoguePanel.SetActive(false);
         _inputManager.canMove = true;
         _playerMovement.canMove = true;
@@ -133,6 +140,8 @@ public class GodLvlThreeDialog : MonoBehaviour
             dialogueText.text += letter;
             if (letter.ToString() != " ") { PlaySpeechClip();}
 
+            if (nameText.text.Equals("Minimalist God") && !char.IsPunctuation(letter)) { CameraShakeManager.instance.CameraShake(_impulseSource); }
+            
             if (char.IsPunctuation(letter)) { yield return new WaitForSeconds(wordSpeed * 6); }
             else { yield return new WaitForSeconds(wordSpeed); }
         }
@@ -151,6 +160,8 @@ public class GodLvlThreeDialog : MonoBehaviour
         //canGoToNextLine = false;
         if (index < dialogue.Length - 1)
         {
+            wordSpeed = 0.06f;
+            _audioSource.volume = 0.5f;
             index++;
             dialogueText.text = "";
             nameText.text = name[index];
