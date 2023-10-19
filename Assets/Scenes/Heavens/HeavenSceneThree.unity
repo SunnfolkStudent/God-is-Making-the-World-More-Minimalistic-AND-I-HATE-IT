@@ -1298,6 +1298,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1405099163}
     m_Modifications:
+    - target: {fileID: 4822485888204167288, guid: 9d13a7a6286aaf14a875244eb1e9a98c, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5054663990586610830, guid: 9d13a7a6286aaf14a875244eb1e9a98c, type: 3}
       propertyPath: m_Name
       value: Player_Very_Minimalist
