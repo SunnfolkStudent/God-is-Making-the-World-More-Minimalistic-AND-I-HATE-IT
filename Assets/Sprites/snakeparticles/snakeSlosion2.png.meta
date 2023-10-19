@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      snakeSlosion2_0: -2359998623371596044
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
