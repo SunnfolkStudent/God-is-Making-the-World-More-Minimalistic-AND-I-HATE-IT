@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Heavens/HeavenScene.unity
+    guid: f929df34f34309e47a8401dfba9d978f
+  - enabled: 1
     path: Assets/Scenes/Menu Scenes/Title.unity
     guid: 7c7eaf2009c51f14b99aa29920b77478
   - enabled: 1
@@ -23,9 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/LevelFour.unity
     guid: 8a7e7d05f31862d41bf3b275283f59a9
-  - enabled: 1
-    path: Assets/Scenes/Heavens/HeavenScene.unity
-    guid: f929df34f34309e47a8401dfba9d978f
   - enabled: 1
     path: Assets/Scenes/Heavens/HeavenSceneThree.unity
     guid: 0195d82f920bd2d49a797adc48285db5
