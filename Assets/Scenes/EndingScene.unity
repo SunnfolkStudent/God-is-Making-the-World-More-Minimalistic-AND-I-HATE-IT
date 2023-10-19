@@ -257,7 +257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425249655}
-  - component: {fileID: 425249654}
+  - component: {fileID: 425249656}
   m_Layer: 0
   m_Name: CutsenDialogueControler
   m_TagString: Untagged
@@ -265,32 +265,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &425249654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 425249653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68e2a8f8b8961cd45b0f0e021f04b429, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvs: {fileID: 480403929}
-  dialogueText: {fileID: 1871378391}
-  nameText: {fileID: 1200614353}
-  dialogue:
-  - Now i am become god, Destroyer of minimalism, i shal now remove minimalism an
-    make evriting MAKIMALIST
-  name:
-  - Joe
-  _audioSource: {fileID: 182440140}
-  joeClips:
-  - {fileID: 8300000, guid: 178847bc43de4a04cb0be8d7af7580c2, type: 3}
-  wordSpeed: 0.06
-  playableDirector: {fileID: 1160254892}
-  activated: 1
 --- !u!4 &425249655
 Transform:
   m_ObjectHideFlags: 0
@@ -306,6 +280,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &425249656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425249653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed892fe44c8e48244945ac545b47e804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvs: {fileID: 480403929}
+  dialogueText: {fileID: 1871378391}
+  nameText: {fileID: 1200614353}
+  dialogue:
+  - I am becom god destoryer of minimalism, I will now change the world to be ultra
+    maximalist
+  name:
+  - Joe
+  _audioSource: {fileID: 182440140}
+  joeClips:
+  - {fileID: 8300000, guid: 2993fef0114335049aba2ac1cd2f55c6, type: 3}
+  wordSpeed: 0.06
+  playableDirector: {fileID: 1160254892}
+  activated: 1
 --- !u!1 &480403929
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,8 +935,8 @@ Camera:
   m_GameObject: {fileID: 2035176488}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
