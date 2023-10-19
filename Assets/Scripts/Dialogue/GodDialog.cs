@@ -9,6 +9,7 @@ using Unity.VisualScripting;
 using UnityEngine.Serialization;
 using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
+using Cinemachine;
 
 public class GodDialog : MonoBehaviour
 {
@@ -50,11 +51,14 @@ public class GodDialog : MonoBehaviour
     private bool timerDone;
     private bool timerOn = false;
 
+    private CinemachineImpulseSource _impulseSource;
+    
     public PlayableDirector crushed;
     void Start()
     {
         dialogueText.text = "";
         _audioSource.volume = 0.5f;
+        _impulseSource = GetComponent<CinemachineImpulseSource>();
     }
 
     // Update is called once per frame
@@ -136,7 +140,9 @@ public class GodDialog : MonoBehaviour
         {
             dialogueText.text += letter;
             if (letter.ToString() != " ") { PlaySpeechClip();}
-
+            
+            if (nameText.text.Equals("Minimalist God") && !char.IsPunctuation(letter)) { CameraShakeManager.instance.CameraShake(_impulseSource); }
+            
             if (char.IsPunctuation(letter)) { yield return new WaitForSeconds(wordSpeed * 6); }
             else { yield return new WaitForSeconds(wordSpeed); }
         }
