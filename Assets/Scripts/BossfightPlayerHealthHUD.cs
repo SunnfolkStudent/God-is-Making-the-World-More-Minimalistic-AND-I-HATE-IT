@@ -13,6 +13,7 @@ public class BossfightPlayerHealthHUD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _text.text = playerHealth.lives + "/3";
+        if (playerHealth.lives > 3) { _text.text = "∞/3"; }
+        else { _text.text = playerHealth.lives + "/3"; }
     }
 }
