@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 80265286}
   - component: {fileID: 80265285}
   - component: {fileID: 80265284}
+  - component: {fileID: 80265288}
   m_Layer: 5
   m_Name: CutsenDialogue
   m_TagString: Untagged
@@ -223,6 +224,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &80265288
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80265283}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &170960968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,6 +1512,8 @@ PlayableDirector:
     value: {fileID: 1078174866}
   - key: {fileID: 5386029942365043544, guid: 7f3a144cfe651fc4db3204c7a506c290, type: 2}
     value: {fileID: 1767674371}
+  - key: {fileID: 1135701086530087524, guid: 7f3a144cfe651fc4db3204c7a506c290, type: 2}
+    value: {fileID: 80265288}
   m_ExposedReferences:
     m_References:
     - 11c75b37ae8cf0f45bfb73eb377cc9f7: {fileID: 2103530472}

@@ -67,7 +67,7 @@ public class CutseneDialog : MonoBehaviour
             {
                 if (index == 0)
                 {
-                    playableDirector.Stop();
+                    //playableDirector.Stop();
                 }
                 
 
