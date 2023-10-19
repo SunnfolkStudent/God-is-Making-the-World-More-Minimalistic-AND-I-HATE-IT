@@ -1,16 +1,11 @@
 
 using System.Collections;
-using System.Collections.Generic;
-using Cinemachine;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEngine.Serialization;
 using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
-public class CutseneDialog : MonoBehaviour
+public class EndOfGameDialog : MonoBehaviour
 {
     [Header("Dialogue")]
     public GameObject canvs;
@@ -50,13 +45,10 @@ public class CutseneDialog : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        print("timerOn");
         timer += Time.deltaTime;
-        if (timer > 11f) 
+        if (timer > 10f) 
         {
-            print("IwantTOleeve"); 
-            SceneManager.LoadScene("LevelOne");
+            SceneManager.LoadScene("Credits");
         }
         
         
