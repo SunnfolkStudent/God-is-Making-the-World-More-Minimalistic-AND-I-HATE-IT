@@ -39,6 +39,9 @@ public class EndOfGameDialog : MonoBehaviour
     private bool timerDone2;
     private bool timerOn2 = false;
     
+    private float timer3;
+    private bool timerDone3;
+    private bool timerOn3 = false;
     
     
     public bool activated = true;
@@ -52,7 +55,7 @@ public class EndOfGameDialog : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer > 15f) 
+        if (timer > 18f) 
         {
             SceneManager.LoadScene("Credits");
         }
@@ -65,6 +68,19 @@ public class EndOfGameDialog : MonoBehaviour
                  timerDone2 = true;
                  timer2 = 0;
              }
+        }
+
+        if (timerOn3)
+        {
+            timer3 += Time.deltaTime;
+            if (timer3 > 15f) 
+            {
+                dialogueText.text = "";
+                index = 0;
+                canvs.SetActive(false);
+                playableDirector.Resume();
+                timerOn = true;
+            }
         }
         if (dialogueText.text == dialogue[index])
         {
@@ -111,11 +127,16 @@ public class EndOfGameDialog : MonoBehaviour
     
     public void RemoveText()
     {
-        dialogueText.text = "";
-        index = 0;
-        canvs.SetActive(false);
-        playableDirector.Resume();
-        timerOn = true;
+        timerOn3 = true;
+        /*if (timer3 > 15f)
+        {
+             dialogueText.text = "";
+             index = 0;
+             canvs.SetActive(false);
+             playableDirector.Resume();
+             timerOn = true;
+        }
+        */
     }
 
     IEnumerator Typing()
