@@ -296,9 +296,13 @@ MonoBehaviour:
   dialogueText: {fileID: 1871378391}
   nameText: {fileID: 1200614353}
   dialogue:
-  - I am becom god destoryer of minimalism, I will now change the world to be ultra
-    maximalist
+  - Finally, after all this time. I can finally remove minimalism!!
+  - I am become God, destroyer of minimalism!
+  - ...
+  - 'But why do I '
   name:
+  - Maximalist Joe
+  - Maximalist Joe
   - Joe
   _audioSource: {fileID: 182440140}
   joeClips:

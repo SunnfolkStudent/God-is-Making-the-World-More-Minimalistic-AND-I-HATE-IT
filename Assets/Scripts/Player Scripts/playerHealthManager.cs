@@ -100,6 +100,7 @@ public class PlayerHealthManager : MonoBehaviour
 
     private void Update()
     {
+        
         if (Time.time > canTakeDamageCounter && !canTakeDamage)
         {
 
