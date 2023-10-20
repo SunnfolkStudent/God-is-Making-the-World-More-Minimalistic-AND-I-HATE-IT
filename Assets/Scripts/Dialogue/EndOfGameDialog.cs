@@ -35,6 +35,11 @@ public class EndOfGameDialog : MonoBehaviour
     private bool timerDone;
     private bool timerOn = false;
 
+    private float timer2;
+    private bool timerDone2;
+    private bool timerOn2 = false;
+    
+    
     public bool activated = true;
 
     void Start()
@@ -46,12 +51,20 @@ public class EndOfGameDialog : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer > 10f) 
+        if (timer > 20f) 
         {
             SceneManager.LoadScene("Credits");
         }
-        
-        
+
+        if (timerOn2)
+        {
+             timer2 += Time.deltaTime;
+             if (timer2 > 0.5f)
+             {
+                 timerDone2 = true;
+             }
+        }
+       
         if (activated)
         {
             activated = false;
@@ -72,7 +85,12 @@ public class EndOfGameDialog : MonoBehaviour
             }
             else if (dialogueText.text == dialogue[index])
             {
-                NextLine();
+                timerOn2 = true;
+                if (timerDone2)
+                {
+                     NextLine();
+                }
+                
             } 
             
             if (dialogueText.text == dialogue[index])
