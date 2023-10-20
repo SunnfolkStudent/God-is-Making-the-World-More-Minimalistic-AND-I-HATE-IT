@@ -414,6 +414,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2109785789749733882, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0b69712852caa3f4989dc6009eef4fd1, type: 2}
     - target: {fileID: 2920355578495400352, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -424,16 +428,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6390774003641410433, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: Koe
       objectReference: {fileID: 0}
     - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_Size.x
-      value: 0.75
+      value: 0.5833333
       objectReference: {fileID: 0}
     - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_Size.y
-      value: 1.3333334
+      value: 1.2083334
       objectReference: {fileID: 0}
+    - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2652488082949370688, guid: 1ea64a05fc08ca6479f9aa773a75492b, type: 3}
     - target: {fileID: 8963828464764373657, guid: 35abf9abc4049704ab29057beaf69136, type: 3}
       propertyPath: m_Color.b
       value: 1

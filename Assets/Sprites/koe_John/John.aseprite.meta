@@ -2,7 +2,22 @@ fileFormatVersion: 2
 guid: 1ea64a05fc08ca6479f9aa773a75492b
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: behind
+    second: {fileID: 7400000, guid: 4d7806efa1ee6f24e9a121d6bec8fc65, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: death
+    second: {fileID: 7400000, guid: e29f1b8da2059a145960d2721bf95ce8, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: walk
+    second: {fileID: 7400000, guid: 1f8a94401f3a5cb46850819874616eee, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -35,7 +50,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 24
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +110,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638334093472489194
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,8 +136,8 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: John_Frame_0
     originalName: 
-    pivot: {x: 0.21428573, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -141,8 +156,8 @@ ScriptedImporter:
     uvTransform: {x: 29, y: 79}
   - name: John_Frame_1
     originalName: 
-    pivot: {x: 0.23529412, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -161,8 +176,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: John_Frame_2
     originalName: 
-    pivot: {x: 0.21428573, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -181,8 +196,8 @@ ScriptedImporter:
     uvTransform: {x: 29, y: 191}
   - name: John_Frame_3
     originalName: 
-    pivot: {x: 0.21428573, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -201,8 +216,8 @@ ScriptedImporter:
     uvTransform: {x: 53, y: 71}
   - name: John_Frame_4
     originalName: 
-    pivot: {x: 0.1875, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -221,8 +236,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 41}
   - name: John_Frame_5
     originalName: 
-    pivot: {x: 0.1875, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -241,8 +256,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 79}
   - name: John_Frame_6
     originalName: 
-    pivot: {x: 0.1875, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -261,8 +276,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 117}
   - name: John_Frame_7
     originalName: 
-    pivot: {x: 0.1875, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -281,8 +296,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 155}
   - name: John_Frame_8
     originalName: 
-    pivot: {x: 0.1875, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -301,8 +316,8 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 193}
   - name: John_Frame_9
     originalName: 
-    pivot: {x: 0.21428573, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -321,8 +336,8 @@ ScriptedImporter:
     uvTransform: {x: 29, y: 117}
   - name: John_Frame_10
     originalName: 
-    pivot: {x: 0.06666667, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -341,8 +356,8 @@ ScriptedImporter:
     uvTransform: {x: 29, y: 42}
   - name: John_Frame_11
     originalName: 
-    pivot: {x: 0.0625, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -361,8 +376,8 @@ ScriptedImporter:
     uvTransform: {x: 29, y: 4}
   - name: John_Frame_12
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -381,8 +396,8 @@ ScriptedImporter:
     uvTransform: {x: 29, y: 155}
   - name: John_Frame_13
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -401,8 +416,8 @@ ScriptedImporter:
     uvTransform: {x: 53, y: 107}
   - name: John_Frame_14
     originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -421,8 +436,8 @@ ScriptedImporter:
     uvTransform: {x: 53, y: 36}
   - name: John_Frame_15
     originalName: 
-    pivot: {x: 0.25, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -441,8 +456,8 @@ ScriptedImporter:
     uvTransform: {x: 53, y: 4}
   - name: John_Frame_16
     originalName: 
-    pivot: {x: 0.375, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -461,8 +476,8 @@ ScriptedImporter:
     uvTransform: {x: 81, y: 4}
   - name: John_Frame_17
     originalName: 
-    pivot: {x: 0.375, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -481,8 +496,8 @@ ScriptedImporter:
     uvTransform: {x: 81, y: 41}
   - name: John_Frame_18
     originalName: 
-    pivot: {x: 0.375, y: 0}
-    alignment: 9
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -662,7 +677,29 @@ ScriptedImporter:
       spriteId: 03a6035a8de67134ea979299bf3c6f9a
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 32, y: 32}
