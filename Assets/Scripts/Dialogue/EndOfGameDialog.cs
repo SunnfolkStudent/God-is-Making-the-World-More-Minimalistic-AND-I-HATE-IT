@@ -154,7 +154,7 @@ public class EndOfGameDialog : MonoBehaviour
     private void PlaySpeechClip()
     {
         _audioSource.volume = 0.5f;
-        _audioSource.PlayOneShot(koeClips[Random.Range(0, koeClips.Length)]);
+        if (nameText.text.Equals("Koe")) { _audioSource.PlayOneShot(koeClips[Random.Range(0, koeClips.Length)]); }
         return;
     }
     public void NextLine()
