@@ -85,6 +85,7 @@ public class LevelStartDiolouge : MonoBehaviour
     {
         dialogueText.text = "";
         index = 0;
+        _audioSource.volume = 1f;
         dialoguePanel.SetActive(false);
         _inputManager.canMove = true;
         _playerMovement.canMove = true;
