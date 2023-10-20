@@ -755,7 +755,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'God
+  m_text: 'Joe
 
 '
   m_isRightToLeft: 0
