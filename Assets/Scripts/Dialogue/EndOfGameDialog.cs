@@ -40,6 +40,7 @@ public class EndOfGameDialog : MonoBehaviour
     private bool timerOn2 = false;
     
     
+    
     public bool activated = true;
 
     void Start()
@@ -58,11 +59,11 @@ public class EndOfGameDialog : MonoBehaviour
 
         if (timerOn2)
         {
-            timer2 = 0;
              timer2 += Time.deltaTime;
-             if (timer2 > 1.5f)
+             if (timer2 > 3f)
              {
                  timerDone2 = true;
+                 timer2 = 0;
              }
         }
         if (dialogueText.text == dialogue[index])
