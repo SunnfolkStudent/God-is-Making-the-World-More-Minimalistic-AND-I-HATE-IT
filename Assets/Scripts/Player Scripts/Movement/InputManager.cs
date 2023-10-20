@@ -72,7 +72,7 @@ public class InputManager : MonoBehaviour
         interactReleased = _keyboard.eKey.wasReleasedThisFrame;
         interactHeld = _keyboard.eKey.isPressed;
     // Set the attack bools wen the g key is interacted with
-        attackPressed = _keyboard.qKey.wasPressedThisFrame;
+        attackPressed = _keyboard.wKey.wasPressedThisFrame;
 
     if (!canMove)
     {

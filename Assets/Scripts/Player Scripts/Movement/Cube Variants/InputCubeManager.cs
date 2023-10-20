@@ -70,8 +70,8 @@ public class InputCubeManager : MonoBehaviour
         interactReleased = _keyboard.eKey.wasReleasedThisFrame;
         interactHeld = _keyboard.eKey.isPressed;
     // Set the attack bools wen the g key is interacted with
-        attackPressed = _keyboard.qKey.wasPressedThisFrame;
-        attackHeld = _keyboard.qKey.isPressed;
+        attackPressed = _keyboard.wKey.wasPressedThisFrame;
+        attackHeld = _keyboard.wKey.isPressed;
     // Set the value of shootDirection to be equal to the value of arrowKeys
         shootDirection.x = (_keyboard.leftArrowKey.isPressed ? -1 : 0) + (_keyboard.rightArrowKey.isPressed ? 1 : 0);
         shootDirection.y = (_keyboard.upArrowKey.isPressed ? 1 : 0) + (_keyboard.downArrowKey.isPressed ? -1 : 0);
