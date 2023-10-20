@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Playables;
+using Cinemachine;
 
 
 public class YouAreGodDioluge : MonoBehaviour
@@ -31,11 +32,12 @@ public class YouAreGodDioluge : MonoBehaviour
     public AudioSource _audioSource;
     
     //public bool canGoToNextLine = true;
-
+    private CinemachineImpulseSource _impulseSource;
 
     void Start()
     {
         dialogueText.text = "";
+        _impulseSource = GetComponent<CinemachineImpulseSource>();
     }
 
     // Update is called once per frame
@@ -99,6 +101,8 @@ public class YouAreGodDioluge : MonoBehaviour
             dialogueText.text += letter;
             if (letter.ToString() != " ") { PlaySpeechClip();}
 
+            if (nameText.text.Contains("Minimalist") && !char.IsPunctuation(letter)) { CameraShakeManager.instance.CameraShake(_impulseSource); }
+            
             if (char.IsPunctuation(letter)) { yield return new WaitForSeconds(wordSpeed * 6); }
             yield return new WaitForSeconds(wordSpeed);
         }
