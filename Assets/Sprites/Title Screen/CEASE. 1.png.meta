@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 62c45e05995d80f4f8c0773da9dc2786
+guid: 1caa41d66a68db540bfa3a691296e862
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5337694842916807599
-    second: CEASE._0
+      213: -2782141776664054155
+    second: CEASE. 1_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,7 +98,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CEASE._0
+      name: CEASE. 1_0
       rect:
         serializedVersion: 2
         x: 158
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 15c528812d2bce5b0800000000000000
-      internalID: -5337694842916807599
+      spriteID: 5763a276bc8d369d0800000000000000
+      internalID: -2782141776664054155
       vertices: []
       indices: 
       edges: []
@@ -129,7 +129,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CEASE._0: -5337694842916807599
+      CEASE. 1_0: -2782141776664054155
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
