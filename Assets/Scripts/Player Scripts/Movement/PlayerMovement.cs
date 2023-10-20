@@ -195,7 +195,7 @@ public class PlayerMovement : MonoBehaviour
     
     public void playWalkSound()
     {
-        
+        Debug.Log("Walk");
         _audioSource.PlayOneShot(walkClips[Random.Range(0, walkClips.Length)]);
         return;
     }
