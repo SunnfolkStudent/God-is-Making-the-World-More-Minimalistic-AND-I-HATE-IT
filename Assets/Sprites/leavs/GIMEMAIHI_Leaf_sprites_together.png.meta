@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: a902e64901a88f740af9596f8e146f0d
+guid: 5d3daf5507a49924f94003d126c58d63
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 88235557096625266
-    second: GIMEMAIHI_Leaf_sprite_3_0
+      213: 1843985300864948976
+    second: GIMEMAIHI_Leaf_sprites_together_0
+  - first:
+      213: -2740913599508738435
+    second: GIMEMAIHI_Leaf_sprites_together_1
+  - first:
+      213: 1531718603839992818
+    second: GIMEMAIHI_Leaf_sprites_together_2
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -98,11 +104,53 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GIMEMAIHI_Leaf_sprite_3_0
+      name: GIMEMAIHI_Leaf_sprites_together_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 13
+        x: 8
+        y: 12
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fad81d7cd6279910800000000000000
+      internalID: 1843985300864948976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIMEMAIHI_Leaf_sprites_together_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 9
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e8e3d6a9156f9d0800000000000000
+      internalID: -2740913599508738435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIMEMAIHI_Leaf_sprites_together_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 11
         width: 11
         height: 9
       alignment: 0
@@ -112,8 +160,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2749d4d85c9793100800000000000000
-      internalID: 88235557096625266
+      spriteID: 2f37dbd64f1c14510800000000000000
+      internalID: 1531718603839992818
       vertices: []
       indices: 
       edges: []
@@ -129,7 +177,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GIMEMAIHI_Leaf_sprite_3_0: 88235557096625266
+      GIMEMAIHI_Leaf_sprites_together_0: 1843985300864948976
+      GIMEMAIHI_Leaf_sprites_together_1: -2740913599508738435
+      GIMEMAIHI_Leaf_sprites_together_2: 1531718603839992818
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
