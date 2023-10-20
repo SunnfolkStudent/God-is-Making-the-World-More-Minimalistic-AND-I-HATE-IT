@@ -63,7 +63,7 @@ public class EndOfGameDialog : MonoBehaviour
         if (timerOn2)
         {
              timer2 += Time.deltaTime;
-             if (timer2 > 3f)
+             if (timer2 > 4f)
              {
                  timerDone2 = true;
                  timer2 = 0;
