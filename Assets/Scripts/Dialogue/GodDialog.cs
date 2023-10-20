@@ -52,6 +52,9 @@ public class GodDialog : MonoBehaviour
     private bool timerOn = false;
 
     private CinemachineImpulseSource _impulseSource;
+
+    public Transform invisWallSpawn;
+    public GameObject invisWall;
     
     public PlayableDirector crushed;
     void Start()
@@ -78,6 +81,7 @@ public class GodDialog : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
         {
             
+            var clone = Instantiate(invisWall, invisWallSpawn.position, Quaternion.identity);
             
             tFollowTarget = dialogueCamPos.transform; 
             vcam.LookAt = tFollowTarget; 

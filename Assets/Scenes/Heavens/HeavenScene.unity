@@ -736,6 +736,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &318424180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 318424181}
+  m_Layer: 0
+  m_Name: invisWallSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &318424181
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318424180}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.12, y: 4.449259, z: -0.08460556}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1325670974}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &323134466
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,6 +2990,7 @@ Transform:
   m_Children:
   - {fileID: 1760303871}
   - {fileID: 72577316}
+  - {fileID: 318424181}
   m_Father: {fileID: 1760410113}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1346392225
@@ -3644,6 +3676,8 @@ MonoBehaviour:
   dialogueCamPos: {fileID: 375530355}
   tFollowTarget: {fileID: 375530356}
   vcam: {fileID: 1116744151}
+  invisWallSpawn: {fileID: 318424181}
+  invisWall: {fileID: 7060722102525483209, guid: cc2988b04dcfe7c489c30f9ea248e0d7, type: 3}
   crushed: {fileID: 938402640}
 --- !u!82 &1465143670
 AudioSource:
