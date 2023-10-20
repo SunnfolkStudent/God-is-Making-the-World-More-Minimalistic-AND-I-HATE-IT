@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GIMEMAIHI_Leaf_sprite_3_0: 88235557096625266
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
