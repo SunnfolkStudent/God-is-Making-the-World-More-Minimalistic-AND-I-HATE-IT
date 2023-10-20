@@ -22,7 +22,7 @@ public class EndOfGameDialog : MonoBehaviour
 
     [Header("Audio")]
     public AudioSource _audioSource;
-    public AudioClip[] joeClips;
+    public AudioClip[] koeClips;
 
     [Header("Word Speed & Disable Movement")]
     public float wordSpeed;
@@ -131,7 +131,8 @@ public class EndOfGameDialog : MonoBehaviour
 
     private void PlaySpeechClip()
     {
-        if (nameText.text == "Joe") { _audioSource.PlayOneShot(joeClips[Random.Range(0, joeClips.Length)]); }
+        _audioSource.volume = 0.5f;
+        _audioSource.PlayOneShot(koeClips[Random.Range(0, koeClips.Length)]);
         return;
     }
     public void NextLine()
