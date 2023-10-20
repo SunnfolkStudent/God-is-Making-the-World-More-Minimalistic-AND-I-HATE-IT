@@ -143,6 +143,7 @@ public class GodDialog : MonoBehaviour
             if (letter.ToString() != " ") { PlaySpeechClip();}
             
             if (nameText.text.Equals("Minimalist God") && !char.IsPunctuation(letter)) { CameraShakeManager.instance.CameraShake(_impulseSource); }
+            if (SceneManager.GetActiveScene().name.Equals("HeavenScene") && index == 4 && !char.IsPunctuation(letter)) { CameraShakeManager.instance.CameraShake(_impulseSource); }
             
             if (char.IsPunctuation(letter)) { yield return new WaitForSeconds(wordSpeed * 6); }
             else { yield return new WaitForSeconds(wordSpeed); }
