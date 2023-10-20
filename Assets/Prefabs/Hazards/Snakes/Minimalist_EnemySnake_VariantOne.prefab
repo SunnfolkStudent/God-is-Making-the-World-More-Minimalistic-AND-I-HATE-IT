@@ -191,7 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBtwShots: 4
   startTimeBtwShots: 4
-  projectile: {fileID: 1252491438052546928, guid: 50da0171e1a43b74b9576aedcb1eb747, type: 3}
+  projectile: {fileID: 6429120411980881399, guid: 1325f29cef5a7f642b49250be95b9a88, type: 3}
   spawnPoint: {fileID: 1056079991153734732}
 --- !u!95 &7248457786550008603
 Animator:
