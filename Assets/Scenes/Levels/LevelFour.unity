@@ -956,9 +956,22 @@ MonoBehaviour:
   - Yeah! Now remove minimalism!
   - Very well. Thou shalt never again be forceth to endure thy so called "minimalist
     plague".
+  - Thou hast defeateth mineself. I hath becometh too weak to continue in mine holy
+    journey. Thou must taketh mine torch and carry on.
+  - Wait, you want me to be God?
+  - Thou are correct.
+  - Awesome! NO MORE MINIMALISM!!
+  - Now that I am not God anymore I am not bound by the cosmic rules. I shall retire.
+  - Minimalism sucked anyways. Have fun.
   name:
   - God
   - Maximalist Joe
+  - God
+  - God
+  - Maximalist Joe
+  - God
+  - Maximalist Joe
+  - God
   - God
   wordSpeed: 0.06
   godIsDead: 0
@@ -1603,7 +1616,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Use the arrow keys to aim and use Q to shoot Minimalist God
+  m_text: Use the arrow keys to aim and use W to shoot Minimalist God
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
