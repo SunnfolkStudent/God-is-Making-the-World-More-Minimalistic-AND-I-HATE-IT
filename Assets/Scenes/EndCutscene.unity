@@ -1064,10 +1064,11 @@ MonoBehaviour:
   name:
   - Koe
   - ...
+  index: 0
   _audioSource: {fileID: 0}
   joeClips: []
   wordSpeed: 0.06
-  playableDirector: {fileID: 0}
+  playableDirector: {fileID: 1740203323}
   activated: 1
 --- !u!1 &1159196445
 GameObject:

@@ -58,6 +58,7 @@ public class EndOfGameDialog : MonoBehaviour
 
         if (timerOn2)
         {
+            timer2 = 0;
              timer2 += Time.deltaTime;
              if (timer2 > 1.5f)
              {
