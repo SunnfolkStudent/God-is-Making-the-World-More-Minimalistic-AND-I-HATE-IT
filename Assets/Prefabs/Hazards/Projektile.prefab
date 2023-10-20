@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f731fbf8e9d426248b5b50fb6d5b2dd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particles: {fileID: 6096750258496048490, guid: c86cba9bc2db7684b9409dd9b570a828, type: 3}
   speed: 7
   arc: 4
   rigidbody2D: {fileID: 5413821048844802452}
