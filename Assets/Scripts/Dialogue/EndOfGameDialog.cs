@@ -18,7 +18,7 @@ public class EndOfGameDialog : MonoBehaviour
     //public InputManager _inputManager;
     //public PlayerMovement _playerMovement;
     
-    private int index = 0;
+    public int index = 0;
 
     [Header("Audio")]
     public AudioSource _audioSource;
@@ -59,20 +59,30 @@ public class EndOfGameDialog : MonoBehaviour
         if (timerOn2)
         {
              timer2 += Time.deltaTime;
-             if (timer2 > 0.5f)
+             if (timer2 > 1.5f)
              {
                  timerDone2 = true;
              }
         }
-       
+        if (dialogueText.text == dialogue[index])
+        {
+            
+            timerOn2 = true;
+            if (timerDone2)
+            {
+                NextLine();
+            }
+        } 
         if (activated)
         {
             activated = false;
             if (!canvs.activeInHierarchy)
             {
+                print("twest1");
                 if (index == 0)
                 {
                     //playableDirector.Stop();
+                    print("test3");
                 }
                 
 
@@ -81,17 +91,8 @@ public class EndOfGameDialog : MonoBehaviour
                 dialogueText.text = ""; 
                 nameText.text = name[index]; 
                 StartCoroutine(Typing());
-                
             }
-            else if (dialogueText.text == dialogue[index])
-            {
-                timerOn2 = true;
-                if (timerDone2)
-                {
-                     NextLine();
-                }
-                
-            } 
+            
             
             if (dialogueText.text == dialogue[index])
             {
