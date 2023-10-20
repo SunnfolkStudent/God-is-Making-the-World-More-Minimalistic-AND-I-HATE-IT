@@ -1068,11 +1068,11 @@ MonoBehaviour:
   nameText: {fileID: 557388794}
   dialogue:
   - Minimalism sucks. These "artists" really think they're good at art. God, I want
-    to ask you to remove minimalism
-  - And so the sycle continues
+    to ask you to remove minimalism!
+  - And so the cycle continues.
   name:
   - Koe
-  - ...
+  - ' '
   index: 0
   _audioSource: {fileID: 1767674371}
   koeClips:
