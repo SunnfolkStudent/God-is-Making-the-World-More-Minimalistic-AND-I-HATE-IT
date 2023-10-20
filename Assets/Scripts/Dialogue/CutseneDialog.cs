@@ -74,7 +74,8 @@ public class CutseneDialog : MonoBehaviour
                 canvs.SetActive(true); 
                 
                 dialogueText.text = ""; 
-                nameText.text = name[index]; 
+                nameText.text = name[index];
+                _audioSource.volume = 0.5f;
                 StartCoroutine(Typing());
                 
             }
@@ -100,6 +101,7 @@ public class CutseneDialog : MonoBehaviour
     {
         dialogueText.text = "";
         index = 0;
+        _audioSource.volume = 1f;
         canvs.SetActive(false);
         playableDirector.Resume();
         timerOn = true;
